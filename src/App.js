@@ -15,6 +15,7 @@ function App() {
         <div className="main-image">
         <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="App-logo" alt="logo" />
         </div>
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
