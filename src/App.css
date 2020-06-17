@@ -12,11 +12,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
+/*MAIN TITLE*/
+h1 {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: allegro;
+  color: #831A04;
+}
 /*HEADER*/
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -36,6 +44,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: allegro;
   color: white;
 }
 .Nav-bar a:hover{

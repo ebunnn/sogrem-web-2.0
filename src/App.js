@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Sogrem Associates</h1>
         <div className="Nav-bar">
           <a href="https://www.google.com/search?q=home&oq=home+&aqs=chrome..69i57j0l4j69i61j69i60j69i61.5463j0j7&sourceid=chrome&ie=UTF-8">Home</a>
           <a href="https://www.google.com/search?q=tax+returns&oq=tax+returns&aqs=chrome..69i57j0l7.6327j0j9&sourceid=chrome&ie=UTF-8">Tax Returns</a>
@@ -15,7 +16,7 @@ function App() {
         <div className="main-image">
         <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="App-logo" alt="logo" />
         </div>
-        
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
