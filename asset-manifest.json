@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sogrem-web-2.0/static/css/main.6b50df1e.chunk.css",
+    "main.js": "/sogrem-web-2.0/static/js/main.67c4cd16.chunk.js",
+    "main.js.map": "/sogrem-web-2.0/static/js/main.67c4cd16.chunk.js.map",
+    "runtime-main.js": "/sogrem-web-2.0/static/js/runtime-main.ea64daa2.js",
+    "runtime-main.js.map": "/sogrem-web-2.0/static/js/runtime-main.ea64daa2.js.map",
+    "static/js/2.b18c695b.chunk.js": "/sogrem-web-2.0/static/js/2.b18c695b.chunk.js",
+    "static/js/2.b18c695b.chunk.js.map": "/sogrem-web-2.0/static/js/2.b18c695b.chunk.js.map",
+    "index.html": "/sogrem-web-2.0/index.html",
+    "precache-manifest.103adc8b0fb09a32090176b6cf984359.js": "/sogrem-web-2.0/precache-manifest.103adc8b0fb09a32090176b6cf984359.js",
+    "service-worker.js": "/sogrem-web-2.0/service-worker.js",
+    "static/css/main.6b50df1e.chunk.css.map": "/sogrem-web-2.0/static/css/main.6b50df1e.chunk.css.map",
+    "static/js/2.b18c695b.chunk.js.LICENSE.txt": "/sogrem-web-2.0/static/js/2.b18c695b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/sogrem-web-2.0/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea64daa2.js",
+    "static/js/2.b18c695b.chunk.js",
+    "static/css/main.6b50df1e.chunk.css",
+    "static/js/main.67c4cd16.chunk.js"
+  ]
+}
