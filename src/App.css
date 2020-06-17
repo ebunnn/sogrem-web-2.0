@@ -7,12 +7,12 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
+} */
+/*HEADER*/
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +23,32 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/*NAVIGATION BAR*/
+.Nav-bar {
+  overflow: hidden;
+  background-color: #831A04;
+
+  
+} 
+.Nav-bar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+.Nav-bar a:hover{
+  background-color: white;
+  color: black;
+}
+.Nav-bar a:active{
+  background-color: white;
+  color: black;
+}
+/*MAIN IMAGE*/
+
+
 
 .App-link {
   color: #61dafb;
