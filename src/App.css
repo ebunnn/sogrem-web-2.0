@@ -50,7 +50,7 @@ h1 {
   font-family: allegro;
   color: white;
 }
-.Nav-bar a:hover{
+.Nav-bar a:hover, .dropdown:hover .dropbtn{
   background-color: white;
   color: black;
 }
@@ -63,7 +63,6 @@ h1 {
 .dropdown {
   float: left;
 }
-
 .dropbtn {
   font-size: 17px;
   text-align: center;
@@ -73,11 +72,10 @@ h1 {
   border: none;
   padding: 14px 16px;
 }
-/*.dropbtn:hover {
+.dropbtn:hover {
   background-color: white;
   color: black;
-}*/
-
+}
 .dropdown-content a {
   float: none;
   color: black;
@@ -90,6 +88,7 @@ h1 {
   color: #831A04;
 }
 .dropdown-content {
+  display: none;
   position: absolute;
   background-color: white;
   min-width: 160px;
@@ -121,11 +120,11 @@ h1 {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/*@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/
