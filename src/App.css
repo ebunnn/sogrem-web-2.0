@@ -130,6 +130,12 @@ h1 {
   color: green;
 }*/
 
+/*FOOTER*/
+.home-footer {
+  background-color: #EADEDC;
+  display: flow-root;
+}
+
 .App-link {
   color: #61dafb;
 }

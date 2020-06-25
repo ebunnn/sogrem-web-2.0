@@ -61,6 +61,13 @@ class App extends Component {
             </Route>
             <Route path="/">
               <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="main-image" alt="mainimage" />
+              <footer className="home-footer">
+            <div>
+              <p>
+                Created by Ebun Oludemi
+              </p>
+            </div>
+          </footer>
             </Route>
           </Switch>
         </div>

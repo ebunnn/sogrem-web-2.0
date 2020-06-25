@@ -9,6 +9,13 @@ class AboutUs extends Component {
         return(
             <div>
                 <p>this page is about us</p>
+                    <footer className="about-us-footer">
+                        <div>
+                            <p>
+                                Created by Ebun Oludemi
+                            </p>
+                        </div>
+                    </footer>
             </div>
         )
     }

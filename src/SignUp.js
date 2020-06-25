@@ -8,13 +8,20 @@ class SignUp extends Component {
     render() {
         return(
             <div>
+                <h2>Sign Up Here!</h2>
                 <form>
-                    <h2>Sign Up here!</h2>
-                    <p>Create a username:</p>
-                    <input type="text"/>
-                    <p>Create a password:</p>
+                    <label for="su-user">Create a username: </label>
+                    <input type="text"/> <br></br>
+                    <label for="su-pass">Create a password: </label> 
                     <input type="text"/>
                 </form>
+                <footer className="su-footer">
+                    <div>
+                        <p>
+                            Created by Ebun Oludemi
+                        </p>
+                    </div>
+                </footer>
             </div>
         )
     }

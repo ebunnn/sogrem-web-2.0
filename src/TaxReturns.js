@@ -11,6 +11,13 @@ class TaxReturns extends Component {
         return(
             <div>
                 <p>This is the tax return page ya dig</p>
+                    <footer className="tax-returns-footer">
+                        <div>
+                            <p>
+                                Created by Ebun Oludemi
+                            </p>
+                        </div>
+                    </footer>
             </div>
         )
     }

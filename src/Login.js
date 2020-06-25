@@ -8,14 +8,23 @@ class Login extends Component {
     render() {
         return(
             <div>
+                <h2>Login here!</h2>
                 <form>
-                    <h2>Login here!</h2>
-                    <p>Username:</p>
-                    <input type="text"/>
-                    <p>Password:</p>
+                    <label for="user">Username: </label>
+                    <input type="text"/><br></br>
+                    <label for="pass">Password: </label> 
                     <input type="text"/>
                 </form>
+                <footer className="login-footer">
+                    <div>
+                        <p>
+                            Created by Ebun Oludemi
+                        </p>
+                    </div>
+                </footer>
             </div>
+            
+                   
         )
     }
     
