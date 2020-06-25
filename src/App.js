@@ -1,45 +1,72 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Contact from './Contact';
+import TaxReturns from './TaxReturns';
+import AboutUs from './AboutUs';
+import SignUp from './SignUp';
+import Login from './Login';
 import { FaBeer, FaArrowDown, FaCaretDown } from 'react-icons/fa';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <h1>Sogrem Associates</h1>
-        <div className="Nav-bar">
-          <a href="#Home">Home</a>
-          <a href="#TaxReturns">Tax Returns</a>
-          <a href="#ContactUs">Contact Us</a>
-          <a href="#AboutUs">About Us</a>
-          <div className="dropdown">
-            <button className="dropbtn">Other<FaCaretDown /></button>
-            <div className="dropdown-content">
-              <a href="#Example1">Example 1</a>
-              <a href="#Example2">Example 2</a>
-              <a href="#Example3">Example 3</a>
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            <h1>Sogrem Associates</h1>
+            <div className="Nav-bar">
+              <Link to="/Home">Home</Link>
+              <Link to="/Tax-returns">Tax Returns</Link>
+              <Link to="/Contact-us">Contact Us</Link>
+              <Link to="/About-us">About Us</Link>
+              <div className="dropdown">
+                <button className="dropbtn">Other<FaCaretDown /></button>
+                <div className="dropdown-content">
+                  <a href="#Example1">Example 1</a>
+                  <a href="#Example2">Example 2</a>
+                  <a href="#Example3">Example 3</a>
+                </div>
+              </div>
+                  <div className="signup-login">
+                    <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
+                    <Link to="/Login" className="login-btn">Login</Link>
+                  </div>              
             </div>
-          </div>
+          </header>
+          <Switch>
+            <Route path="/Contact-us">
+              <Contact />
+            </Route>
+            <Route path="/Tax-returns">
+              <TaxReturns />
+            </Route>
+            <Route path="/About-us">
+              <AboutUs />
+            </Route>
+            <Route path="/Sign-up">
+              <SignUp />
+            </Route>
+            <Route path="/Login">
+              <Login />
+            </Route>
+            <Route path="/">
+              <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="main-image" alt="mainimage" />
+            </Route>
+          </Switch>
         </div>
-        <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="main-image" alt="mainimage" />
-        
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     </Router>
+    );
+  }
 }
 
 export default App;

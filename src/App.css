@@ -29,7 +29,6 @@ h1 {
 /*HEADER*/
 .App-header {
   background-color: #EADEDC;
-  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -48,7 +47,7 @@ h1 {
   text-decoration: none;
   font-size: 17px;
   font-family: allegro;
-  color: white;
+  color: inherit;
 }
 .Nav-bar a:hover, .dropdown:hover .dropbtn{
   background-color: white;
@@ -114,7 +113,22 @@ h1 {
   display: block;
 }
 
+/*SIGN UP AND LOG IN BUTTON*/
 
+.signup-login {
+  text-align: right;
+  display: inline-flex;
+  padding-left: 434px;
+  float: right;
+}
+
+/*.sign-up-btn {
+  color: green;
+}
+
+.login-btn {
+  color: green;
+}*/
 
 .App-link {
   color: #61dafb;
