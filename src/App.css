@@ -57,6 +57,10 @@ h1 {
   background-color: white;
   color: black;
 }
+.search-bar {
+  float: right;
+  padding-right: 20px;
+}
 /* DROPDOWN*/
 
 .dropdown {
@@ -118,8 +122,8 @@ h1 {
 .signup-login {
   text-align: right;
   display: inline-flex;
-  padding-left: 434px;
-  float: right;
+  padding-left: 550px;
+  /*float: right;*/
 }
 
 /*.sign-up-btn {
@@ -131,11 +135,20 @@ h1 {
 }*/
 
 /*FOOTER*/
-.home-footer {
+footer {
   background-color: #EADEDC;
-  display: flow-root;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  /*display: flow-root;*/
 }
 
+p {
+  font-family: allegro;
+}
+
+h2 {
+  font-family: allegro;
+}
 .App-link {
   color: #61dafb;
 }

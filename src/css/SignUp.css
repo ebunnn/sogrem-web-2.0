@@ -1,4 +1,36 @@
-.su-footer {
-    padding-top: 550px;
-    
+.signing-up {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #EADEDC;
+    background-color: #EADEDC;
+    margin-left: 420px;
+    margin-right: 420px;
+    padding: 20px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=password] {
+    width: 500px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=submit] {
+  font-size: 17px;
+  text-align: center;
+  background-color: #831A04;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
 }

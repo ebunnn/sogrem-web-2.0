@@ -1,4 +1,51 @@
-.login-footer{
-    padding-top: 550px;
-    
+.logging-in {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #EADEDC;
+    background-color: #EADEDC;
+    margin-left: 420px;
+    margin-right: 420px;
+    padding: 20px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=text]:hover {
+    background-color: #F1F1F1;
+}
+input[type=password] {
+    width: 500px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=password]:hover {
+    background-color: #F1F1F1;
+}
+input[type=submit] {
+  font-size: 17px;
+  text-align: center;
+  background-color: #831A04;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+}
+input[type=submit]:hover {
+    background-color: #F1F1F1;
+    color: #831A04;
+}
+
+.forgot-pass {
+    float: left;
+    padding-left: 22px;
+    text-decoration: none;
+    color: #831A04;
+}
+.forgot-pass:hover {
+    text-decoration: underline;
 }

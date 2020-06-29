@@ -9,19 +9,24 @@ class Login extends Component {
         return(
             <div>
                 <h2>Login here!</h2>
-                <form>
-                    <label for="user">Username: </label>
-                    <input type="text"/><br></br>
-                    <label for="pass">Password: </label> 
-                    <input type="text"/>
-                </form>
-                <footer className="login-footer">
-                    <div>
-                        <p>
-                            Created by Ebun Oludemi
-                        </p>
-                    </div>
-                </footer>
+                <div className="logging-in">
+                    <form>
+                        <input type="text" placeholder="Enter Username"/><br></br><br></br>
+                        <input type="password" placeholder="Enter Password"/><br></br><br></br>
+                        <a href="#forgotpass" className="forgot-pass">Forgot Password?</a><br></br><br></br>
+                        <input type="submit" value="Submit"/>
+                    </form> 
+                </div>   
+                <h5>Ignore this</h5>
+                <div>
+                    <footer className="login-footer">
+                        <div>
+                            <p>
+                                Created by Ebun Oludemi
+                            </p>
+                        </div>
+                    </footer>
+                </div>
             </div>
             
                    

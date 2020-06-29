@@ -5,7 +5,7 @@ import TaxReturns from './TaxReturns';
 import AboutUs from './AboutUs';
 import SignUp from './SignUp';
 import Login from './Login';
-import { FaBeer, FaArrowDown, FaCaretDown } from 'react-icons/fa';
+import { FaBeer, FaArrowDown, FaCaretDown, FaSearch } from 'react-icons/fa';
 import {
   BrowserRouter as Router,
   Switch,
@@ -40,7 +40,13 @@ class App extends Component {
                   <div className="signup-login">
                     <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
                     <Link to="/Login" className="login-btn">Login</Link>
-                  </div>              
+                  </div>
+                    <div className="search-bar">
+                      <form>
+                        <input type="search" placeholder="Search..."/>
+                        <button className="search-btn"><FaSearch /></button>
+                      </form>
+                      </div>          
             </div>
           </header>
           <Switch>
@@ -61,7 +67,7 @@ class App extends Component {
             </Route>
             <Route path="/">
               <img src="https://image1.masterfile.com/getImage/NjAwLTAxNjE0OTkxZW4uMDAwMDAwMDA=AA$6u$/600-01614991en_Masterfile.jpg" className="main-image" alt="mainimage" />
-              <footer className="home-footer">
+              <footer>
             <div>
               <p>
                 Created by Ebun Oludemi
