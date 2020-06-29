@@ -23,7 +23,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <h1>Sogrem Associates</h1>
+            <a href="#placeholder" className="main-title">Sogrem Associates</a>
             <div className="Nav-bar">
               <Link to="/Home">Home</Link>
               <Link to="/Tax-returns">Tax Returns</Link>

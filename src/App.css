@@ -17,13 +17,17 @@
 } */
 
 /*MAIN TITLE*/
-h1 {
+.main-title {
   text-align: left;
   margin-left: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
   font-family: allegro;
   color: #831A04;
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
 }
 
 /*HEADER*/
