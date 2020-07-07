@@ -16,18 +16,26 @@
 }
 .promise {
   position: absolute;
-  top: 266px;
+  /*top: 266px;*/
   font-size: 100px;
   margin-bottom: auto;
   font-family: allegro;
   padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: 10px;
   /*text-shadow: 5px 5px 10px black;*/
   /*border: 5px solid #17B019;*/
   /*color: #17B019;*/
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
   background-color: rgba(91, 164, 207, 0.4);
   width: 100%;
-
+}
+@keyframes intro {
+  from{top: -68px;}
+  to{top: 266px;}
 }
 
 /*@media (prefers-reduced-motion: no-preference) {
@@ -42,8 +50,8 @@
   margin-left: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: cursive;
-  color: #17B019;
+  font-family: allegro;
+  color: #8FACBD;
   text-decoration: none;
   font-size: 60px;
   font-weight: bold;
