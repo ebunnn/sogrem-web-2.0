@@ -14,19 +14,10 @@ class Login extends Component {
                         <input type="text" placeholder="Enter Username"/><br></br><br></br>
                         <input type="password" placeholder="Enter Password"/><br></br><br></br>
                         <a href="#forgotpass" className="forgot-pass">Forgot Password?</a><br></br><br></br>
-                        <input type="submit" value="Submit"/>
+                        <input type="submit" value="Log in"/>
                     </form> 
                 </div>   
                 <h5>Ignore this</h5>
-                <div>
-                    <footer className="login-footer">
-                        <div>
-                            <p>
-                                Created by Ebun Oludemi
-                            </p>
-                        </div>
-                    </footer>
-                </div>
             </div>
             
                    

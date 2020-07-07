@@ -1,8 +1,8 @@
 .logging-in {
     border-radius: 20px;
     border: 1px solid;
-    border-color: #EADEDC;
-    background-color: #EADEDC;
+    border-color: #CEEFCE;
+    background-color: #CEEFCE;
     margin-left: 420px;
     margin-right: 420px;
     padding: 20px;
@@ -28,7 +28,7 @@ input[type=password]:hover {
 input[type=submit] {
   font-size: 17px;
   text-align: center;
-  background-color: #831A04;
+  background-color: #17B019;
   font-family: allegro;
   color: white;
   border: none;
@@ -44,7 +44,7 @@ input[type=submit]:hover {
     float: left;
     padding-left: 22px;
     text-decoration: none;
-    color: #831A04;
+    color: #17B019;
 }
 .forgot-pass:hover {
     text-decoration: underline;

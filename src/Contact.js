@@ -10,13 +10,6 @@ class Contact extends Component {
         return (
             <div>
                 <h2>Contact Us</h2>
-                    <footer className="contact-footer">
-                        <div>
-                            <p>
-                                Created by Ebun Oludemi
-                            </p>
-                        </div>
-                    </footer>
             </div>
             
         )

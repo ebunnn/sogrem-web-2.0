@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import './css/TaxReturns.css';
+import './css/ITIN.css';
 //import { render } from '@testing-library/react';
 
 
-class TaxReturns extends Component {
+class ITIN extends Component {
     //constructor(props) {
         //super(props)
     //}
     render() {
         return(
             <div>
-                <p>This is the tax return page ya dig</p>
+                <p>This is the ITIN page</p>
             </div>
         )
     }
 }
 
-export default TaxReturns;
+export default ITIN;

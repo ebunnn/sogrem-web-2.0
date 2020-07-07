@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/AboutUs.css';
+/*import mainimg from './images/IMG_3086.JPG';*/
 
 class AboutUs extends Component {
     constructor(props) {
@@ -8,14 +9,11 @@ class AboutUs extends Component {
     render() {
         return(
             <div>
+                <div>
+                    <a href="#placeholder" className="main-title">Sogrem Associates</a>
+                </div>
                 <p>this page is about us</p>
-                    <footer className="about-us-footer">
-                        <div>
-                            <p>
-                                Created by Ebun Oludemi
-                            </p>
-                        </div>
-                    </footer>
+                {/*<img src={mainimg} alt="mainimg" />*/}
             </div>
         )
     }

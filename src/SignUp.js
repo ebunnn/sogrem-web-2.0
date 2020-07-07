@@ -13,17 +13,10 @@ class SignUp extends Component {
                     <form>
                         <input type="text" placeholder="Create a Username"/> <br></br><br></br> 
                         <input type="password" placeholder="Create a Password"/><br></br><br></br>
-                        <input type="submit" label="Submit"/>
+                        <input type="submit" value="Sign Up"/>
                     </form>
                 </div>
                 <h2>Ignore this</h2>
-                <footer className="su-footer">
-                    <div>
-                        <p>
-                            Created by Ebun Oludemi
-                        </p>
-                    </div>
-                </footer>
             </div>
         )
     }
