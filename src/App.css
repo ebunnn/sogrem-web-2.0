@@ -9,10 +9,16 @@
   object-fit: cover;
   height: 685px;
 }
-.main-image-texts {
+.main-image-content {
   position: relative;
   text-align: center;
   color: white;
+}
+.main-image-content .main-btn {
+  position: absolute;
+  top: 75%;
+  left: 42%;
+
 }
 .promise {
   position: absolute;
@@ -37,14 +43,39 @@
   from{top: -68px;}
   to{top: 266px;}
 }
+.main-btn {
+    text-align: center;
+    padding: 14px 80px;
+    font-size: 20px;
+    font-family: allegro;
+    background-color: #BD8915;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: flex-end;
+    cursor: pointer;
+    animation-name: intro-btn;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+@keyframes intro-btn {
+  from{top: 800px;}
+  to{top: 550px;}
+}
+.main-btn:hover {
+  background-color: white;
+  color: black;
 
+}
 /*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 } */
 
-/*MAIN TITLE*/
+/*MAIN TITLE
 .main-title {
   text-align: left;
   margin-left: 20px;
@@ -57,8 +88,8 @@
   font-weight: bold;
   display: block;
   letter-spacing: 3px;
-  /*text-shadow: 2px 9px 8px;*/
-}
+  text-shadow: 2px 9px 8px;
+/*}
 
 /*HEADER*/
 .App-header {
@@ -82,6 +113,7 @@
   font-size: 17px;
   font-family: allegro;
   color: inherit;
+  cursor: pointer;
 }
 .Nav-bar a:hover, .dropdown:hover .dropbtn{
   background-color: white;
@@ -95,6 +127,17 @@
   float: right;
   padding-right: 20px;
 }
+.title-navbar{
+  font-size: 17px;
+  font-family: allegro;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-flex;
+  padding-right: 425px;
+  text-align: center;
+  margin-bottom: auto;
+}
+
 /* DROPDOWN*/
 
 .dropdown {
@@ -108,6 +151,7 @@
   color: white;
   border: none;
   padding: 14px 16px;
+  display: flex;
 }
 .dropbtn:hover {
   background-color: white;
@@ -128,16 +172,17 @@
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  color: black;
+  text-align: left;
+  min-width: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: allegro;
   margin: 0;
@@ -153,20 +198,12 @@
 
 /*SIGN UP AND LOG IN BUTTON*/
 
-.signup-login {
+/*.signup-login {
   text-align: right;
   display: inline-flex;
   padding-left: 550px;
   /*float: right;*/
-}
-
-/*.sign-up-btn {
-  color: green;
-}
-
-.login-btn {
-  color: green;
-}*/
+/*} 
 
 /*FOOTER*/
 footer {

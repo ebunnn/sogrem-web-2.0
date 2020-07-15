@@ -9,9 +9,6 @@ class AboutUs extends Component {
     render() {
         return(
             <div>
-                <div>
-                    <a href="#placeholder" className="main-title">Sogrem Associates</a>
-                </div>
                 <p>this page is about us</p>
                 {/*<img src={mainimg} alt="mainimg" />*/}
             </div>
