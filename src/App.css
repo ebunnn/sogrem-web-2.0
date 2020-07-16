@@ -146,7 +146,6 @@
 .dropbtn {
   font-size: 17px;
   text-align: center;
-  background-color: #831A04;
   font-family: allegro;
   color: white;
   border: none;
@@ -166,7 +165,7 @@
   text-align: left;
 }
 .dropdown-content a:hover {
-  color: #8FACBD;
+  background-color: #ddd;
 }
 .dropdown-content {
   display: none;
@@ -174,9 +173,16 @@
   background-color: white;
   color: black;
   text-align: left;
-  min-width: 500px;
+  min-width: 800px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+}
+.dropdown-content h4 {
+  padding-left: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: allegro;
 }
 .dropdown .dropbtn {
   font-size: 17px;  
@@ -186,6 +192,19 @@
   background-color: inherit;
   font-family: allegro;
   margin: 0;
+}
+.dropdown-across {
+  float: left;
+  width: 200px;
+  height: 250px;
+}
+.dropdown-across a {
+  float: none;
+  display: block;
+  margin-right: 50px;
+}
+.dropdown-across2 {
+  margin-left: -50px;
 }
 /*.dropdown:hover {
   background-color: white;
@@ -225,9 +244,7 @@ p {
 h2 {
   font-family: allegro;
 }
-.App-link {
-  color: #61dafb;
-}
+
 
 /*BODY*/
 .body {

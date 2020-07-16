@@ -33,10 +33,36 @@ class App extends Component {
                 <div className="dropdown">
                   <button className="dropbtn">Taxes<FaCaretDown /></button>
                   <div className="dropdown-content">
-                    <h3>1040</h3>
-                    <a href="#Example1">Example 1</a>
-                    <a href="#Example2">Example 2</a>
-                    <a href="#Example3">Example 3</a>
+                    <div className="dropdown-across">
+                      <h4>1040</h4>
+                      <a href="#Example1">1040</a>
+                      <a href="#Example2">1040A</a>
+                      <a href="#Example3">1040EZ</a>
+                      <a href="#Example3a">1040SR</a>
+                    </div>
+                    <div className="dropdown-across">
+                      <div className="dropdown-across2">
+                        <h4>Tax</h4>
+                        <a href="#Example4">Tax Filing</a>
+                        <a href="#Example5">Tax Consultation</a>
+                        <a href="#Example6">Tax Representation</a>
+                      </div>
+                    </div>
+                    <div className="dropdown-across">
+                      <div className="dropdown-across2">
+                        <h4>Tax ID</h4>
+                        <a href="#Example7">EIN</a>
+                        <a href="#Example8">ITIN</a>
+                        <a href="#Example9">Social Security</a>
+                      </div>
+                    </div>
+                    <div className="dropdown-across">
+                      <div className="dropdown-across2">
+                        <h4>Immigration</h4>
+                        <a href="#Example10">Immigration Consultation</a>
+                        <a href="#Example11">Immigration Doc Prep</a>
+                      </div>
+                    </div>             
                   </div>
                 </div>
                     {/*<div className="signup-login">
