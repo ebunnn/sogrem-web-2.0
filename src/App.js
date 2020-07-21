@@ -30,39 +30,39 @@ class App extends Component {
                 <Link to="/ITIN">ITIN</Link>
                 <Link to="/Contact-us">Contact Us</Link>
                 <Link to="/About-us">About Us</Link>
+                <Link to="#Services">Services<FaCaretDown /></Link>
                 <div className="dropdown">
                   <button className="dropbtn">Taxes<FaCaretDown /></button>
                   <div className="dropdown-content">
                     <div className="dropdown-across">
-                      <h4>1040</h4>
+                      <h4>Individual</h4>
                       <a href="#Example1">1040</a>
-                      <a href="#Example2">1040A</a>
-                      <a href="#Example3">1040EZ</a>
-                      <a href="#Example3a">1040SR</a>
+                      <a href="#Example2">1040NR</a>
+                      <a href="#Example3">1040X</a>
                     </div>
                     <div className="dropdown-across">
                       <div className="dropdown-across2">
-                        <h4>Tax</h4>
-                        <a href="#Example4">Tax Filing</a>
-                        <a href="#Example5">Tax Consultation</a>
-                        <a href="#Example6">Tax Representation</a>
+                        <h4>Businesses</h4>
+                        <a href="#Example4">1065 (Partnerships)</a>
+                        <a href="#Example5">1120s (SCorps)</a>
+                        <a href="#Example6">1120 (CCorps)</a>
                       </div>
                     </div>
                     <div className="dropdown-across">
                       <div className="dropdown-across2">
-                        <h4>Tax ID</h4>
-                        <a href="#Example7">EIN</a>
-                        <a href="#Example8">ITIN</a>
+                        <h4>Fudiciary</h4>
+                        <a href="#Example7">1041</a>
+                        <a href="#Example8">1044</a>
                         <a href="#Example9">Social Security</a>
                       </div>
                     </div>
-                    <div className="dropdown-across">
+                    {/*<div className="dropdown-across">
                       <div className="dropdown-across2">
                         <h4>Immigration</h4>
                         <a href="#Example10">Immigration Consultation</a>
                         <a href="#Example11">Immigration Doc Prep</a>
                       </div>
-                    </div>             
+    </div>*/}             
                   </div>
                 </div>
                     {/*<div className="signup-login">
@@ -100,12 +100,23 @@ class App extends Component {
             <Route path="/">
               <div className="main-image-content">
                 <img src="https://images.unsplash.com/photo-1573497701240-345a300b8d36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" className="main-image" alt="mainimage" />
-                <h1 className="promise">SOGREM ASSOCIATES</h1>
+                <h1 className="main-title">SOGREM ASSOCIATES</h1>
                 <button className="main-btn">Our Services  <FaAngleDoubleRight /></button>
               </div>
-              <div className="body">
-                <h1>What services do we provide?</h1>
-                <p>Sogrem provides services such as ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+              <div className="homepage-body">
+                <h1>Welcome!</h1>
+                <p>You are heartily welcomed to our website. We see your visit as a privileged opportunity
+                   to showcase the solutions we provide to our numerous clients in the Maryland, DC,
+                   Virginia and West Virginia areas. We believe you will be able to make up your mind
+                   about us within the possible shortest time – our target is 3 minutes.</p>
+                <h1>What We Do</h1>
+                <p>We fix tax problems and obligations. SOGREM is wholesomely involved ONLY in tax &amp; tax related solutions. Our tax related
+                   solutions include,  payroll, bookkeeping, QuickBooks, IRS/State tax resolutions,etc. ,
+                   Our Payroll &amp; bookkeeping services are tax advantage(s) focused, driven to ensure
+                   optimal compliances at Federal, State, County or City tax levels. With us, you will
+                   always be fully certain of the possible best tax position you could be.  You could not be
+                   better  any where else!! Tax is serious matter, second to health, both for the individual
+                   and business, this is the level of seriousness our services apply.</p>
               </div>
             </Route>
           </Switch>

@@ -20,18 +20,15 @@
   left: 42%;
 
 }
-.promise {
+
+.main-title {
   position: absolute;
-  /*top: 266px;*/
   font-size: 100px;
   margin-bottom: auto;
   font-family: allegro;
   padding-top: 20px;
   padding-bottom: 20px;
   letter-spacing: 10px;
-  /*text-shadow: 5px 5px 10px black;*/
-  /*border: 5px solid #17B019;*/
-  /*color: #17B019;*/
   animation-name: intro;
   animation-duration: 3s;
   animation-delay: 0.3s;
@@ -69,27 +66,6 @@
   color: black;
 
 }
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/*MAIN TITLE
-.main-title {
-  text-align: left;
-  margin-left: 20px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-family: allegro;
-  color: #8FACBD;
-  text-decoration: none;
-  font-size: 60px;
-  font-weight: bold;
-  display: block;
-  letter-spacing: 3px;
-  text-shadow: 2px 9px 8px;
-/*}
 
 /*HEADER*/
 .App-header {
@@ -101,6 +77,7 @@
   color: white;
 }
 /*NAVIGATION BAR*/
+
 .Nav-bar {
   overflow: hidden;
   background-color: #8FACBD;
@@ -114,6 +91,7 @@
   font-family: allegro;
   color: inherit;
   cursor: pointer;
+  height: 20px;
 }
 .Nav-bar a:hover, .dropdown:hover .dropbtn{
   background-color: white;
@@ -128,7 +106,7 @@
   padding-right: 20px;
 }
 .title-navbar{
-  font-size: 17px;
+  font-size: 25px;
   font-family: allegro;
   font-weight: bold;
   letter-spacing: 2px;
@@ -136,6 +114,7 @@
   padding-right: 425px;
   text-align: center;
   margin-bottom: auto;
+  margin-top: 10px;
 }
 
 /* DROPDOWN*/
@@ -192,6 +171,8 @@
   background-color: inherit;
   font-family: allegro;
   margin: 0;
+  display: flex;
+  align-items: flex-end;
 }
 .dropdown-across {
   float: left;
@@ -206,10 +187,6 @@
 .dropdown-across2 {
   margin-left: -50px;
 }
-/*.dropdown:hover {
-  background-color: white;
-  color: black;
-}*/
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -232,7 +209,7 @@ footer {
   /*display: flow-root;*/
 }
 .footer-parent-div {
-  bottom: 0px;
+  bottom: -60px;
   position: inherit;
   width: 100%;
 }
@@ -245,18 +222,110 @@ h2 {
   font-family: allegro;
 }
 
-
 /*BODY*/
-.body {
+.homepage-body {
   padding: 20px;
-  text-align: left;
+  text-align: center;
+
 }
 
-/*@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @MEDIA  */
+@media only screen and (max-width : 900px) {
+  .main-image {
+    width: 100%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .Nav-bar {
+    width: 100%;
+    height: 60px;
   }
-}*/
+  .Nav-bar a {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+  .title-navbar {
+    font-size: xx-large;
+    float: right;
+    padding-right: 30px;
+  }
+  .main-title {
+    font-size: 52px;
+    animation-name: intro900;
+  }
+  .main-btn {
+    margin-top: -120px;
+    margin-left: -60px;
+    animation-name: intro-btn900;
+  }
+  @keyframes intro900 {
+    from{top: -80px;}
+    to{top: 200px;}
+  }
+  @keyframes intro-btn900 {
+    from{top: 850px;}
+    to{top: 540px;}
+  }
+
+}
+@media only screen and (max-width : 1191px) {
+  .title-navbar {
+    float: right;
+    padding-right: 20px;
+  }
+  .Nav-bar a {
+    font-size: 20px;
+    display: flex;
+  }
+  .Nav-bar {
+    height: 48px;
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+  }
+  .main-title {
+    font-size: 70px;
+  }
+  .main-btn  {
+    margin-left: -70px;
+    margin-top: -50px;
+  }
+  .homepage-body {
+    font-size: 30px;
+    font-family: allegro;
+  }
+}
+@media only screen and (max-width : 445px) {
+  .title-navbar {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  .Nav-bar {
+    height: 40px;
+  }
+  .main-title {
+    font-size: 30px;
+    padding: 5px;
+    margin-top: auto;
+    animation-name: intro445;
+  }
+  @keyframes intro445 {
+    from{top: -80px;}
+    to{top: 90px;}
+  }
+  .main-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+    margin-left: -30px;
+    margin-top: -60px;
+    animation-name: intro-btn445;
+  }
+  @keyframes intro-btn445 {
+    from{top: -50px;}
+    to{top: 250px;}
+  }
+  
+
+
+}
