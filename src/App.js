@@ -27,29 +27,61 @@ class App extends Component {
               {/*<a href="#placeholder" className="main-title">Sogrem Associates</a>*/}
               <div className="Nav-bar">
                 <Link to="/Home">Home</Link>
-                <Link to="/ITIN">ITIN</Link>
-                <Link to="/Contact-us">Contact Us</Link>
-                <Link to="/About-us">About Us</Link>
+                <div className="aboutus-dropdown">
+                  <Link to="/About-us">About Us<FaCaretDown /></Link>
+                  <div className="aboutus-dropdown-content">
+                      <Link to="/Contact-us">Contact Us</Link>
+                      <a href="#Example2">EX</a>
+                      <a href="#Example3">EX</a> 
+                  </div>
+                </div>
+                <div className="itin-dropdown">
+                  <Link to="/ITIN">ITIN<FaCaretDown /></Link>
+                  <div className="itin-dropdown-content">
+                    <div className="itin-dropdown-across">
+                      <h4>SUB1</h4>
+                      <a href="#Example1">EX</a>
+                      <a href="#Example2">EX</a>
+                      <a href="#Example3">EX</a>
+                    </div>
+                    <div className="itin-dropdown-across">
+                      <div className="itin-dropdown-across2">
+                        <h4>SUB2</h4>
+                        <a href="#Example4">EX)</a>
+                        <a href="#Example5">EX</a>
+                        <a href="#Example6">EX</a>
+                      </div>
+                    </div>
+                    <div className="itin-dropdown-across">
+                      <div className="itin-dropdown-across2">
+                        <h4>SUB3</h4>
+                        <a href="#Example7">EX</a>
+                        <a href="#Example8">EX</a>
+                        <a href="#Example9">EX</a>
+                      </div>
+                    </div>             
+                  </div>
+                </div>
                 <Link to="#Services">Services<FaCaretDown /></Link>
-                <div className="dropdown">
-                  <button className="dropbtn">Taxes<FaCaretDown /></button>
-                  <div className="dropdown-content">
-                    <div className="dropdown-across">
+                <div className="taxes-dropdown">
+                  <Link to="#Taxes" className="taxes-dropbtn">Taxes<FaCaretDown /></Link>
+                  <div className="taxes-dropdown-content">
+                    <div className="taxes-dropdown-across">
                       <h4>Individual</h4>
                       <a href="#Example1">1040</a>
                       <a href="#Example2">1040NR</a>
                       <a href="#Example3">1040X</a>
                     </div>
-                    <div className="dropdown-across">
-                      <div className="dropdown-across2">
+                    <div className="taxes-dropdown-across">
+                      <div className="taxes-dropdown-across2">
                         <h4>Businesses</h4>
                         <a href="#Example4">1065 (Partnerships)</a>
                         <a href="#Example5">1120s (SCorps)</a>
                         <a href="#Example6">1120 (CCorps)</a>
                       </div>
                     </div>
-                    <div className="dropdown-across">
-                      <div className="dropdown-across2">
+                    <div className="taxes-dropdown-across">
+                      <div className="taxes-dropdown-across2">
                         <h4>Fudiciary</h4>
                         <a href="#Example7">1041</a>
                         <a href="#Example8">1044</a>
@@ -105,19 +137,51 @@ class App extends Component {
               </div>
               <div className="homepage-body">
                 <h1>Welcome!</h1>
-                <p>You are heartily welcomed to our website. We see your visit as a privileged opportunity
-                   to showcase the solutions we provide to our numerous clients in the Maryland, DC,
-                   Virginia and West Virginia areas. We believe you will be able to make up your mind
-                   about us within the possible shortest time – our target is 3 minutes.</p>
+                <p>You are heartily welcomed to our SOGREM Associates website. We see your visit as a 
+                  privileged opportunity to showcase the solutions we provide to our numerous clients 
+                  in the Maryland, DC, Virginia and West Virginia areas. We believe you will be able 
+                  to make up your mind about us within the possible shortest time – our target is 3 minutes.</p>
                 <h1>What We Do</h1>
                 <p>We fix tax problems and obligations. SOGREM is wholesomely involved ONLY in tax &amp; tax related solutions. Our tax related
-                   solutions include,  payroll, bookkeeping, QuickBooks, IRS/State tax resolutions,etc. ,
-                   Our Payroll &amp; bookkeeping services are tax advantage(s) focused, driven to ensure
-                   optimal compliances at Federal, State, County or City tax levels. With us, you will
-                   always be fully certain of the possible best tax position you could be.  You could not be
-                   better  any where else!! Tax is serious matter, second to health, both for the individual
+                   solutions include, payroll, bookkeeping, QuickBooks, IRS/State tax resolutions, etc.
+                   Our Payroll &amp; bookkeeping services are tax advantage(s) focused, driven to ensure 
+                   optimal compliances at Federal, State, County or City tax levels. With us, you will
+                   always be fully certain of the possible best tax position you could be. You could not be
+                   better any where else! Tax is serious matter, second to health, both for the individual
                    and business, this is the level of seriousness our services apply.</p>
-              </div>
+              </div>     
+                <div className="homepage-body2">
+                  <h1>Our Service Delivery Platform</h1>
+                  <p>SOGREM Associates tax professionals are US Treasury Circular 230 Practitioners and
+                     fully governed by the Office of Professional Responsibility (OPR). We offer our tax
+                     services within the confines of this rigorously regulated monitoring banner of the US
+                     Government. Hence your peace of mind is always assured.<br></br>
+                     <br></br>
+                     With us you only pay what you are legally obligated to pay and you receive all your dues
+                     - deductions, credits, refunds or waivers, to the last penny! Again, you always have the
+                     assurance and peace of mind that you are in full compliance with the tax laws and no
+                     backdoor or aftermath negative surprises.</p>
+                </div>
+                <div className="homepage-body3">
+                  <h1>IRS Enabling Credentials</h1>
+                  <p>SOGREM Associates tax professionals are <a href="https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information" target="_blank" rel="noopener noreferrer"> Enrolled Agents. </a>Enrolled Agents, as with tax attorneys
+                     and CPAs, have unlimited rights to practice at all levels of the IRS and are the only federally 
+                     licensed tax professionals - by the US Treasury. CPAs and Attorneys are state licensed.<br></br>
+                    <br></br>
+                    SOGREM is also an authorized IRS certified acceptance agents (CAA) and <a href="https://www.irs.gov/e-file-providers/authorized-irs-e-file-providers-for-individuals" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
+                    Electronic Return Originator (ERO).</p>
+                </div>
+                <div className="homepage-body4">
+                  <h1>Fees Affordability Assurance</h1>
+                  <p>Our charges are always the best you can receive within the industry and we are ready
+                     to match any price (on similar service) you get from other Enrolled Agents, Tax
+                     Attorneys and CPAs. Please feel free to go through our web pages to see what we have
+                     to offer you. We are extremely flexible and we always accommodate your peculiar or
+                     special situations.</p>
+                </div>
+                <div className="more-info">
+                  <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us" onclick="scroll(0,0)">Contact Us</Link> page.</p>
+                </div>
             </Route>
           </Switch>
           <div className="footer-parent-div">

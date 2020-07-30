@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/Contact.css';
 import contactimg from './images/contact-image-cropped.jpg';
-import { FaBeer, FaArrowDown, FaCaretDown, FaSearch, FaArrowRight, FaAngleDoubleRight, FaPhone, FaClock, FaMailBulk, FaMailchimp, FaHome } from 'react-icons/fa';
+import { FaArrowDown, FaCaretDown, FaSearch, FaArrowRight, FaAngleDoubleRight, FaPhone, FaClock, FaMailBulk, FaMailchimp, FaHome } from 'react-icons/fa';
 
 class Contact extends Component {
     // constructor(props) {

@@ -57,6 +57,21 @@ hr {
     margin-bottom: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     font-family: allegro;
-    
+}
+@media only screen and (max-width : 1191px) {
+    .telephone {
+        margin-right: 200px;
+    }
+    .address {
+        width: 775px;
+    }
+}
+@media only screen and (max-width : 900px) {
+    .telephone {
+        margin-right: 100px;
+    }
+    .address {
+        width: 674px;
+    }
 
 }

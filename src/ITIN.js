@@ -9,8 +9,8 @@ class ITIN extends Component {
     //}
     render() {
         return(
-            <div>
-                <p>This is the ITIN page</p>
+            <div className="itin-title">
+                <h1>ITIN - Individual Tax Identification Number</h1>
             </div>
         )
     }

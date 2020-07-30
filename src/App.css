@@ -111,18 +111,21 @@
   font-weight: bold;
   letter-spacing: 2px;
   display: inline-flex;
-  padding-right: 425px;
+  float: right;
+  padding-right: 12px;
   text-align: center;
   margin-bottom: auto;
   margin-top: 10px;
 }
 
-/* DROPDOWN*/
+/*DROPDOWNS*/
 
-.dropdown {
+/*TAXES DROPDOWN*/
+
+.taxes-dropdown {
   float: left;
 }
-.dropbtn {
+.taxes-dropbtn {
   font-size: 17px;
   text-align: center;
   font-family: allegro;
@@ -131,11 +134,11 @@
   padding: 14px 16px;
   display: flex;
 }
-.dropbtn:hover {
+.taxes-dropbtn:hover {
   background-color: white;
   color: black;
 }
-.dropdown-content a {
+.taxes-dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -143,27 +146,28 @@
   display: block;
   text-align: left;
 }
-.dropdown-content a:hover {
+.taxes-dropdown-content a:hover {
   background-color: #ddd;
 }
-.dropdown-content {
+.taxes-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
   color: black;
   text-align: left;
-  min-width: 800px;
+  /* min-width: 800px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top: 48px;
 }
-.dropdown-content h4 {
+.taxes-dropdown-content h4 {
   padding-left: 15px;
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
   font-family: allegro;
 }
-.dropdown .dropbtn {
+.taxes-dropdown .taxes-dropbtn {
   font-size: 17px;  
   border: none;
   outline: none;
@@ -172,25 +176,155 @@
   font-family: allegro;
   margin: 0;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
-.dropdown-across {
+.taxes-dropdown-across {
   float: left;
   width: 200px;
   height: 250px;
 }
-.dropdown-across a {
+.taxes-dropdown-across a {
   float: none;
   display: block;
   margin-right: 50px;
 }
-.dropdown-across2 {
+.taxes-dropdown-across2 {
   margin-left: -50px;
 }
 
-.dropdown:hover .dropdown-content {
+.taxes-dropdown:hover .taxes-dropdown-content {
   display: block;
 }
+/* ITIN DROPDOWN */
+
+.itin-dropdown {
+  float: left;
+}
+.itin-dropbtn {
+  font-size: 17px;
+  text-align: center;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  display: flex;
+}
+.itin-dropbtn:hover {
+  background-color: white;
+  color: black;
+}
+.itin-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.itin-dropdown-content a:hover {
+  background-color: #ddd;
+}
+.itin-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  /* min-width: 800px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 48px;
+}
+.itin-dropdown-content h4 {
+  padding-left: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: allegro;
+}
+.itin-dropdown .itin-dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: allegro;
+  margin: 0;
+  display: flex;
+  /* align-items: flex-end; */
+}
+.itin-dropdown-across {
+  float: left;
+  width: 200px;
+  height: 250px;
+}
+.itin-dropdown-across a {
+  float: none;
+  display: block;
+  margin-right: 50px;
+}
+.itin-dropdown-across2 {
+  margin-left: -50px;
+}
+
+.itin-dropdown:hover .itin-dropdown-content {
+  display: block;
+}
+
+/* ABOUT US DROPDOWN  */
+
+.aboutus-dropdown {
+  float: left;
+}
+.aboutus-dropbtn {
+  font-size: 17px;
+  text-align: center;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  display: flex;
+}
+.aboutus-dropbtn:hover {
+  background-color: white;
+  color: black;
+}
+.aboutus-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-right: 60px;
+}
+.aboutus-dropdown-content a:hover {
+  background-color: #ddd;
+}
+.aboutus-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 48px;
+}
+.aboutus-dropdown .aboutus-dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: allegro;
+  margin: 0;
+  display: flex;
+}
+
+.aboutus-dropdown:hover .aboutus-dropdown-content {
+  display: block;
+} 
 
 /*SIGN UP AND LOG IN BUTTON*/
 
@@ -224,12 +358,142 @@ h2 {
 
 /*BODY*/
 .homepage-body {
-  padding: 20px;
-  text-align: center;
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 80px;
 
 }
+.homepage-body p {
+  font-size: 30px;
+  text-align: left;
+}
+.homepage-body h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+}
+.homepage-body2 {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: justify;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 80px;
+}
+.homepage-body2 p {
+  font-size: 30px;
+  text-align: left;
+}
+.homepage-body2 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
 
+}
+.homepage-body3 {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: justify;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 80px;
+}
+.homepage-body3 p {
+  font-size: 30px;
+  text-align: left;
+}
+.homepage-body3 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+}
+.homepage-body3 a {
+  color: blue;
+  text-decoration: none;
+}
+.homepage-body3 a:hover {
+  text-decoration: underline;
+}
+.homepage-body4 {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: justify;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 80px;
+}
+.homepage-body4 p {
+  font-size: 30px;
+  text-align: left;
+}
+.homepage-body4 h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+
+}
 /* @MEDIA  */
+@media only screen and (max-width : 1300px) {
+  .main-title {
+    font-size: 80px;
+  }
+  @keyframes intro {
+    from{top: -68px;}
+    to{top: 266px;}
+  }
+  .main-btn  {
+    margin-left: -70px;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width : 1191px) {
+  .title-navbar {
+    float: right;
+    padding-right: 20px;
+  }
+  .Nav-bar a {
+    font-size: 20px;
+    display: flex;
+  }
+  .Nav-bar {
+    height: 48px;
+  }
+  .taxes-dropdown .taxes-dropbtn {
+    font-size: 20px;
+  }
+  .main-title {
+    font-size: 70px;
+  }
+  .main-btn  {
+    margin-left: -70px;
+    margin-top: -50px;
+  }
+  .homepage-body {
+    font-size: 30px;
+    font-family: allegro;
+  }
+}
+@media only screen and (max-width : 933px) {
+  .main-btn {
+    animation-name: intro-btn933;
+    margin-top: -21px;
+}
+  @keyframes intro-btn933 {
+    from{top: 800px;}
+    to{top: 550px;}
+  }
+  .main-title {
+    margin-top: 78px;
+    font-size: 66px;
+  }
+}
 @media only screen and (max-width : 900px) {
   .main-image {
     width: 100%;
@@ -242,7 +506,7 @@ h2 {
   .Nav-bar a {
     display: none;
   }
-  .dropdown {
+  .taxes-dropdown {
     display: none;
   }
   .title-navbar {
@@ -267,34 +531,28 @@ h2 {
     from{top: 850px;}
     to{top: 540px;}
   }
-
 }
-@media only screen and (max-width : 1191px) {
-  .title-navbar {
-    float: right;
-    padding-right: 20px;
-  }
-  .Nav-bar a {
-    font-size: 20px;
-    display: flex;
-  }
-  .Nav-bar {
-    height: 48px;
-  }
-  .dropdown .dropbtn {
-    font-size: 20px;
-  }
+@media only screen and (max-width : 736px) {
   .main-title {
-    font-size: 70px;
+    font-size: 50px;
+    margin-top: revert;
   }
-  .main-btn  {
-    margin-left: -70px;
-    margin-top: -50px;
+  .main-btn {
+    margin-top: -157px;
+    margin-left: -60px;
   }
-  .homepage-body {
-    font-size: 30px;
-    font-family: allegro;
+}
+@media only screen and (max-width : 715px) {
+  .main-title {
+    font-size: 48px;
   }
+  .main-btn {
+    margin-top: -168px;
+    margin-left: -60px;
+  }
+  
+
+
 }
 @media only screen and (max-width : 445px) {
   .title-navbar {
@@ -305,10 +563,12 @@ h2 {
     height: 40px;
   }
   .main-title {
-    font-size: 30px;
+    /*font-size: 30px;
     padding: 5px;
     margin-top: auto;
     animation-name: intro445;
+    width: auto;*/
+    display: none;
   }
   @keyframes intro445 {
     from{top: -80px;}
@@ -317,15 +577,71 @@ h2 {
   .main-btn {
     padding: 14px 20px;
     font-size: 15px;
-    margin-left: -30px;
-    margin-top: -60px;
+    /*margin-left: -30px;
+    margin-top: -60px;*/
+    margin-left: 40px;
+    margin-top: -75px;
     animation-name: intro-btn445;
   }
   @keyframes intro-btn445 {
     from{top: -50px;}
     to{top: 250px;}
   }
+  .homepage-body {
+    text-align: left;
+    margin: 80px;
+    width: 237px;
+    margin-left: 11px;
+  }
+  .homepage-body p {
+    font-size: 25px;
+  }
+  .homepage-body h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+  .homepage-body2 {
+    text-align: left;
+    margin: 80px;
+    width: 237px;
+    margin-left: 11px;
+  }
+  .homepage-body2 p {
+    font-size: 25px;
+  }
+  .homepage-body2 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+  .homepage-body3 {
+    text-align: left;
+    margin: 80px;
+    width: 237px;
+    margin-left: 11px;
+  }
+  .homepage-body3 p {
+    font-size: 25px;
+  }
+  .homepage-body3 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+  .homepage-body4 {
+    text-align: left;
+    margin: 80px;
+    width: 237px;
+    margin-left: 11px;
+  }
+  .homepage-body4 p {
+    font-size: 25px;
+  }
+  .homepage-body4 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
   
-
-
+  }
 }
