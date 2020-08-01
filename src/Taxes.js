@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './css/TaxReturns.css';
+import './css/Taxes.css';
 //import { render } from '@testing-library/react';
 
 
-class TaxReturns extends Component {
+class Taxes extends Component {
     //constructor(props) {
         //super(props)
     //}
@@ -16,4 +16,4 @@ class TaxReturns extends Component {
     }
 }
 
-export default TaxReturns;
+export default Taxes;

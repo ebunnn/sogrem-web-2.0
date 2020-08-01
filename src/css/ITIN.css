@@ -1,4 +1,112 @@
 .itin-title {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 70px;
     padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: allegro;
+    font-weight: bold;
+    background-color: rgba(91, 164, 207, 0.6);
+    color: white;
+    border-radius: 5px;
+}
+.itin-image img {
+    object-fit: cover;
+    height: 685px;
+    width: 100%;
+}
+.itin-image {
+    object-fit: cover;
+    height: 400px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+.itin-body {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 80px;
+  margin-top: 300px;
+}
+.itin-body p {
+    font-size: 30px;
     text-align: left;
+  }
+.itin-body h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+.itin-body2 {
+    font-family: allegro;
+    padding: 50px;
+    padding-top: 5px;
+    text-align: justify;
+    border: 2px solid white;
+    box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+    margin: 80px;
+  }
+.itin-body2 p {
+    font-size: 30px;
+    text-align: left;
+  }
+.itin-body2 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  
+  }
+.itin-body3 {
+    font-family: allegro;
+    padding: 50px;
+    padding-top: 5px;
+    text-align: justify;
+    border: 2px solid white;
+    box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+    margin: 80px;
+  }
+.itin-body3 p {
+    font-size: 30px;
+    text-align: left;
+  }
+.itin-body3 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+.itin-body3 a {
+    color: blue;
+    text-decoration: none;
+  }
+.itin-body3 a:hover {
+    text-decoration: underline;
+  }
+.itin-body4 {
+    font-family: allegro;
+    padding: 50px;
+    padding-top: 5px;
+    text-align: justify;
+    border: 2px solid white;
+    box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+    margin: 80px;
+  }
+.itin-body4 p {
+    font-size: 30px;
+    text-align: left;
+  }
+.itin-body4 h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgba(91, 164, 207, 0.4);
+  }
+.itin-body4 h3 {
+    font-size: 30px;
 }

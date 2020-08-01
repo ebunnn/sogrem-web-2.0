@@ -5,6 +5,7 @@ import ITIN from './ITIN';
 import AboutUs from './AboutUs';
 import SignUp from './SignUp';
 import Login from './Login';
+import Taxes from './Taxes';
 import { FaBeer, FaArrowDown, FaCaretDown, FaSearch, FaArrowRight, FaAngleDoubleRight } from 'react-icons/fa';
 import {
   BrowserRouter as Router,
@@ -35,36 +36,8 @@ class App extends Component {
                       <a href="#Example3">EX</a> 
                   </div>
                 </div>
-                <div className="itin-dropdown">
-                  <Link to="/ITIN">ITIN<FaCaretDown /></Link>
-                  <div className="itin-dropdown-content">
-                    <div className="itin-dropdown-across">
-                      <h4>SUB1</h4>
-                      <a href="#Example1">EX</a>
-                      <a href="#Example2">EX</a>
-                      <a href="#Example3">EX</a>
-                    </div>
-                    <div className="itin-dropdown-across">
-                      <div className="itin-dropdown-across2">
-                        <h4>SUB2</h4>
-                        <a href="#Example4">EX)</a>
-                        <a href="#Example5">EX</a>
-                        <a href="#Example6">EX</a>
-                      </div>
-                    </div>
-                    <div className="itin-dropdown-across">
-                      <div className="itin-dropdown-across2">
-                        <h4>SUB3</h4>
-                        <a href="#Example7">EX</a>
-                        <a href="#Example8">EX</a>
-                        <a href="#Example9">EX</a>
-                      </div>
-                    </div>             
-                  </div>
-                </div>
-                <Link to="#Services">Services<FaCaretDown /></Link>
                 <div className="taxes-dropdown">
-                  <Link to="#Taxes" className="taxes-dropbtn">Taxes<FaCaretDown /></Link>
+                  <Link to="/Taxes" className="taxes-dropbtn">Taxes<FaCaretDown /></Link>
                   <div className="taxes-dropdown-content">
                     <div className="taxes-dropdown-across">
                       <h4>Individual</h4>
@@ -97,6 +70,37 @@ class App extends Component {
     </div>*/}             
                   </div>
                 </div>
+                <Link to="#Services">Representation<FaCaretDown /></Link>
+                <div className="itin-dropdown">
+                  <Link to="/ITIN">ITIN<FaCaretDown /></Link>
+                  <div className="itin-dropdown-content">
+                    <div className="itin-dropdown-across">
+                      <h4>SUB1</h4>
+                      <a href="#Example1">EX</a>
+                      <a href="#Example2">EX</a>
+                      <a href="#Example3">EX</a>
+                    </div>
+                    <div className="itin-dropdown-across">
+                      <div className="itin-dropdown-across2">
+                        <h4>SUB2</h4>
+                        <a href="#Example4">EX)</a>
+                        <a href="#Example5">EX</a>
+                        <a href="#Example6">EX</a>
+                      </div>
+                    </div>
+                    <div className="itin-dropdown-across">
+                      <div className="itin-dropdown-across2">
+                        <h4>SUB3</h4>
+                        <a href="#Example7">EX</a>
+                        <a href="#Example8">EX</a>
+                        <a href="#Example9">EX</a>
+                      </div>
+                    </div>             
+                  </div>
+                </div>
+                <Link to="#Payroll">Payroll<FaCaretDown /></Link>
+                <Link to="#Bookkeeping">Bookkeeping<FaCaretDown /></Link>
+                <Link to="#Quicksbooks">QuickBooks<FaCaretDown /></Link>
                     {/*<div className="signup-login">
                       <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
                       <Link to="/Login" className="login-btn">Login</Link>
@@ -114,6 +118,9 @@ class App extends Component {
             </div>  
           </header>
           <Switch>
+            <Route path="/Taxes">
+              <Taxes />
+            </Route>
             <Route path="/Contact-us">
               <Contact />
             </Route>
@@ -168,7 +175,7 @@ class App extends Component {
                      and CPAs, have unlimited rights to practice at all levels of the IRS and are the only federally 
                      licensed tax professionals - by the US Treasury. CPAs and Attorneys are state licensed.<br></br>
                     <br></br>
-                    SOGREM is also an authorized IRS certified acceptance agents (CAA) and <a href="https://www.irs.gov/e-file-providers/authorized-irs-e-file-providers-for-individuals" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
+                    SOGREM is also an authorized IRS Certified Acceptance Agents (CAA) and <a href="https://www.irs.gov/e-file-providers/authorized-irs-e-file-providers-for-individuals" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
                     Electronic Return Originator (ERO).</p>
                 </div>
                 <div className="homepage-body4">
