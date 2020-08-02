@@ -65,7 +65,7 @@ class ITIN extends Component {
                     <p>If you do not submit an original valid passport, you must provide a combination of (at least two or more)
                        of the following:
                        <ul>
-                           <li>National Identification card (must show photo, name, and current address, date of
+                           <li>National Identification card (must show photo, name, current address, date of
                                birth and expiration date).</li>
                            <li>US Driver's License</li>   
                            <li>Civil birth certificate</li>

@@ -6,7 +6,7 @@ import AboutUs from './AboutUs';
 import SignUp from './SignUp';
 import Login from './Login';
 import Taxes from './Taxes';
-import { FaBeer, FaArrowDown, FaCaretDown, FaSearch, FaArrowRight, FaAngleDoubleRight } from 'react-icons/fa';
+import { FaBeer, FaArrowDown, FaCaretDown, FaSearch, FaArrowRight, FaAngleDoubleRight, FaAngleDoubleDown } from 'react-icons/fa';
 import {
   BrowserRouter as Router,
   Switch,
@@ -83,7 +83,7 @@ class App extends Component {
                     <div className="itin-dropdown-across">
                       <div className="itin-dropdown-across2">
                         <h4>SUB2</h4>
-                        <a href="#Example4">EX)</a>
+                        <a href="#Example4">EX</a>
                         <a href="#Example5">EX</a>
                         <a href="#Example6">EX</a>
                       </div>
@@ -140,9 +140,9 @@ class App extends Component {
               <div className="main-image-content">
                 <img src="https://images.unsplash.com/photo-1573497701240-345a300b8d36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" className="main-image" alt="mainimage" />
                 <h1 className="main-title">SOGREM ASSOCIATES</h1>
-                <button className="main-btn">Our Services  <FaAngleDoubleRight /></button>
+                <a href="#scroll" className="main-btn">Get Started  <FaAngleDoubleDown /></a>
               </div>
-              <div className="homepage-body">
+              <div id="scroll" className="homepage-body">
                 <h1>Welcome!</h1>
                 <p>You are heartily welcomed to our SOGREM Associates website. We see your visit as a 
                   privileged opportunity to showcase the solutions we provide to our numerous clients 
@@ -187,7 +187,7 @@ class App extends Component {
                      special situations.</p>
                 </div>
                 <div className="more-info">
-                  <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us" onclick="scroll(0,0)">Contact Us</Link> page.</p>
+                  <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
                 </div>
             </Route>
           </Switch>

@@ -40,7 +40,7 @@ class Contact extends Component {
                         <h1>Address <FaHome /></h1>
                         <hr></hr><br></br>
                         <h3>228 Linden Ridge Road, Laurel, MD 20724</h3><br></br>
-                        <h2>Visting Hours <FaClock /></h2>
+                        <h2>Visiting Hours <FaClock /></h2>
                         <hr></hr>
                         <h3>10AM-5PM</h3>
                     </div>
