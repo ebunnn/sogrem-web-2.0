@@ -360,6 +360,11 @@ h2 {
 }
 
 /*BODY*/
+.whole-hp-body {
+  width: 70%;
+  position: relative;
+  display: contents;
+}
 .homepage-body {
   font-family: allegro;
   padding: 50px;
@@ -367,7 +372,7 @@ h2 {
   text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 80px;
+  margin: 30px;
 
 }
 .homepage-body p {
@@ -386,7 +391,7 @@ h2 {
   text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 80px;
+  margin: 30px;
 }
 .homepage-body2 p {
   font-size: 30px;
@@ -405,7 +410,7 @@ h2 {
   text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 80px;
+  margin: 30px;
 }
 .homepage-body3 p {
   font-size: 30px;
@@ -430,7 +435,7 @@ h2 {
   text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 80px;
+  margin: 30px;
 }
 .homepage-body4 p {
   font-size: 30px;
@@ -440,26 +445,20 @@ h2 {
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
-
 }
 /* @MEDIA  */
 @media only screen and (max-width : 1300px) {
   .main-title {
     font-size: 80px;
   }
-  @keyframes intro {
-    from{top: -68px;}
-    to{top: 266px;}
-  }
   .main-btn  {
     margin-left: -70px;
     margin-top: -50px;
   }
 }
-@media only screen and (max-width : 1191px) {
+@media only screen and (max-width : 1134px) {
   .title-navbar {
-    float: right;
-    padding-right: 20px;
+    display: none;
   }
   .Nav-bar a {
     font-size: 20px;
@@ -478,20 +477,16 @@ h2 {
     margin-left: -70px;
     margin-top: -50px;
   }
-  .homepage-body {
-    font-size: 30px;
-    font-family: allegro;
+}
+@media only screen and (max-width : 993px) {
+  .quickbooks {
+    display: none;
   }
 }
 @media only screen and (max-width : 933px) {
   .main-btn {
-    animation-name: intro-btn933;
     margin-top: -21px;
 }
-  @keyframes intro-btn933 {
-    from{top: 800px;}
-    to{top: 550px;}
-  }
   .main-title {
     margin-top: 78px;
     font-size: 66px;
@@ -516,29 +511,20 @@ h2 {
     font-size: xx-large;
     float: right;
     padding-right: 30px;
+    display: block;
   }
   .main-title {
     font-size: 52px;
-    animation-name: intro900;
+    margin-top: 0px;
   }
   .main-btn {
     margin-top: -120px;
     margin-left: -60px;
-    animation-name: intro-btn900;
-  }
-  @keyframes intro900 {
-    from{top: -80px;}
-    to{top: 200px;}
-  }
-  @keyframes intro-btn900 {
-    from{top: 850px;}
-    to{top: 540px;}
   }
 }
-@media only screen and (max-width : 736px) {
+@media only screen and (max-width : 744px) {
   .main-title {
     font-size: 50px;
-    margin-top: revert;
   }
   .main-btn {
     margin-top: -157px;
@@ -547,57 +533,66 @@ h2 {
 }
 @media only screen and (max-width : 715px) {
   .main-title {
-    font-size: 48px;
+    font-size: 40px;
   }
   .main-btn {
     margin-top: -168px;
     margin-left: -60px;
   }
 }
-@media only screen and (max-width : 693px) {
+@media only screen and (max-width : 680px) {
   .main-title {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: -40px;
   }
   .main-btn {
     display: none;
   }
 }
+@media only screen and (max-width : 600px) {
+  .main-title {
+    margin-top: -85px;
+  }
+}
+@media only screen and (max-width : 551px) {
+  .main-title {
+    font-size: 30px;
+  }
+  .homepage-body {
+    padding: 30px;
+  }
+  .homepage-body2 {
+    padding: 30px;
+  }
+  .homepage-body3 {
+    padding: 30px;
+  }
+  .homepage-body4 {
+    padding: 30px;
+  }
+}
 @media only screen and (max-width : 497px) {
   .main-title {
     font-size: 25px;
-    margin-top: -50px;
+    margin-top: -110px;
   }
 }
 @media only screen and (max-width : 450px) {
   .main-title {
     font-size: 25px;
-    margin-top: -45px;
+    margin-top: -128px;
   }
-  .whole-hp-body {
-    margin-left: -72px;
+  .whole-hp-body h1 {
+    font-size: 30px;
   }
-  .homepage-body {
-    width: 280px;
-    margin-left: 105px;
-
+  .whole-hp-body h3 {
+    font-size: 20px;
   }
-  .homepage-body2 {
-    width: 280px;
-    margin-left: 105px;
-
-  }
-  .homepage-body3 {
-    width: 280px;
-    margin-left: 105px;
-
-  }
-  .homepage-body4 {
-    width: 280px;
-    margin-left: 105px;
+  .whole-hp-body p {
+    font-size: 20px;
   }
 }
-@media only screen and (max-width : 445px) {
+@media only screen and (max-width : 442px) {
   .title-navbar {
     font-size: 20px;
     padding-right: 10px;
@@ -606,138 +601,20 @@ h2 {
     height: 40px;
   }
   .main-title {
-    /*font-size: 30px;
-    padding: 5px;
-    margin-top: auto;
-    animation-name: intro445;
-    width: auto;*/
     display: none;
-  }
-  @keyframes intro445 {
-    from{top: -80px;}
-    to{top: 90px;}
-  }
-  .whole-hp-body {
-    margin-left: 30px;
-  }
-  .homepage-body {
-    text-align: left;
-    margin: 80px;
-    width: 237px;
-    margin-left: 11px;
-  }
-  .homepage-body p {
-    font-size: 25px;
-  }
-  .homepage-body h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgba(91, 164, 207, 0.4);
-  }
-  .homepage-body2 {
-    text-align: left;
-    margin: 80px;
-    width: 237px;
-    margin-left: 11px;
-  }
-  .homepage-body2 p {
-    font-size: 25px;
-  }
-  .homepage-body2 h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgba(91, 164, 207, 0.4);
-  }
-  .homepage-body3 {
-    text-align: left;
-    margin: 80px;
-    width: 237px;
-    margin-left: 11px;
-  }
-  .homepage-body3 p {
-    font-size: 25px;
-  }
-  .homepage-body3 h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgba(91, 164, 207, 0.4);
-  }
-  .homepage-body4 {
-    text-align: left;
-    margin: 80px;
-    width: 237px;
-    margin-left: 11px;
-  }
-  .homepage-body4 p {
-    font-size: 25px;
-  }
-  .homepage-body4 h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    text-decoration-color: rgba(91, 164, 207, 0.4);
-  
-  }
-}
-@media only screen and (max-width : 414px) {
-  .whole-hp-body {
-    margin-left: 30px;
-  }
-}
-@media only screen and (max-width : 375px) {
-  .whole-hp-body {
-    margin-left: 6px;
-  }
-}
-@media only screen and (max-width : 360px) {
-  .whole-hp-body {
-    margin-left: -2px;
-  }
-}
-@media only screen and (max-width : 320px) {
-  .whole-hp-body {
-    margin-left: -11px;
-    margin-top: -46px;
-  }
-  .homepage-body {
-    width: 215px;
-  }
-  .homepage-body2 {
-    width: 215px;
-  }
-  .homepage-body3{
-    width: 215px;
-  }
-  .homepage-body4{
-    width: 215px;
-  }
-  .homepage-body4 h1 {
-    font-size: 40px;
   }
   .more-info {
     padding: 15px;
   }
 }
-@media only screen and (max-width : 280px) {
+@media only screen and (max-width : 350px) {
   .whole-hp-body h1 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .whole-hp-body h3 {
+    font-size: 15px;
   }
   .whole-hp-body p {
     font-size: 15px;
-  }
-  .whole-hp-body .homepage-body {
-    width: 150px;
-    margin-left: 25px;
-  }
-  .whole-hp-body .homepage-body2 {
-    width: 150px;
-    margin-left: 25px;
-  }
-  .whole-hp-body .homepage-body3 {
-    width: 150px;
-    margin-left: 25px;
-  }
-  .whole-hp-body .homepage-body4 {
-    width: 150px;
-    margin-left: 25px;
   }
 }

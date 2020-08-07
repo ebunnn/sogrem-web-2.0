@@ -1,38 +1,95 @@
 .taxes-title {
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    letter-spacing: 5px;
-    font-size: 20px;
-    font-family: allegro;
-    font-weight: bold;
-    background-color: rgba(91, 164, 207, 0.6);
-    color: white;
-    border-radius: 5px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-family: allegro;
+  font-weight: bold;
+  background-color: rgba(91, 164, 207, 0.6);
+  color: white;
+  border-radius: 5px;
 }
 .taxes-image img {
-    object-fit: cover;
-    height: 685px;
-    width: 100%;
+  object-fit: cover;
+  height: 685px;
+  width: 100%;
 }
 .taxes-body {
-    font-family: allegro;
-    padding: 50px;
-    padding-top: 5px;
-    text-align: left;
-    border: 2px solid white;
-    box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-    margin: 80px;
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.whole-taxes-body {
+  width: 70%;
+  position: relative;
+  display: contents;
+}
+.taxes-body p {
+  font-size: 30px;
+  text-align: left;
+}
+.taxes-body h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+}
+/* @MEDIA */
+
+@media only screen and (max-width : 640px) {
+  .taxes-title {
+    font-size: 17px;
   }
-  .taxes-body p {
-      font-size: 30px;
-      text-align: left;
-    }
-  .taxes-body h1 {
-      font-size: 50px;
-      text-decoration: underline;
-      text-decoration-color: rgba(91, 164, 207, 0.4);
-    }
+}
+@media only screen and (max-width : 570px) {
+  .taxes-title {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width : 530px) {
+  .taxes-title {
+    font-size: 12px;
+  }
+  .taxes-body {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width : 470px) {
+  .taxes-title {
+    font-size: 18px;
+    display: table;
+    width: 1px;
+  }
+  .whole-taxes-body h1 {
+    font-size: 30px;
+  }
+  .whole-taxes-body h3 {
+    font-size: 20px;
+  }
+  .whole-taxes-body p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width : 350px) {
+  .whole-taxes-body h1 {
+    font-size: 20px;
+  }
+  .whole-taxes-body h3 {
+    font-size: 15px;
+  }
+  .whole-taxes-body p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width : 315px) {
+  .taxes-title {
+    font-size: 10px;
+  }
+}

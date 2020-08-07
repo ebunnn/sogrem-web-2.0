@@ -100,7 +100,8 @@ class App extends Component {
                 </div>
                 <Link to="#Payroll">Payroll<FaCaretDown /></Link>
                 <Link to="#Bookkeeping">Bookkeeping<FaCaretDown /></Link>
-                <Link to="#Quicksbooks">QuickBooks<FaCaretDown /></Link>
+                <Link to="#Quicksbooks" className="quickbooks">QuickBooks<FaCaretDown /></Link>
+                {/*<button className="more-btn">More<FaCaretDown/></button>*/}
                     {/*<div className="signup-login">
                       <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
                       <Link to="/Login" className="login-btn">Login</Link>
