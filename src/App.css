@@ -383,7 +383,7 @@ h2 {
   font-family: allegro;
   padding: 50px;
   padding-top: 5px;
-  text-align: justify;
+  text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 80px;
@@ -402,7 +402,7 @@ h2 {
   font-family: allegro;
   padding: 50px;
   padding-top: 5px;
-  text-align: justify;
+  text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 80px;
@@ -427,7 +427,7 @@ h2 {
   font-family: allegro;
   padding: 50px;
   padding-top: 5px;
-  text-align: justify;
+  text-align: left;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 80px;
@@ -553,9 +553,49 @@ h2 {
     margin-top: -168px;
     margin-left: -60px;
   }
-  
+}
+@media only screen and (max-width : 693px) {
+  .main-title {
+    font-size: 30px;
+    margin-top: -40px;
+  }
+  .main-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width : 497px) {
+  .main-title {
+    font-size: 25px;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width : 450px) {
+  .main-title {
+    font-size: 25px;
+    margin-top: -45px;
+  }
+  .whole-hp-body {
+    margin-left: -72px;
+  }
+  .homepage-body {
+    width: 280px;
+    margin-left: 105px;
 
+  }
+  .homepage-body2 {
+    width: 280px;
+    margin-left: 105px;
 
+  }
+  .homepage-body3 {
+    width: 280px;
+    margin-left: 105px;
+
+  }
+  .homepage-body4 {
+    width: 280px;
+    margin-left: 105px;
+  }
 }
 @media only screen and (max-width : 445px) {
   .title-navbar {
@@ -577,18 +617,8 @@ h2 {
     from{top: -80px;}
     to{top: 90px;}
   }
-  .main-btn {
-    padding: 14px 20px;
-    font-size: 15px;
-    /*margin-left: -30px;
-    margin-top: -60px;*/
-    margin-left: 40px;
-    margin-top: -75px;
-    animation-name: intro-btn445;
-  }
-  @keyframes intro-btn445 {
-    from{top: -50px;}
-    to{top: 250px;}
+  .whole-hp-body {
+    margin-left: 30px;
   }
   .homepage-body {
     text-align: left;
@@ -646,5 +676,68 @@ h2 {
     text-decoration: underline;
     text-decoration-color: rgba(91, 164, 207, 0.4);
   
+  }
+}
+@media only screen and (max-width : 414px) {
+  .whole-hp-body {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width : 375px) {
+  .whole-hp-body {
+    margin-left: 6px;
+  }
+}
+@media only screen and (max-width : 360px) {
+  .whole-hp-body {
+    margin-left: -2px;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .whole-hp-body {
+    margin-left: -11px;
+    margin-top: -46px;
+  }
+  .homepage-body {
+    width: 215px;
+  }
+  .homepage-body2 {
+    width: 215px;
+  }
+  .homepage-body3{
+    width: 215px;
+  }
+  .homepage-body4{
+    width: 215px;
+  }
+  .homepage-body4 h1 {
+    font-size: 40px;
+  }
+  .more-info {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width : 280px) {
+  .whole-hp-body h1 {
+    font-size: 25px;
+  }
+  .whole-hp-body p {
+    font-size: 15px;
+  }
+  .whole-hp-body .homepage-body {
+    width: 150px;
+    margin-left: 25px;
+  }
+  .whole-hp-body .homepage-body2 {
+    width: 150px;
+    margin-left: 25px;
+  }
+  .whole-hp-body .homepage-body3 {
+    width: 150px;
+    margin-left: 25px;
+  }
+  .whole-hp-body .homepage-body4 {
+    width: 150px;
+    margin-left: 25px;
   }
 }

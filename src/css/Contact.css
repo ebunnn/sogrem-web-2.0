@@ -72,3 +72,64 @@ hr {
     }
 
 }
+@media only screen and (max-width : 720px) {
+    .telephone {
+        margin-right: 50px;
+    }
+    .address {
+        width: 620px;
+    }
+}
+@media only screen and (max-width : 668px) {
+    .telephone {
+        margin-right: 30px;
+    }
+    .address {
+        width: 600px;
+    }
+}
+@media only screen and (max-width : 650px) {
+    .contact-info {
+        display: inline-block;
+    }
+    .email {
+        margin-top: 50px;
+        margin-left: -25px;
+    }
+    .address {
+        width: 500px;
+    }
+}
+@media only screen and (max-width : 560px) {
+    .address {
+        width: 350px;
+        margin-left: 75px;
+    }
+}
+@media only screen and (max-width : 445px) {
+    .address {
+        width: 250px;
+        margin-left: 18px;
+    }
+    .email {
+        margin-left: 0px;
+        display: inline-table;
+        padding: 25px;
+        width: 200px;
+    }
+    .telephone {
+        margin-left: 26px;
+    }
+    .contact-title {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .contact-img {
+        padding-top: 20px;
+
+    }
+    .contact-img img {
+        width: 100%;
+    }
+}
