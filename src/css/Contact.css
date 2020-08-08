@@ -1,7 +1,7 @@
 .contact-img img {
     object-fit: cover;
     height: 400px;
-    width: 95%;
+    width: 100%;
 }
 .contact-title {
     position: absolute;
@@ -70,7 +70,6 @@ hr {
     .address {
         width: 674px;
     }
-
 }
 @media only screen and (max-width : 720px) {
     .telephone {
@@ -102,34 +101,52 @@ hr {
 }
 @media only screen and (max-width : 560px) {
     .address {
-        width: 350px;
-        margin-left: 75px;
+        width: 75%;
+    }
+    .contact-info {
+        width: 70%;
     }
 }
-@media only screen and (max-width : 445px) {
-    .address {
-        width: 250px;
-        margin-left: 18px;
-    }
-    .email {
-        margin-left: 0px;
-        display: inline-table;
-        padding: 25px;
-        width: 200px;
-    }
-    .telephone {
-        margin-left: 26px;
-    }
+@media only screen and (max-width : 485px) {
     .contact-title {
-        font-size: 35px;
-        margin-left: 30px;
-        margin-top: 40px;
+        font-size: 50px;
     }
-    .contact-img {
-        padding-top: 20px;
-
+}
+@media only screen and (max-width : 420px) {
+    .contact-title {
+        font-size: 40px;
     }
-    .contact-img img {
-        width: 100%;
+}
+@media only screen and (max-width : 395px) {
+    .contact-address h1 {
+        font-size: 25px;
+    }
+    .contact-address h2 {
+        font-size: 20px;
+    }
+    .contact-address h3 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width : 350px) {
+    .contact-title {
+        display: table;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width : 330px) {
+    .contact-address h1 {
+        font-size: 20px;
+    }
+    .contact-address h2 {
+        font-size: 17px;
+    }
+    .contact-address h3 {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width : 290px) {
+    .email {
+        padding-left: 27px;
     }
 }

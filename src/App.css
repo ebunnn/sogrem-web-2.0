@@ -120,7 +120,9 @@
   margin-bottom: auto;
   margin-top: 10px;
 }
-
+.bars-icon {
+  display: none;
+}
 /*DROPDOWNS*/
 
 /*TAXES DROPDOWN*/
@@ -198,25 +200,12 @@
 .taxes-dropdown:hover .taxes-dropdown-content {
   display: block;
 }
-/* ITIN DROPDOWN */
+/* TAX ID DROPDOWN */
 
-.itin-dropdown {
+.taxid-dropdown {
   float: left;
 }
-.itin-dropbtn {
-  font-size: 17px;
-  text-align: center;
-  font-family: allegro;
-  color: white;
-  border: none;
-  padding: 14px 16px;
-  display: flex;
-}
-.itin-dropbtn:hover {
-  background-color: white;
-  color: black;
-}
-.itin-dropdown-content a {
+.taxid-dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -224,10 +213,10 @@
   display: block;
   text-align: left;
 }
-.itin-dropdown-content a:hover {
+.taxid-dropdown-content a:hover {
   background-color: #ddd;
 }
-.itin-dropdown-content {
+.taxid-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -238,73 +227,56 @@
   z-index: 1;
   margin-top: 48px;
 }
-.itin-dropdown-content h4 {
+.taxid-dropdown-content h4 {
   padding-left: 15px;
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
   font-family: allegro;
 }
-.itin-dropdown .itin-dropbtn {
-  font-size: 17px;  
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: allegro;
-  margin: 0;
-  display: flex;
-  /* align-items: flex-end; */
-}
-.itin-dropdown-across {
+.taxid-dropdown-across {
   float: left;
   width: 200px;
   height: 250px;
 }
-.itin-dropdown-across a {
+.taxid-dropdown-across a {
   float: none;
   display: block;
   margin-right: 50px;
 }
-.itin-dropdown-across2 {
+.taxid-dropdown-across2 {
   margin-left: -50px;
 }
 
-.itin-dropdown:hover .itin-dropdown-content {
+.taxid-dropdown:hover .taxid-dropdown-content {
   display: block;
 }
 
-/* ABOUT US DROPDOWN  */
+/*BUSINESS ADVISORY DROPDOWN */
 
-.aboutus-dropdown {
+.businessad-dropdown {
   float: left;
 }
-.aboutus-dropbtn {
-  font-size: 17px;
-  text-align: center;
-  font-family: allegro;
-  color: white;
-  border: none;
-  padding: 14px 16px;
-  display: flex;
-}
-.aboutus-dropbtn:hover {
-  background-color: white;
-  color: black;
-}
-.aboutus-dropdown-content a {
+.businessad-dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-  padding-right: 60px;
+  margin-right: -50px;
 }
-.aboutus-dropdown-content a:hover {
+.businessad-dropdown-content a:hover {
   background-color: #ddd;
 }
-.aboutus-dropdown-content {
+.businessad-dropdown-content h4 {
+  padding-left: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: allegro;
+}
+.businessad-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -313,31 +285,43 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 48px;
+  padding-right: 50px;
 }
-.aboutus-dropdown .aboutus-dropbtn {
-  font-size: 17px;  
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: allegro;
-  margin: 0;
-  display: flex;
-}
-
-.aboutus-dropdown:hover .aboutus-dropdown-content {
+.businessad-dropdown:hover .businessad-dropdown-content {
   display: block;
 } 
+/* REPRESENTATION DROPDOWN */
 
-/*SIGN UP AND LOG IN BUTTON*/
+.rep-dropdown {
+  float: left;
+}
+.rep-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-right: 100px;
+  height: 50px;
+}
+.rep-dropdown-content a:hover {
+  background-color: #ddd;
+}
+.rep-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 48px;
 
-/*.signup-login {
-  text-align: right;
-  display: inline-flex;
-  padding-left: 550px;
-  /*float: right;*/
-/*} 
-
+}
+.rep-dropdown:hover .rep-dropdown-content {
+  display: block;
+}
 /*FOOTER*/
 footer {
   background-color: #f0f0f0;
@@ -349,13 +333,12 @@ footer {
   bottom: -60px;
   position: inherit;
   width: 100%;
-}
-
-p {
   font-family: allegro;
 }
-
-h2 {
+.footer-links {
+  display: grid;
+}
+.more-info {
   font-family: allegro;
 }
 
@@ -401,7 +384,6 @@ h2 {
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
-
 }
 .homepage-body3 {
   font-family: allegro;
@@ -478,9 +460,14 @@ h2 {
     margin-top: -50px;
   }
 }
-@media only screen and (max-width : 993px) {
-  .quickbooks {
-    display: none;
+/*@media only screen and (max-width : 1080px) {
+  .itin-dropdown-content {
+    width: 160px;
+  }
+}*/
+@media only screen and (max-width : 955px) {
+  .taxid-dropdown-across {
+    width: 160px;
   }
 }
 @media only screen and (max-width : 933px) {
@@ -512,6 +499,7 @@ h2 {
     float: right;
     padding-right: 30px;
     display: block;
+    margin-top: -50px;
   }
   .main-title {
     font-size: 52px;
@@ -520,6 +508,14 @@ h2 {
   .main-btn {
     margin-top: -120px;
     margin-left: -60px;
+  }
+  .bars-icon {
+    display: block;
+    background-color: #8FACBD;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin: 14px;
   }
 }
 @media only screen and (max-width : 744px) {
@@ -547,6 +543,9 @@ h2 {
   }
   .main-btn {
     display: none;
+  }
+  .more-info {
+    padding: 15px;
   }
 }
 @media only screen and (max-width : 600px) {
@@ -596,6 +595,7 @@ h2 {
   .title-navbar {
     font-size: 20px;
     padding-right: 10px;
+    margin-top: -40px;
   }
   .Nav-bar {
     height: 40px;
@@ -603,8 +603,13 @@ h2 {
   .main-title {
     display: none;
   }
-  .more-info {
-    padding: 15px;
+  .bars-icon {
+    display: block;
+    background-color: #8FACBD;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
   }
 }
 @media only screen and (max-width : 350px) {

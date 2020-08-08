@@ -1,0 +1,27 @@
+class Human {
+    var leg
+    var age
+    var skinColor
+    var firstname
+    var lastname
+
+    move: function() {
+        // increase lat
+    }
+
+    nextAge(age) {
+        var age = 200
+        return this.age + 1;
+    }
+}
+
+let ebun = Human() // object
+ebun.leg = "2 legs"
+ebun.skinColor = "black"
+.
+.
+ebun.age = 18
+
+ebun.nextAge(20)  // 19
+
+"Ebun" += " Oludemi" === "Ebun Oludemi"
