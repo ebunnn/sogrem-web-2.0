@@ -26,7 +26,7 @@ class ITIN extends Component {
                     
                         <h1>Who Must Apply:</h1>
                         <p>Any individual who is not eligible to obtain Social Security Number (SSN) but who must furnish a taxpayer
-                        identification number must apply for an ITIN on Form W-7 (current version)</p>
+                        identification number must apply for an ITIN on Form W-7 (current version).</p>
                     </div>
                     <div className="itin-body2"> 
                         <h1>How to Apply:</h1>
@@ -48,8 +48,8 @@ class ITIN extends Component {
                         <p>
                             <ol>
                                 <li>Completed Form W-7, appropriately signed by the applicant or his/her representative (parent,
-                                    court appointed agent or power of attorney</li>
-                                <li>Your Original, completed tax return(s) for which the ITIN is needed</li> 
+                                    court appointed agent or power of attorney.</li>
+                                <li>Your Original, completed tax return(s) for which the ITIN is needed.</li> 
                                 <li>The original documents or certified copies of documents that substantiate the information
                                     provided on the Form W-7. Supporting documentation must provide, for example:
                                     <ul>
@@ -60,7 +60,7 @@ class ITIN extends Component {
                                     </ul>
                                     </li>
                                 <li>Original valid passport. A passport is the only document that stands alone in satisfying item 3
-                                    above and support your claim of foreign status</li>       
+                                    above and support your claim of foreign status.</li>       
                             </ol>
                         </p>
                         <p>If you do not submit an original valid passport, you must provide a combination of (at least two or more)
@@ -78,7 +78,7 @@ class ITIN extends Component {
                             <li>Visa</li>
                             <li>US Citizenship and Immigration Services (USCIS) photo ID</li>
                             <li>Medical records (dependents only) under 6 years of age</li>
-                            <li>School records (dependents and/or student only under age 18</li>
+                            <li>School records (dependents and/or student only under age 18)</li>
                         </ul>
                         </p>
                     </div> 

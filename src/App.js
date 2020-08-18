@@ -8,6 +8,7 @@ import Login from './Login';
 import Taxes from './Taxes';
 import { FaCaretDown, FaAngleDoubleDown, FaBars } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
+import salogo from './images/salogo.png';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,7 +29,7 @@ class App extends Component {
             
             <header className="App-header">
               <div>
-                <div className="Nav-bar">
+                <div className="Nav-bar" id="TheNavBar">
                   <Link to="/Home">Home</Link>
                   <div className="taxes-dropdown">
                     <Link to="/Taxes" className="taxes-dropbtn">Taxes<FaCaretDown /></Link>
@@ -76,7 +77,7 @@ class App extends Component {
                       <div className="taxid-dropdown-content">
                         <div className="taxid-dropdown-across">
                           <h4>ITIN</h4>
-                          <Link to="/ITIN">ITIN</Link>
+                          <Link to="/ITIN">ITIN Info</Link>
                           <a href="#Example2">EX</a>
                           <a href="#Example3">EX</a>
                         </div>
@@ -114,7 +115,7 @@ class App extends Component {
                       </div>
                   </div> 
                   <Link to="#Quicksbooks" className="quickbooks">QuickBooks</Link>
-                  <button className="bars-icon"><FaBars/></button>
+                  <a href="javascript:void(0);"className="bars-icon"><FaBars/></a>
                   {/*<button className="more-btn">More<FaCaretDown/></button>*/}
                       {/*<div className="signup-login">
                         <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
@@ -128,7 +129,12 @@ class App extends Component {
                         </div>*/}
                     <div>
                       <h3 className="title-navbar">Sogrem Associates</h3>
-                    </div>                
+                    </div>     
+                    <div className="salogo">
+                    <img src={salogo} alt="" />
+
+                      
+                    </div>           
                 </div>
               </div>  
             </header>

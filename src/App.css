@@ -68,8 +68,6 @@
 #scroll {
   scroll-behavior: smooth;
 }
-
-
 /*HEADER*/
 .App-header {
   background-color: white;
@@ -120,7 +118,10 @@
   margin-bottom: auto;
   margin-top: 10px;
 }
-.bars-icon {
+.Nav-bar .bars-icon {
+  display: none;
+}
+.salogo {
   display: none;
 }
 /*DROPDOWNS*/
@@ -459,12 +460,16 @@ footer {
     margin-left: -70px;
     margin-top: -50px;
   }
-}
-/*@media only screen and (max-width : 1080px) {
-  .itin-dropdown-content {
-    width: 160px;
+  .salogo img {
+    width: 43px;
   }
-}*/
+  .salogo {
+    display: flex;
+    float: right;
+    padding-right: 10px;
+    margin-top: 3px;
+  }
+}
 @media only screen and (max-width : 955px) {
   .taxid-dropdown-across {
     width: 160px;
@@ -499,7 +504,7 @@ footer {
     float: right;
     padding-right: 30px;
     display: block;
-    margin-top: -50px;
+    margin-top: 10px;
   }
   .main-title {
     font-size: 52px;
@@ -509,13 +514,19 @@ footer {
     margin-top: -120px;
     margin-left: -60px;
   }
-  .bars-icon {
+  .Nav-bar .bars-icon {
     display: block;
     background-color: #8FACBD;
-    border: none;
     color: white;
     font-size: 25px;
-    margin: 14px;
+    margin: 3px;
+  }
+  .Nav-bar .bars-icon:hover {
+    background-color: #8FACBD;
+    color: #ddd;
+  }
+  .salogo {
+    display: none;
   }
 }
 @media only screen and (max-width : 744px) {
@@ -595,7 +606,7 @@ footer {
   .title-navbar {
     font-size: 20px;
     padding-right: 10px;
-    margin-top: -40px;
+    margin-top: 8px;
   }
   .Nav-bar {
     height: 40px;
@@ -603,13 +614,12 @@ footer {
   .main-title {
     display: none;
   }
-  .bars-icon {
+  .Nav-bar .bars-icon {
     display: block;
     background-color: #8FACBD;
-    border: none;
     color: white;
     font-size: 20px;
-    margin: 10px;
+    margin: -3px;
   }
 }
 @media only screen and (max-width : 350px) {
