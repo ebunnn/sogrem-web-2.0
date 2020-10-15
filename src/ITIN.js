@@ -48,7 +48,7 @@ class ITIN extends Component {
                         <p>
                             <ol>
                                 <li>Completed Form W-7, appropriately signed by the applicant or his/her representative (parent,
-                                    court appointed agent or power of attorney.</li>
+                                    court appointed agent or power of attorney).</li>
                                 <li>Your Original, completed tax return(s) for which the ITIN is needed.</li> 
                                 <li>The original documents or certified copies of documents that substantiate the information
                                     provided on the Form W-7. Supporting documentation must provide, for example:
