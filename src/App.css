@@ -23,6 +23,7 @@
   position: absolute;
   font-size: 100px;
   margin-bottom: auto;
+  margin-top: 0px;
   font-family: allegro;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,13 +39,45 @@
   from{top: -68px;}
   to{top: 266px;}
 }
+.efile-logo {
+  position: absolute;
+  height: 10%;
+}
+.caa-logo {
+  position: absolute;
+  height: 10%;
+  margin-left: 70px;
+}
+.irsea-logo {
+  position: absolute;
+  height: 10%;
+  margin-left: 255px;
+}
+.certifications {
+  display: flex;
+  float: left;
+  margin-right: 40px;
+}
+.certifications img {
+  width: 50%;
+}
+.certifications-logo {
+  flex: 5.33%;
+  padding: 5px;
+}
+.certifications-logo2 {
+  flex: 50%;
+  padding: 5px;
+  margin-left: -80px;
+}
+
 .main-btn {
     text-align: center;
     padding: 14px 80px;
     font-size: 20px;
     font-family: allegro;
     font-weight: bold;
-    background-color: #BD8915;
+    background-color: #8FACBD;
     color: inherit;
     border: none;
     border-radius: 5px;
@@ -56,6 +89,7 @@
     animation-duration: 3s;
     animation-delay: 0.3s;
     animation-fill-mode: both;
+    scroll-behavior: smooth;
 }
 @keyframes intro-btn {
   from{top: 800px;}
@@ -63,7 +97,10 @@
 }
 .main-btn:hover {
   background-color: white;
-  color: black;
+  color: #8FACBD;
+}
+html {
+  scroll-behavior: smooth;
 }
 #scroll {
   scroll-behavior: smooth;
@@ -357,6 +394,7 @@ footer {
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 30px;
+  margin-top: 220px;
 
 }
 .homepage-body p {
@@ -480,7 +518,6 @@ footer {
     margin-top: -21px;
 }
   .main-title {
-    margin-top: 78px;
     font-size: 66px;
   }
 }
@@ -508,7 +545,7 @@ footer {
   }
   .main-title {
     font-size: 52px;
-    margin-top: 0px;
+    margin-top: -65px;
   }
   .main-btn {
     margin-top: -120px;
@@ -550,7 +587,7 @@ footer {
 @media only screen and (max-width : 680px) {
   .main-title {
     font-size: 35px;
-    margin-top: -40px;
+    margin-top: -80px;
   }
   .main-btn {
     display: none;
@@ -561,12 +598,13 @@ footer {
 }
 @media only screen and (max-width : 600px) {
   .main-title {
-    margin-top: -85px;
+    margin-top: -110px;
   }
 }
 @media only screen and (max-width : 551px) {
   .main-title {
     font-size: 30px;
+    margin-top: -150px;
   }
   .homepage-body {
     padding: 30px;
@@ -584,13 +622,13 @@ footer {
 @media only screen and (max-width : 497px) {
   .main-title {
     font-size: 25px;
-    margin-top: -110px;
+    margin-top: -150px;
   }
 }
 @media only screen and (max-width : 450px) {
   .main-title {
     font-size: 25px;
-    margin-top: -128px;
+    margin-top: -150px;
   }
   .whole-hp-body h1 {
     font-size: 30px;

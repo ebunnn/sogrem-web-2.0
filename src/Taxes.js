@@ -20,7 +20,7 @@ class Taxes extends Component {
                 <div className="whole-taxes-body">
                     <div className="taxes-body">
                         <h1>Tax Planning</h1>
-                        <p>Our commitment  to our tax clients  for both Federal &amp; State tax returns are:
+                        <p>Our commitment to our tax clients for both Federal &amp; State tax returns are:
                             <ul>
                                 <li>tax owed to Uncle Sam (and/or states) must be at the LEAST possible under the tax laws</li>
                                 <li>tax refunds, credits &amp; deductions must be HIGHEST possible under the tax laws</li>

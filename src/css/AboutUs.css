@@ -1,0 +1,26 @@
+.about-us-img img {
+    object-fit: cover;
+    width: 100%;
+}
+.about-title {
+    position: absolute;
+    margin-left: 95px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: allegro;
+    font-weight: bold;
+    background-color: rgba(91, 164, 207, 0.6);
+    color: white;
+    border-radius: 5px;
+}
+.body-title {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+  text-align: left;
+  padding-left: 35px;
+}

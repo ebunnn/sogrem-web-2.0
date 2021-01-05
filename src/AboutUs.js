@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/AboutUs.css';
-/*import mainimg from './images/IMG_3086.JPG';*/
+import aboutUsImg from './images/sampleAboutUs.jpg';
 
 class AboutUs extends Component {
     constructor(props) {
@@ -9,8 +9,22 @@ class AboutUs extends Component {
     render() {
         return(
             <div>
-                <p>this page is about us</p>
-                {/*<img src={mainimg} alt="mainimg" />*/}
+                <div className="about-title">
+                    <h1>About Us</h1>
+                </div>
+                <div className="about-us-img">
+                    {<img src={aboutUsImg} alt="aboutUsimg" />}
+                </div>
+                <div>
+                    <h1 className="body-title">Sogrem Associates is...</h1>
+                    <h1>IRS Enabling Credentials</h1>
+                      <p>SOGREM Associates tax professionals are <a href="https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information" target="_blank" rel="noopener noreferrer"> Enrolled Agents. </a>Enrolled Agents, as with tax attorneys
+                        and CPAs, have unlimited rights to practice at all levels of the IRS and are the only federally 
+                        licensed tax professionals - by the US Treasury. CPAs and Attorneys are state licensed.<br></br>
+                        <br></br>
+                        SOGREM is also an authorized IRS Certified Acceptance Agents (CAA) and <a href="https://www.irs.gov/e-file-providers/authorized-irs-e-file-providers-for-individuals" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
+                        Electronic Return Originator (ERO).</p>
+                </div>
             </div>
         )
     }

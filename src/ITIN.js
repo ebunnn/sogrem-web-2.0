@@ -19,28 +19,34 @@ class ITIN extends Component {
                 </div>
                 <div className="whole-itin-body">
                     <div className="itin-body">
-                        <h1>What is an ITIN:</h1>
+                        <h1>What is an ITIN?:</h1>
                         <p>An ITIN is a nine-digit number issued by the Internal Revenue Service (IRS) to individuals who are
                         required, for US tax purposes,  to have a Tax Payer Identification number but who do not have, and are
-                        not eligible to obtain an SSN. The ITIN is for Federal tax purposes only.</p>
+                        not eligible to obtain an SSN. While ITIN is a US government assigned number and generally for Federal
+                        tax purposes, ITINs can also be used for US state(s) taxes and financial/banking purposes.</p>
                     
                         <h1>Who Must Apply:</h1>
                         <p>Any individual who is not eligible to obtain Social Security Number (SSN) but who must furnish a taxpayer
                         identification number must apply for an ITIN on Form W-7 (current version).</p>
+
+                        
+
+                        
                     </div>
                     <div className="itin-body2"> 
                         <h1>How to Apply:</h1>
-                        <p>If you are applying for an ITIN to file a tax return, you must now attach your original, completed return to
-                        request an ITIN. After your W-7 has been processed, the IRS will assign an ITIN to the return and
-                        process the return.<br></br>
-                        <br></br>
-                        If you are not required to file a tax return or if you fail to file a completed tax return with your Form W-7,
-                        you will not be issued an ITIN, unless you meet one of the exceptions as described ion the instructions of
-                        Form W-7.<br></br>
-                        <br></br>
-                        An ITIN does not entitle you to social security benefits and does not change your immigration status or
-                        your right to work in the United States. Also, individual filing tax returns using and ITIN are not eligible for
-                        the earned income credit (EIC).    
+                        <h2>With a Federal Tax Return:</h2>
+                        <p>If you are applying for an ITIN to file a tax return, you must attach your original, completed and signed
+                           federal tax return to apply and request ITIN with your <b>W7</b>. If your attached W7 is accurately completed the
+                           IRS will process and assign an ITIN to the attached federal return after which the return will be processed.<br></br>
+                           <br></br>
+                           If you are not required to file a tax return or if you fail to file an accurate completed tax return with your
+                           W-7, you will not be issued an ITIN, unless you meet one of the <b>exceptions</b> as described the
+                           instructions of Form W-7.<br></br>
+                           <br></br>
+                           An ITIN does not entitle you to social security benefits and does not change your immigration status or
+                           your right to work in the United States. Also, individual filing tax returns using and ITIN are not eligible for
+                           the earned income credit (EIC).
                         </p>
                     </div>  
                     <div className="itin-body3">
@@ -55,7 +61,7 @@ class ITIN extends Component {
                                     <ul>
                                         <li>Name</li>
                                         <li>Date of Birth</li>
-                                        <li>Photograph(recent)</li>
+                                        <li>Photograph (recent)</li>
                                         <li>Country of Citizenship</li>
                                     </ul>
                                     </li>
@@ -97,7 +103,7 @@ class ITIN extends Component {
                             certified by either a CAA or mail the originals to IRS for verification. This takes more time and/or cost
                             you more therefore get smart, use a CAA, use SOGREM for all your ITIN issues.
                         </p>
-                        <h3>SOGREM Associates is a Certifying Acceptance Agent: Olusoga Oludemi dba Sogrem Associates (put link here)</h3>
+                        <h3>SOGREM Associates is a Certifying Acceptance Agent: Olusoga Oludemi dba Sogrem Associates (***put link here***)</h3>
 
                     </div>
                 </div>    
