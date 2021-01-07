@@ -191,7 +191,7 @@ class App extends Component {
                     spy={true}
                     smooth={true}
                     offset={0}
-                    duration={100}
+                    duration={300}
                     className="main-btn"
                 >Get Started  <FaAngleDoubleDown /></ScrollLink>
                     <div id="scroll" className="certifications">
