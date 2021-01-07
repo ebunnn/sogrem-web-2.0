@@ -6,6 +6,8 @@ import AboutUs from './AboutUs';
 import SignUp from './SignUp';
 import Login from './Login';
 import Taxes from './Taxes';
+import Representation from './Representation';
+import BusinessAdvisory from './BusinessAdvisory';
 import { FaCaretDown, FaAngleDoubleDown, FaBars, FaCheck } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
 import salogo from './images/salogo.png';
@@ -32,14 +34,13 @@ class App extends Component {
       <Router>
         <ScrollToTop>
           <div className="App">
-            
             <header className="App-header">
               <div>
                 <div className="Nav-bar" id="TheNavBar">
                   <Link to="/Home">Home</Link>
                   <div className="taxes-dropdown">
-                    <Link to="/Taxes" className="taxes-dropbtn">Taxes<FaCaretDown /></Link>
-                    <div className="taxes-dropdown-content">
+                    <Link to="/Taxes" className="taxes-dropbtn">Taxes</Link>
+                    {/* <div className="taxes-dropdown-content">
                       <div className="taxes-dropdown-across">
                         <h4>Individual</h4>
                         <a href="#Example1">1040</a>
@@ -62,14 +63,14 @@ class App extends Component {
                           <a href="#Example9">Social Security</a>
                         </div>
                       </div>
-                      {/*<div className="dropdown-across">
+                      <div className="dropdown-across">
                         <div className="dropdown-across2">
                           <h4>Immigration</h4>
                           <a href="#Example10">Immigration Consultation</a>
                           <a href="#Example11">Immigration Doc Prep</a>
                         </div>
-      </div>*/}             
-                    </div>
+                      </div>           
+                    </div> */}
                   </div>
                   <div className="itintab-dropdown">
                     <Link to="/ITIN">ITINs</Link>
@@ -77,11 +78,11 @@ class App extends Component {
                       </div>
                   </div>
                   <div className="rep-dropdown">
-                    <Link to="#Services">Representation<FaCaretDown /></Link>
-                      <div className="rep-dropdown-content">
+                    <Link to="/Representation">Representation</Link>
+                      {/* <div className="rep-dropdown-content">
                         <a href="#Example1">Resolve Most Tax Matters<br></br>with IRS</a>
                         <a href="#Example2">Obtain IRS 501K13<br></br>Certifications</a>
-                      </div>
+                      </div> */}
                   </div>
                   {/* <div className="taxid-dropdown">
                     <Link to="#taxid">Tax IDs<FaCaretDown/></Link>
@@ -110,12 +111,12 @@ class App extends Component {
                         </div>             
                       </div>
                   </div> */}
-                  <Link to="#Payroll">Payroll</Link>
-                  <Link to="#Bookkeeping">Bookkeeping</Link>
-                  <Link to="#Quicksbooks" className="quickbooks">QuickBooks</Link>
+                  {/* <Link to="#Payroll">Payroll</Link> */}
+                  {/* <Link to="#Bookkeeping">Bookkeeping</Link> */}
+                  {/* <Link to="#Quicksbooks" className="quickbooks">QuickBooks</Link> */}
                   <div className="businessad-dropdown">
-                    <Link to="#businessad">Business Advisory<FaCaretDown/></Link>
-                      <div className="businessad-dropdown-content">
+                    <Link to="/BusinessAdvisory">Business Advisory</Link>
+                      {/* <div className="businessad-dropdown-content">
                         <h4>Business Region</h4>
                         <a href="#Example1">EX</a>
                         <a href="#Example2">EX</a>
@@ -124,7 +125,7 @@ class App extends Component {
                         <a href="#Example5">EX</a>
                         <h4>501(c)3 Certification</h4>
                         <a href="#Example6">EX</a>
-                      </div>
+                      </div> */}
                   </div> 
                   <a href="javascript:void(0);"className="bars-icon"><FaBars/></a>
                   {/*<button className="more-btn">More<FaCaretDown/></button>*/}
@@ -143,8 +144,6 @@ class App extends Component {
                     </div>     
                     <div className="salogo">
                     <img src={salogo} alt="" />
-
-                      
                     </div>           
                 </div>
               </div>  
@@ -169,13 +168,22 @@ class App extends Component {
               <Route path="/Login">
                 <Login />
               </Route>
+              <Route path="/Representation">
+                <Representation />
+              </Route>
+              <Route path="/BusinessAdvisory">
+                <BusinessAdvisory />
+              </Route>
               <Route path="/">
                 <div className="main-image-content">
                   {/* <img src={efile} className="efile-logo"/>
                   <img src={caa} className="caa-logo"/>
                   <img src={irsea} className="irsea-logo"/> */}
                   <img src={mainimg} className="main-image" alt="mainimage" />
+                <div> 
                   <h1 className="main-title">SOGREM ASSOCIATES</h1>
+                  <h3 className="title-statement">Professional Tax Preperation Service<br></br> IRS + 50 States &amp; DC</h3>
+                </div>  
                   {/* <a href="#scroll" className="main-btn">Get Started  <FaAngleDoubleDown /></a> */}
                   <ScrollLink
                     activeClass="active"
@@ -200,7 +208,7 @@ class App extends Component {
                 <div className="whole-hp-body">
                   <div className="homepage-body">
                     <h1>Welcome!</h1>
-                    <p>You are heartily welcomed to our SOGREM Associates website. We see your visit as a 
+                    <p>You are heartily welcomed to our SOGREM Associates' website. We see your visit as a 
                       privileged opportunity to showcase the solutions we provide to our numerous clients 
                       in the Maryland, DC, Virginia and West Virginia areas. We believe you will be able 
                       to make up your mind about us within the possible shortest time – our target is 3 minutes.</p>
@@ -208,20 +216,13 @@ class App extends Component {
                     <p>SOGREM is wholesomely involved <b><em><ins>essencially</ins></em></b> in tax &amp; tax related solutions.<br></br>
                        <br></br>
 
-                       Taxes:<br></br>
-                          &emsp;<FaCheck /> IRS/State individual and business tax preparation,<br></br>
-                          &emsp;<FaCheck /> IRS/State tax resolutions, etc.,<br></br>
+                       Our Professional Services Include:<br></br>
+                       <div className="check-links">
+                          &emsp;<FaCheck /> <Link to="/Taxes">IRS/State individual and business tax preparation,</Link><br></br>
+                          &emsp;<FaCheck /> <Link to="/Representation">IRS/State tax resolutions, etc.,</Link><br></br>
+                          &emsp;<FaCheck /> <Link to="/BusinessAdvisory">Business advisory services</Link><br></br>
                         <br></br>
-                       Tax Related Solutions:<br></br>
-                          &emsp;<FaCheck /> Payroll, bookkeeping, QuickBooks<br></br>
-                          &emsp;<FaCheck /> Business advisory services<br></br>
-                        <br></br>
-
-                      Our Payroll &amp; bookkeeping services are tax advantage(s) focused, driven to ensure 
-                      optimal compliances at Federal, State, County or City tax levels. With us, you will
-                      always be fully certain of the possible best tax position you could be. <em>You could not be
-                      better any where else!!</em> Tax is serious matter, second to health, both for the individual
-                      and business, this is the level of seriousness our services apply.</p>
+                       </div></p>
                   </div>     
                     <div className="homepage-body2">
                       <h1>Our Service Delivery Platform</h1>
@@ -262,11 +263,20 @@ class App extends Component {
             
             <div className="footer-parent-div">
               <footer>
-                <div>
+                  <div className="footer-certifications">
+                    <div className="footer-imgs">
+                      <img src={efile}/>
+                    </div>
+                    <div className="footer-imgs">
+                      <img src={caa}/>
+                    </div>
+                    <div className="footer-imgs">
+                      <img src={irsea}/>
+                    </div>                   
+                  </div>
                   <p>
                     Created by Ebun Oludemi
                   </p>
-                </div>
                 <div className="footer-links">
                 <Link to="/About-us">About Us</Link>
                 <br></br>

@@ -25,6 +25,20 @@
   padding-top: 50px;
   margin-top: -50px;
 }
+.upload-scroll {
+  padding: 20px;
+  width: 300px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #8FACBD;
+  border: none;
+  color: white;
+  font-family: allegro;
+  top: 734px;
+  position: absolute;
+  left: 550px;
+  cursor: pointer;
+}
 .whole-itin-body {
   width: 70%;
   position: relative;
@@ -38,7 +52,7 @@
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 30px;
-  margin-top: 300px;
+  margin-top: 340px;
 }
 .itin-body p {
   font-size: 30px;
@@ -113,6 +127,29 @@
 }
 .itin-body4 h3 {
   font-size: 30px;
+}
+.upload-body {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: center;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.upload-body input[type=submit] {
+  background-color:  #8FACBD;
+  font-size: 17px;
+  text-align: center;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+}
+.upload-body input[type=submit]:hover {
+  color: black;
+  cursor: pointer;
 }
 /* @MEDIA */
 @media only screen and (max-width : 600px) {

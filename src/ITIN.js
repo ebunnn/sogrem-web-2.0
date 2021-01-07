@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './css/ITIN.css';
-import itinimg from './images/itinpic.jpg';
+import itinsimg from './images/itinspic.jpg';
+import { FaAngleDoubleDown } from 'react-icons/fa';
+import { Link as ScrollLink } from "react-scroll";
 //import { render } from '@testing-library/react';
 
 
@@ -15,7 +17,20 @@ class ITIN extends Component {
                     <h1>ITIN - Individual Tax<br></br>Identification Number</h1>
                 </div>
                 <div className="itin-image">
-                    <img src={itinimg} alt="" />
+                    <img src={itinsimg} alt="" />
+                    {/* <button>UPLOAD W-7</button> */}
+                </div>
+                <div>
+                <ScrollLink
+                    activeClass="active"
+                    to="uploading-scroll"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={100}
+                    className="upload-scroll"
+                >UPLOAD W-7 DOCUMENT <FaAngleDoubleDown /></ScrollLink>
+                    {/* <button className="upload-scroll">UPLOAD W-7</button> */}
                 </div>
                 <div className="whole-itin-body">
                     <div className="itin-body">
@@ -105,6 +120,13 @@ class ITIN extends Component {
                         </p>
                         <h3>SOGREM Associates is a Certifying Acceptance Agent: Olusoga Oludemi dba Sogrem Associates (***put link here***)</h3>
 
+                    </div>
+                    <div className="upload-body" id="uploading-scroll">
+                        <h1>UPLOAD W-7 DOCUMENT(S)</h1>
+                        <form action="#page">
+                            <input type="file" id="w7File" name="filename" />
+                            <input type="submit"/>
+                        </form>
                     </div>
                 </div>    
             </div>

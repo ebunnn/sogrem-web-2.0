@@ -24,3 +24,26 @@
   text-align: left;
   padding-left: 35px;
 }
+.aboutus-body {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.whole-aboutus-body {
+  width: 70%;
+  position: relative;
+  display: contents;
+}
+.aboutus-body p {
+  font-size: 30px;
+  text-align: left;
+}
+.aboutus-body h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+}

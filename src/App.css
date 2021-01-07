@@ -39,6 +39,17 @@
   from{top: -68px;}
   to{top: 266px;}
 }
+.title-statement {
+  color: white;
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  font-size: 40px;
+  width: fit-content;
+  font-family: allegro;
+  background-color: rgba(91, 164, 207, 0.4);
+
+}
 .efile-logo {
   position: absolute;
   height: 10%;
@@ -98,9 +109,6 @@
 .main-btn:hover {
   background-color: white;
   color: #8FACBD;
-}
-html {
-  scroll-behavior: smooth;
 }
 #scroll {
   scroll-behavior: smooth;
@@ -360,25 +368,6 @@ html {
 .rep-dropdown:hover .rep-dropdown-content {
   display: block;
 }
-/*FOOTER*/
-footer {
-  background-color: #f0f0f0;
-  padding-top: 1px;
-  padding-bottom: 50px;
-  /*display: flow-root;*/
-}
-.footer-parent-div {
-  bottom: -60px;
-  position: inherit;
-  width: 100%;
-  font-family: allegro;
-}
-.footer-links {
-  display: grid;
-}
-.more-info {
-  font-family: allegro;
-}
 
 /*BODY*/
 .whole-hp-body {
@@ -466,6 +455,42 @@ footer {
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
+}
+.check-links a {
+  color: black;
+  text-decoration: underline;
+}
+/*FOOTER*/
+footer {
+  background-color: #f0f0f0;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  /*display: flow-root;*/
+}
+.footer-parent-div {
+  bottom: -60px;
+  position: inherit;
+  width: 100%;
+  font-family: allegro;
+  text-align: center;
+}
+.footer-links {
+  display: grid;
+}
+.more-info {
+  font-family: allegro;
+}
+.footer-certifications {
+  display: inline-flex;
+}
+.footer-certifications img {
+  /* position: absolute;
+  display: block; */
+  height: auto;
+  width: 50%;
+}
+.footer-imgs {
+  flex: 30%
 }
 /* @MEDIA  */
 @media only screen and (max-width : 1300px) {

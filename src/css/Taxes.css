@@ -41,6 +41,53 @@
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
 }
+.taxes-upload-2020 {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.taxes-upload-years {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.taxes-upload-2020 input[type=submit] {
+  background-color:  #8FACBD;
+  font-size: 17px;
+  text-align: center;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+}
+.taxes-upload-2020 input[type=submit]:hover {
+  color: black;
+  cursor: pointer;
+}
+.taxes-upload-years input[type=submit] {
+  background-color:  #8FACBD;
+  font-size: 17px;
+  text-align: center;
+  font-family: allegro;
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 5px;
+}
+.taxes-upload-years input[type=submit]:hover {
+  color: black;
+  cursor: pointer;
+}
+
 /* @MEDIA */
 
 @media only screen and (max-width : 640px) {
