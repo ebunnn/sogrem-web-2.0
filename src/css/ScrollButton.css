@@ -1,0 +1,65 @@
+.main-btn {
+    text-align: center;
+    padding: 14px 80px;
+    font-size: 20px;
+    font-family: allegro;
+    font-weight: bold;
+    background-color: #8FACBD;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: flex-end;
+    cursor: pointer;
+    text-decoration: none;
+    animation-name: intro-btn;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    scroll-behavior: smooth;
+}
+.main-btn:hover {
+    background-color: white;
+    color: #8FACBD;
+  }
+@media only screen and (max-width : 1300px) {
+    .main-btn  {
+      margin-left: -70px;
+      margin-top: -50px;
+    }
+}
+@media only screen and (max-width : 1134px) {
+    .main-btn  {
+      margin-left: -70px;
+      margin-top: -50px;
+    }
+}
+@media only screen and (max-width : 933px) {
+    .main-btn {
+      margin-top: -21px;
+    }
+}
+@media only screen and (max-width : 900px) {
+    .main-btn {
+      margin-top: -120px;
+      margin-left: -60px;
+    }
+
+}
+@media only screen and (max-width : 744px) {
+    .main-btn {
+      margin-top: -157px;
+      margin-left: -60px;
+    }
+  }
+@media only screen and (max-width : 715px) {
+    .main-btn {
+      margin-top: -168px;
+      margin-left: -60px;
+    }
+}
+@media only screen and (max-width : 680px) {
+    .main-btn {
+      display: none;
+    }
+}

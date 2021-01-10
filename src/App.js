@@ -8,7 +8,9 @@ import Login from './Login';
 import Taxes from './Taxes';
 import Representation from './Representation';
 import BusinessAdvisory from './BusinessAdvisory';
-import { FaCaretDown, FaAngleDoubleDown, FaBars, FaCheck } from 'react-icons/fa';
+import Footer from './Footer';
+import ScrollButton from './ScrollButton';
+import { FaAngleDoubleDown, FaBars, FaCheck } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
 import salogo from './images/salogo.png';
 import mainimg from './images/homepage-img.jpg';
@@ -25,8 +27,8 @@ import {
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
   } 
 
   render() {
@@ -183,9 +185,9 @@ class App extends Component {
                 <div> 
                   <h1 className="main-title">SOGREM ASSOCIATES</h1>
                   <h3 className="title-statement">Professional Tax Preperation Service<br></br> IRS + 50 States &amp; DC</h3>
-                </div>  
-                  {/* <a href="#scroll" className="main-btn">Get Started  <FaAngleDoubleDown /></a> */}
-                  <ScrollLink
+                  <h3 className="title-statement2">Professional Tax<br/>Preperation Service<br></br> IRS + 50 States &amp; DC</h3>
+                </div> 
+                  {/* <ScrollLink
                     activeClass="active"
                     to="scroll"
                     spy={true}
@@ -193,14 +195,15 @@ class App extends Component {
                     offset={0}
                     duration={300}
                     className="main-btn"
-                >Get Started  <FaAngleDoubleDown /></ScrollLink>
+                >Get Started  <FaAngleDoubleDown /></ScrollLink> */}
+                    <ScrollButton />
                     <div id="scroll" className="certifications">
                       <div className="certifications-logo">
-                        <img src={efile}/>
+                        <img src={efile} alt=""/>
                       </div>
                       <div className="certifications-logo2">
-                        <img src={caa}/>
-                        <img src={irsea}/>
+                        <img src={caa} alt=""/>
+                        <img src={irsea} alt=""/>
                       </div>
                     </div>
                 </div>
@@ -261,27 +264,9 @@ class App extends Component {
               </Route>
             </Switch>
             
-            <div className="footer-parent-div">
+            <div className="footer-div">
               <footer>
-                  <div className="footer-certifications">
-                    <div className="footer-imgs">
-                      <img src={efile}/>
-                    </div>
-                    <div className="footer-imgs">
-                      <img src={caa}/>
-                    </div>
-                    <div className="footer-imgs">
-                      <img src={irsea}/>
-                    </div>                   
-                  </div>
-                  <p>
-                    Created by Ebun Oludemi
-                  </p>
-                <div className="footer-links">
-                <Link to="/About-us">About Us</Link>
-                <br></br>
-                <Link to="/Contact-us">Contact Us</Link>
-                </div>
+                <Footer />
               </footer>
             </div>
           </div>

@@ -1,0 +1,21 @@
+.rep-image img{
+  width: 100%;
+  object-fit: cover;
+  height: 685px;
+}
+.rep-title {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-family: allegro;
+  font-weight: bold;
+  background-color: rgba(91, 164, 207, 0.6);
+  color: white;
+  border-radius: 5px;
+}
+

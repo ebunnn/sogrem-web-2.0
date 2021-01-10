@@ -48,7 +48,9 @@
   width: fit-content;
   font-family: allegro;
   background-color: rgba(91, 164, 207, 0.4);
-
+}
+.title-statement2 {
+  display: none;
 }
 .efile-logo {
   position: absolute;
@@ -81,35 +83,11 @@
   padding: 5px;
   margin-left: -80px;
 }
-
-.main-btn {
-    text-align: center;
-    padding: 14px 80px;
-    font-size: 20px;
-    font-family: allegro;
-    font-weight: bold;
-    background-color: #8FACBD;
-    color: inherit;
-    border: none;
-    border-radius: 5px;
-    display: inline-flex;
-    align-items: flex-end;
-    cursor: pointer;
-    text-decoration: none;
-    animation-name: intro-btn;
-    animation-duration: 3s;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
-    scroll-behavior: smooth;
-}
 @keyframes intro-btn {
   from{top: 800px;}
   to{top: 550px;}
 }
-.main-btn:hover {
-  background-color: white;
-  color: #8FACBD;
-}
+
 #scroll {
   scroll-behavior: smooth;
 }
@@ -461,45 +439,17 @@
   text-decoration: underline;
 }
 /*FOOTER*/
-footer {
-  background-color: #f0f0f0;
-  padding-top: 1px;
-  padding-bottom: 50px;
-  /*display: flow-root;*/
-}
-.footer-parent-div {
-  bottom: -60px;
-  position: inherit;
-  width: 100%;
-  font-family: allegro;
-  text-align: center;
-}
-.footer-links {
-  display: grid;
-}
 .more-info {
   font-family: allegro;
-}
-.footer-certifications {
-  display: inline-flex;
-}
-.footer-certifications img {
-  /* position: absolute;
-  display: block; */
-  height: auto;
-  width: 50%;
-}
-.footer-imgs {
-  flex: 30%
 }
 /* @MEDIA  */
 @media only screen and (max-width : 1300px) {
   .main-title {
     font-size: 80px;
   }
-  .main-btn  {
-    margin-left: -70px;
-    margin-top: -50px;
+  .title-statement {
+    top: 3%;
+    left: 24%;
   }
 }
 @media only screen and (max-width : 1134px) {
@@ -519,10 +469,6 @@ footer {
   .main-title {
     font-size: 70px;
   }
-  .main-btn  {
-    margin-left: -70px;
-    margin-top: -50px;
-  }
   .salogo img {
     width: 43px;
   }
@@ -539,11 +485,11 @@ footer {
   }
 }
 @media only screen and (max-width : 933px) {
-  .main-btn {
-    margin-top: -21px;
-}
   .main-title {
     font-size: 66px;
+  }
+  .title-statement {
+    left: 18%;
   }
 }
 @media only screen and (max-width : 900px) {
@@ -572,10 +518,6 @@ footer {
     font-size: 52px;
     margin-top: -65px;
   }
-  .main-btn {
-    margin-top: -120px;
-    margin-left: -60px;
-  }
   .Nav-bar .bars-icon {
     display: block;
     background-color: #8FACBD;
@@ -591,6 +533,17 @@ footer {
     display: none;
   }
 }
+@media only screen and (max-width : 840px) {
+  .title-statement {
+    left: 12%;
+  }
+}
+@media only screen and (max-width : 780px) {
+  .title-statement {
+    left: 21%;
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width : 744px) {
   .main-title {
     font-size: 50px;
@@ -604,26 +557,27 @@ footer {
   .main-title {
     font-size: 40px;
   }
-  .main-btn {
-    margin-top: -168px;
-    margin-left: -60px;
-  }
 }
 @media only screen and (max-width : 680px) {
   .main-title {
     font-size: 35px;
     margin-top: -80px;
   }
-  .main-btn {
-    display: none;
-  }
   .more-info {
     padding: 15px;
+  }
+  .title-statement {
+    left: 15%;
+    font-size: 30px;
   }
 }
 @media only screen and (max-width : 600px) {
   .main-title {
     margin-top: -110px;
+  }
+  .title-statement {
+    left: 16%;
+    font-size: 25px;
   }
 }
 @media only screen and (max-width : 551px) {
@@ -644,10 +598,20 @@ footer {
     padding: 30px;
   }
 }
+@media only screen and (max-width : 535px) {
+  .title-statement {
+    left: 13%;
+    font-size: 25px;
+  }
+}
 @media only screen and (max-width : 497px) {
   .main-title {
     font-size: 25px;
     margin-top: -150px;
+  }
+  .title-statement {
+    left: 17%;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width : 450px) {
@@ -684,6 +648,32 @@ footer {
     font-size: 20px;
     margin: -3px;
   }
+  .title-statement {
+    display: none;
+  }
+  .title-statement2 {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 3%;
+    width: fit-content;
+    font-family: allegro;
+    background-color: rgba(91, 164, 207, 0.4);
+    left: 10%;
+    font-size: 37px;
+  }
+}
+@media only screen and (max-width : 415px) {
+  .title-statement2 {
+    font-size: 30px;
+    left: 15%;
+  }
+}
+@media only screen and (max-width : 360px) {
+  .title-statement2 {
+    font-size: 30px;
+    left: 11%;
+  }
 }
 @media only screen and (max-width : 350px) {
   .whole-hp-body h1 {
@@ -694,5 +684,20 @@ footer {
   }
   .whole-hp-body p {
     font-size: 15px;
+  }
+  .title-statement2 {
+    left: 10%;
+  }
+}
+@media only screen and (max-width : 328px) {
+  .title-statement2 {
+    font-size: 25px;
+    left: 15%;
+    top: 15%;
+  }
+}
+@media only screen and (max-width : 300px) {
+  .title-statement2 {
+    left: 11%;
   }
 }

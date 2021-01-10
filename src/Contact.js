@@ -4,8 +4,8 @@ import contactimg from './images/contact-image-cropped.jpg';
 import {  FaPhone, FaClock, FaMailBulk, FaHome } from 'react-icons/fa';
 
 class Contact extends Component {
-    // constructor(props) {
-    //     super(props)
+    // constructor() {
+    //     super()
     // }
 
     render() {

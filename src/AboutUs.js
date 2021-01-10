@@ -27,7 +27,34 @@ class AboutUs extends Component {
                                 SOGREM is also an authorized IRS Certified Acceptance Agents (CAA) and <a href="https://www.irs.gov/efile-index-taxpayer-search?zip=20724&state=23&page=1" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
                                 Electronic Return Originator (ERO).</p>
                         </div>    
-                    </div>        
+                    </div>  
+                    <div>
+                        <h1>Meet The Founders</h1>
+                        <div className="row">
+                            <div className="column">
+                                <div className="card">
+                                    <div className="founder-details">
+                                        <h2>Olusoga Oludemi</h2>
+                                        <p>CEO &amp; Founder</p>
+                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                        <p>jane@example.com</p>
+                                    </div>
+                                </div>
+                            <div className="column">
+                                <div className="card">
+                                    <div className="founder-details">
+                                        <h2>Oluremi Oludemi</h2>
+                                        <p>CEO &amp; Founder</p>
+                                        <p>Some text that describes me lorem ipsum ipsum lorem</p>
+                                        <p>jane@example.com</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>      
                 </div>
             </div>
         )

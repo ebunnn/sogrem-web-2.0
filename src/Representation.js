@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
 import './css/Representation.css';
+import reppic from './images/representationpic.jpg';
+import BodyBox from "./BodyBox";
 
 class Representation extends Component {
-    constructor(props) {
-        super(props); {
-
-        }
+    constructor() {
+        super()
     }
     render() {
         return (
             <div>
-                <h1>Representation</h1>
+                <div className="rep-title">
+                    <h1>Representation</h1>
+                </div>
+                <div className="rep-image">
+                    <img src={reppic} alt="" />
+                </div>
+                <div>
+                    <BodyBox header="Representation"
+                    paragraph1="Sogrem Associates has extensive experience and skills in representing individuals and
+                    businesses at all levels of IRS situations. We manage the whole process from
+                    addressing documentation requests to carefully reviewing IRS inquiries for proper
+                    response."
+                     
+                    paragraph2="Our professional staff fully understands IRS questions to rid you of the hassle of an IRS
+                    audit and ultimately provide you with the best possible solution. Aside from the
+                    aggravation, IRS audits can pretty costly, too. We can alleviate that burden as we guide
+                    you through the IRS audit process."
+                    />
+                </div>
             </div> 
-
         )
     }
 }

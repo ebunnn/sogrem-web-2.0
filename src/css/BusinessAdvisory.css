@@ -1,0 +1,41 @@
+.businessad-image img {
+  object-fit: cover;
+  height: 685px;
+  width: 100%;
+}
+.businessad-title {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 0px 20px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-family: allegro;
+  font-weight: bold;
+  background-color: rgba(91, 164, 207, 0.6);
+  color: white;
+  border-radius: 5px;
+}
+.businessad-body {
+  font-family: allegro;
+  padding: 50px;
+  padding-top: 5px;
+  text-align: left;
+  border: 2px solid white;
+  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
+  margin: 30px;
+}
+.whole-businessad-body {
+  width: 70%;
+  position: relative;
+  display: contents;
+}
+.businessad-body p {
+ font-size: 30px;
+ text-align: left;
+}
+.businessad-body h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: rgba(91, 164, 207, 0.4);
+}
