@@ -5,6 +5,8 @@
   position: relative;
   padding-bottom: 10px;
   font-family: allegro;
+  color: #666;
+  font-weight: bold;
 }
 .footer-base-div {
   width: 100%;
@@ -30,6 +32,10 @@
   width: 20%;
   top: 11%;
   left: 9%;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #666;
 }
 
 @media only screen and (max-width : 1070px) {

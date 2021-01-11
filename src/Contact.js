@@ -17,7 +17,6 @@ class Contact extends Component {
                 <div className="contact-img">
                     <img src={contactimg} alt="" />
                 </div>
-                <div className="contact-address">
                     <div className="contact-info"> 
                         <div className="telephone">
                             <h1>Telephone <FaPhone /></h1>
@@ -46,8 +45,7 @@ class Contact extends Component {
                             <h2>Visiting Hours <FaClock /></h2>
                             <hr></hr>
                             <h3>9AM-5PM</h3>
-                        </div>
-                </div>    
+                        </div>  
             </div>
             
         )

@@ -10,7 +10,7 @@ import Representation from './Representation';
 import BusinessAdvisory from './BusinessAdvisory';
 import Footer from './Footer';
 import ScrollButton from './ScrollButton';
-import { FaAngleDoubleDown, FaBars, FaCheck } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
 import salogo from './images/salogo.png';
 import mainimg from './images/homepage-img.jpg';
@@ -24,13 +24,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ResponsiveNav from './ResponsiveNav';
 
 
 class App extends Component {
   constructor() {
     super();
   } 
-
   render() {
     return (
       <Router>
@@ -39,7 +39,7 @@ class App extends Component {
             <header className="App-header">
               <div>
                 <div className="Nav-bar" id="TheNavBar">
-                  <Link to="/Home">Home</Link>
+                  <Link to="/">Home</Link>
                   <div className="taxes-dropdown">
                     <Link to="/Taxes" className="taxes-dropbtn">Taxes</Link>
                     {/* <div className="taxes-dropdown-content">
@@ -129,7 +129,7 @@ class App extends Component {
                         <a href="#Example6">EX</a>
                       </div> */}
                   </div> 
-                  <a href="javascript:void(0);"className="bars-icon"><FaBars/></a>
+                    {/* <a href="javascript:void(0);"className="bars-icon"><FaBars/></a> */}
                   {/*<button className="more-btn">More<FaCaretDown/></button>*/}
                       {/*<div className="signup-login">
                         <Link to="/Sign-up" className="sign-up-btn">Sign Up</Link>
@@ -148,7 +148,12 @@ class App extends Component {
                     <img src={salogo} alt="" />
                     </div>           
                 </div>
+                <div className="responsive-nav">
+                  <ResponsiveNav />
+                </div>
+                
               </div>  
+              
             </header>
             
             <Switch>

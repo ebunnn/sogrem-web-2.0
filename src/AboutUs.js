@@ -16,7 +16,8 @@ class AboutUs extends Component {
                     {<img src={aboutUsImg} alt="aboutUsimg" />}
                 </div>
                 <div>
-                  <h1 className="body-title">Sogrem Associates is...</h1>
+                  <div>
+                  </div>
                     <div className="whole-aboutus-body">
                         <div className="aboutus-body">
                             <h1>IRS Enabling Credentials</h1>
@@ -29,28 +30,23 @@ class AboutUs extends Component {
                         </div>    
                     </div>  
                     <div>
-                        <h1>Meet The Founders</h1>
-                        <div className="row">
-                            <div className="column">
-                                <div className="card">
-                                    <div className="founder-details">
+                        <div>
+                            <div className="founders-div">
+                                <h1>Meet The Founders</h1>
+                                <div className="row">
+                                    <div className="founder1">
                                         <h2>Olusoga Oludemi</h2>
                                         <p>CEO &amp; Founder</p>
                                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                         <p>jane@example.com</p>
-                                    </div>
-                                </div>
-                            <div className="column">
-                                <div className="card">
-                                    <div className="founder-details">
+                                    </div>    
+                                    <div className="founder2">
                                         <h2>Oluremi Oludemi</h2>
                                         <p>CEO &amp; Founder</p>
                                         <p>Some text that describes me lorem ipsum ipsum lorem</p>
                                         <p>jane@example.com</p>
                                     </div>
                                 </div>
-
-                            </div>
                             </div>
                         </div>
                         

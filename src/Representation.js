@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/Representation.css';
 import reppic from './images/representationpic.jpg';
 import BodyBox from "./BodyBox";
+import ScrollButton from "./ScrollButton";
 
 class Representation extends Component {
     constructor() {
@@ -16,6 +17,8 @@ class Representation extends Component {
                 <div className="rep-image">
                     <img src={reppic} alt="" />
                 </div>
+                <ScrollButton />
+                    
                 <div>
                     <BodyBox header="Representation"
                     paragraph1="Sogrem Associates has extensive experience and skills in representing individuals and

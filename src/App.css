@@ -438,6 +438,9 @@
   color: black;
   text-decoration: underline;
 }
+.responsive-nav {
+  display: none;
+}
 /*FOOTER*/
 .more-info {
   font-family: allegro;
@@ -478,10 +481,34 @@
     padding-right: 10px;
     margin-top: 3px;
   }
+  .certifications-logo {
+    position: absolute;
+    top: 103%;
+    width: 28%;
+    left: 4%;
+  }
+  .certifications-logo2 {
+    flex: none;
+    padding: none;
+    margin-left: none;
+    position: absolute;
+    width: 70%;
+    left: 34%;
+    top: 104%;
+  }
 }
 @media only screen and (max-width : 955px) {
   .taxid-dropdown-across {
     width: 160px;
+  }
+  .certifications-logo {
+    width: 34%;
+    left: -4%;
+  }
+  .certifications-logo2 {
+    width: 74%;
+    left: 32%;
+    top: 105%;
   }
 }
 @media only screen and (max-width : 933px) {
@@ -498,8 +525,12 @@
     height: auto;
   }
   .Nav-bar {
+    display: none;
     width: 100%;
     height: 60px;
+  }
+  .responsive-nav {
+    display: block;
   }
   .Nav-bar a {
     display: none;
@@ -552,6 +583,16 @@
     margin-top: -157px;
     margin-left: -60px;
   }
+  .certifications-logo {
+    width: 33%;
+    left: -3%;
+    top: 107%;
+  }
+  .certifications-logo2 {
+    width: 73%;
+    left: 34%;
+    top: 109%;
+  }
 }
 @media only screen and (max-width : 715px) {
   .main-title {
@@ -569,6 +610,17 @@
   .title-statement {
     left: 15%;
     font-size: 30px;
+  }
+}
+@media only screen and (max-width : 660px) {
+  .certifications-logo {
+    width: 31%;
+    left: 33%;
+    top: 101%;
+  }
+  .certifications-logo2 {
+    left: 26%;
+    top: 126%;
   }
 }
 @media only screen and (max-width : 600px) {
@@ -602,6 +654,14 @@
   .title-statement {
     left: 13%;
     font-size: 25px;
+  }
+  .certifications-logo {
+    width: 37%;
+    left: 29%;
+  }
+  .certifications-logo2 {
+    top: 133%;
+    width: 78%;
   }
 }
 @media only screen and (max-width : 497px) {
@@ -662,11 +722,34 @@
     left: 10%;
     font-size: 37px;
   }
+  .certifications-logo {
+    width: 43%;
+    left: 26%;
+    top: 103%;
+  }
+  .certifications-logo2 {
+    top: 140%;
+    width: 85%;
+  }
 }
 @media only screen and (max-width : 415px) {
   .title-statement2 {
     font-size: 30px;
     left: 15%;
+  }
+}
+@media only screen and (max-width : 375px) {
+  .certifications-logo {
+    width: 47%;
+    left: 22%;
+  }
+  .certifications-logo2 {
+    top: 145%;
+    width: 93%;
+    left: 24%;
+  } 
+  .title-statement2 {
+    left: 12%;
   }
 }
 @media only screen and (max-width : 360px) {
@@ -695,9 +778,31 @@
     left: 15%;
     top: 15%;
   }
+  .certifications-logo {
+    width: 52%;
+    left: 21%;
+    top: 107%;
+  }
+  .certifications-logo2 {
+    top: 155%;
+    width: 92%;
+    left: 27%;
+  } 
 }
 @media only screen and (max-width : 300px) {
   .title-statement2 {
     left: 11%;
   }
+}
+@media only screen and (max-width : 280px) {
+  .certifications-logo {
+    width: 56%;
+    left: 17%;
+    top: 110%;
+  }
+  .certifications-logo2 {
+    top: 168%;
+    width: 95%;
+    left: 29%;
+  } 
 }
