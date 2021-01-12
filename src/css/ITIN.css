@@ -203,6 +203,10 @@
   .upload-body h1 {
     font-size: 17px;
   }
+  .upload-body input[type=submit] {
+    font-size: 13px;
+    padding: 10px 9px;
+  }
 }
 @media only screen and (max-width : 400px) {
   .itin-title {

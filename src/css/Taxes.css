@@ -108,6 +108,27 @@
     padding: 30px;
   }
 }
+@media only screen and (max-width : 500px) {
+  .taxes-upload-years input[type=submit] {
+    font-size: 15px;
+    padding: 11px 10px;
+    margin-top: 20px;
+  }
+  .taxes-upload-years input[type=file] {
+    font-size: 10px;
+  }
+  .taxes-upload-2020 input[type=submit] {
+    font-size: 15px;
+    padding: 11px 10px;
+    margin-top: 20px;
+  }
+  .taxes-upload-2020 input[type=file] {
+    font-size: 10px;
+  }
+  .taxes-uploads h1 {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width : 470px) {
   .taxes-title {
     font-size: 18px;
@@ -121,6 +142,9 @@
     font-size: 20px;
   }
   .whole-taxes-body p {
+    font-size: 20px;
+  }
+  .taxes-uploads h1 {
     font-size: 20px;
   }
 }

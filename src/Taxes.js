@@ -39,19 +39,21 @@ class Taxes extends Component {
                         C-Corps
                         </h3>
                     </div>
-                    <div className="taxes-upload-2020">
-                        <h1>UPLOAD YOUR 2020 TAX DOCUMENT(S)</h1>
-                        <form action="#page">
-                            <input type="file" id="w7File" name="filename" />
-                            <input type="submit"/>
-                        </form>
-                    </div>
-                    <div className="taxes-upload-years">
-                        <h1>UPLOAD OTHER YEAR(S) DOCUMENT(S)</h1>
-                        <form action="#page">
-                            <input type="file" id="w7File" name="filename" />
-                            <input type="submit"/>
-                        </form>
+                    <div className="taxes-uploads">
+                        <div className="taxes-upload-2020">
+                            <h1>UPLOAD YOUR 2020 TAX DOCUMENT(S)</h1>
+                            <form action="#page">
+                                <input type="file" id="w7File" name="filename" />
+                                <input type="submit"/>
+                            </form>
+                        </div>
+                        <div className="taxes-upload-years">
+                            <h1>UPLOAD OTHER YEAR(S) DOCUMENT(S)</h1>
+                            <form action="#page">
+                                <input type="file" id="w7File" name="filename" />
+                                <input type="submit"/>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
