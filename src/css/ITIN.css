@@ -173,6 +173,17 @@
   .itin-body4 {
     padding: 30px;
   }
+  .upload-body {
+    font-size: 12px;
+  }
+  .upload-body input[type=submit] {
+    font-size: 15px;
+    padding: 11px 10px;
+    margin-top: 20px;
+  }
+  .upload-body input[type=file] {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width : 452px) {
   .itin-title {
@@ -186,6 +197,11 @@
   }
   .whole-itin-body p {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width : 418px) {
+  .upload-body h1 {
+    font-size: 17px;
   }
 }
 @media only screen and (max-width : 400px) {

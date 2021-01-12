@@ -445,6 +445,9 @@
 .more-info {
   font-family: allegro;
 }
+.more-info a, .more-info a:visited {
+  color: blue;
+}
 /* @MEDIA  */
 @media only screen and (max-width : 1300px) {
   .main-title {

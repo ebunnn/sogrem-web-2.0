@@ -10,9 +10,10 @@ import Representation from './Representation';
 import BusinessAdvisory from './BusinessAdvisory';
 import Footer from './Footer';
 import ScrollButton from './ScrollButton';
+import ResponsiveNav from './ResponsiveNav';
 import { FaCheck } from 'react-icons/fa';
 import ScrollToTop from './ScrollToTop';
-import salogo from './images/salogo.png';
+import salogo from './images/sogremLogo1.png';
 import mainimg from './images/homepage-img.jpg';
 import efile from './images/efile-img.png';
 import caa from './images/caa.png';
@@ -24,7 +25,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import ResponsiveNav from './ResponsiveNav';
+
 
 
 class App extends Component {

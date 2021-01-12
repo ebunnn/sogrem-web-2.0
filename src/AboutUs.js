@@ -28,29 +28,22 @@ class AboutUs extends Component {
                                 SOGREM is also an authorized IRS Certified Acceptance Agents (CAA) and <a href="https://www.irs.gov/efile-index-taxpayer-search?zip=20724&state=23&page=1" target="_blank" rel="noopener noreferrer"> Authorized efile Provider</a> aka 
                                 Electronic Return Originator (ERO).</p>
                         </div>    
-                    </div>  
-                    <div>
-                        <div>
-                            <div className="founders-div">
-                                <h1>Meet The Founders</h1>
-                                <div className="row">
-                                    <div className="founder1">
-                                        <h2>Olusoga Oludemi</h2>
-                                        <p>CEO &amp; Founder</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                                        <p>jane@example.com</p>
-                                    </div>    
-                                    <div className="founder2">
-                                        <h2>Oluremi Oludemi</h2>
-                                        <p>CEO &amp; Founder</p>
-                                        <p>Some text that describes me lorem ipsum ipsum lorem</p>
-                                        <p>jane@example.com</p>
-                                    </div>
-                                </div>
+                    </div> 
+                        <div className="founders-div">
+                            <h1>Meet the Founders of Sogrem Associates</h1>
+                            <div className="founder-cards">
+                                <div className="founder1">
+                                    <h3>Olusoga Oludemi</h3>
+                                    <h5>CEO &amp; Founder</h5>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                </div> 
+                                <div className="founder2">
+                                    <h3>Oluremi Oludemi</h3>
+                                    <h5>CEO &amp; Founder</h5>
+                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>        
+                                </div>  
                             </div>
                         </div>
-                        
-                    </div>      
                 </div>
             </div>
         )

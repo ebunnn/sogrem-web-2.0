@@ -20,18 +20,17 @@ class ITIN extends Component {
                     <img src={itinsimg} alt="" />
                     {/* <button>UPLOAD W-7</button> */}
                 </div>
-                <div>
-                <ScrollLink
-                    activeClass="active"
-                    to="uploading-scroll"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={100}
-                    className="upload-scroll"
-                >UPLOAD W-7 DOCUMENT <FaAngleDoubleDown /></ScrollLink>
-                    {/* <button className="upload-scroll">UPLOAD W-7</button> */}
-                </div>
+                {/* <div>
+                    <ScrollLink
+                        activeClass="active"
+                        to="uploading-scroll"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={100}
+                        className="upload-scroll"
+                    >UPLOAD W-7 DOCUMENT <FaAngleDoubleDown /></ScrollLink>
+                </div> */}
                 <div className="whole-itin-body">
                     <div className="itin-body">
                         <h1>What is an ITIN?:</h1>

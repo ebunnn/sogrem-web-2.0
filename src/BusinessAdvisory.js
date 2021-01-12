@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/BusinessAdvisory.css';
 import busadpic from './images/businessadpic.jpg';
+import ScrollButtonTwo from "./ScrollButton2";       
 import { FaCheck } from 'react-icons/fa';
 
 class BusinessAdvisory extends Component {
@@ -13,9 +14,13 @@ class BusinessAdvisory extends Component {
                 <div className="businessad-title">
                     <h1>Business Advisory Services</h1>
                 </div>
+                <div className="businessad-title2">
+                    <h1>Business Advisory<br/>Services</h1>
+                </div>
                 <div className="businessad-image">
                     <img src={busadpic} alt="business advisory picture" />
                 </div>
+                
                 <div className="whole-businessad-body">
                     <div className="businessad-body">
                         <h1>Business Advisory</h1>

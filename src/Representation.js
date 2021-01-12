@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/Representation.css';
 import reppic from './images/representationpic.jpg';
 import BodyBox from "./BodyBox";
-import ScrollButton from "./ScrollButton";
+import ScrollButtonTwo from "./ScrollButton2";
 
 class Representation extends Component {
     constructor() {
@@ -17,9 +17,8 @@ class Representation extends Component {
                 <div className="rep-image">
                     <img src={reppic} alt="" />
                 </div>
-                <ScrollButton />
                     
-                <div>
+                <div className="rep-body" id="scroll-two">
                     <BodyBox header="Representation"
                     paragraph1="Sogrem Associates has extensive experience and skills in representing individuals and
                     businesses at all levels of IRS situations. We manage the whole process from

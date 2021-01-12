@@ -21,3 +21,35 @@
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
 }
+@media only screen and (max-width : 740px) {
+  .box-content h1 {
+    font-size: 40px;
+  }
+  .box-content p {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width : 575px) {
+  .box-content h1 {
+    font-size: 30px;
+  }
+  .box-content p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width : 400px) {
+  .box-content h1 {
+    font-size: 25px;
+  }
+  .box-content p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width : 333px) {
+  .box-content h1 {
+    font-size: 20px;
+  }
+  .box-content p {
+    font-size: 13px;
+  }
+}

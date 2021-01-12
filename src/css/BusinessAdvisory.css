@@ -16,6 +16,20 @@
   color: white;
   border-radius: 5px;
 }
+.businessad-title2 {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 0px 20px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-family: allegro;
+  font-weight: bold;
+  background-color: rgba(91, 164, 207, 0.6);
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
 .businessad-body {
   font-family: allegro;
   padding: 50px;
@@ -38,4 +52,62 @@
   font-size: 50px;
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
+}
+@media only screen and (max-width : 800px) {
+  .businessad-title {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width : 740px) {
+  .businessad-title {
+    font-size: 15px;
+  }
+  .businessad-body p {
+    font-size: 25px;
+  }
+  .businessad-body h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width : 575px) {
+  .businessad-title {
+    display: none;
+  }
+  .businessad-title2 {
+    display: block;
+    font-size: 16px;
+  }
+  .businessad-body p {
+    font-size: 20px;
+  }
+  .businessad-body h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width : 465px) {
+  .businessad-title2 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width : 400px) {
+  .businessad-title2 {
+    font-size: 10px;
+  }
+  .businessad-body p {
+    font-size: 15px;
+  }
+  .businessad-body h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width : 333px) {
+  .businessad-title2 {
+    font-size: 7px;
+  }
+  .businessad-body p {
+    font-size: 13px;
+  }
+  .businessad-body h1 {
+    font-size: 20px;
+  }
 }
