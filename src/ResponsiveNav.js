@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "./ResponsiveNav.css";
+import "./css/ResponsiveNav.css";
 import {FaBars} from 'react-icons/fa';
 import {Link} from "react-router-dom";
 
@@ -43,13 +43,14 @@ class ResponsiveNav extends Component {
                             <div>
                                 <a className="bars-icon" onClick={this.handleHamburgerClick}><FaBars/></a>
                             </div>
-                        
-                        <div className="responsive-nav-div">
-                            <Link to="/" className="each-responsive-btn">Home</Link>
-                            <Link to="/Taxes" className="each-responsive-btn">Taxes</Link>
-                            <Link to="/ITIN" className="each-responsive-btn">ITINs</Link>
-                            <Link to="/Representation" className="each-responsive-btn">Representation</Link>
-                            <Link to="/BusinessAdvisory" className="each-responsive-btn">Business Advisory</Link>
+                        <div className="">
+                            <div className="responsive-nav-div">
+                                <Link to="/" className="each-responsive-btn">Home</Link>
+                                <Link to="/Taxes" className="each-responsive-btn">Taxes</Link>
+                                <Link to="/ITIN" className="each-responsive-btn">ITINs</Link>
+                                <Link to="/Representation" className="each-responsive-btn">Representation</Link>
+                                <Link to="/BusinessAdvisory" className="each-responsive-btn">Business Advisory</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

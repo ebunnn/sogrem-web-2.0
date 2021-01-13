@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/Representation.css';
 import reppic from './images/representationpic.jpg';
 import BodyBox from "./BodyBox";
-import ScrollButtonTwo from "./ScrollButton2";
+import {Link} from "react-router-dom";
 
 class Representation extends Component {
     constructor() {
@@ -31,6 +31,9 @@ class Representation extends Component {
                     you through the IRS audit process."
                     />
                 </div>
+                <div className="more-info">
+                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                </div>   
             </div> 
         )
     }

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './css/ITIN.css';
 import itinsimg from './images/itinspic.jpg';
-import { FaAngleDoubleDown } from 'react-icons/fa';
-import { Link as ScrollLink } from "react-scroll";
+import {Link} from "react-router-dom";
 //import { render } from '@testing-library/react';
 
 
@@ -117,16 +116,16 @@ class ITIN extends Component {
                             certified by either a CAA or mail the originals to IRS for verification. This takes more time and/or cost
                             you more therefore get smart, use a CAA, use SOGREM for all your ITIN issues.
                         </p>
-                        <h3>SOGREM Associates is a Certifying Acceptance Agent: Olusoga Oludemi dba Sogrem Associates (***put link here***)</h3>
+                        <h3>SOGREM Associates is a Certifying Acceptance Agent: Olusoga Oludemi dba Sogrem Associates</h3>
 
                     </div>
                     <div className="upload-body" id="uploading-scroll">
                         <h1>UPLOAD W-7 DOCUMENT(S)</h1>
-                        <form action="#page">
-                            <input type="file" id="w7File" name="filename" />
-                            <input type="submit"/>
-                        </form>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnCRLvF3d3mVp9JYi_vPeP9j0pRKt9S2_VB6GBBoRtWgMr6Q/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">W-7 Documents</a>
                     </div>
+                </div>
+                <div className="more-info">
+                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
                 </div>    
             </div>
 

@@ -41,6 +41,7 @@ class App extends Component {
               <div>
                 <div className="Nav-bar" id="TheNavBar">
                   <Link to="/">Home</Link>
+                  <Link to="/About-us">About Us</Link>
                   <div className="taxes-dropdown">
                     <Link to="/Taxes" className="taxes-dropbtn">Taxes</Link>
                     {/* <div className="taxes-dropdown-content">
@@ -129,6 +130,7 @@ class App extends Component {
                         <h4>501(c)3 Certification</h4>
                         <a href="#Example6">EX</a>
                       </div> */}
+                      <Link to="/Contact-us">Contact Us</Link>
                   </div> 
                     {/* <a href="javascript:void(0);"className="bars-icon"><FaBars/></a> */}
                   {/*<button className="more-btn">More<FaCaretDown/></button>*/}

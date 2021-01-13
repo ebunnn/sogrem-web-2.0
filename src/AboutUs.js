@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/AboutUs.css';
 import aboutUsImg from './images/sampleAboutUs.jpg';
+import {Link} from "react-router-dom";
 
 class AboutUs extends Component {
     // constructor(props) {
@@ -34,17 +35,20 @@ class AboutUs extends Component {
                             <div className="founder-cards">
                                 <div className="founder1">
                                     <h3>Olusoga Oludemi</h3>
-                                    <h5>CEO &amp; Founder</h5>
-                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                    <h5>Principal</h5>
+                                    <p></p>
                                 </div> 
                                 <div className="founder2">
                                     <h3>Oluremi Oludemi</h3>
-                                    <h5>CEO &amp; Founder</h5>
-                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>        
+                                    <h5>Senior Associate</h5>
+                                    <p></p>        
                                 </div>  
                             </div>
                         </div>
                 </div>
+                <div className="more-info">
+                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                </div>  
             </div>
         )
     }

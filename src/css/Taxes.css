@@ -87,12 +87,20 @@
   color: black;
   cursor: pointer;
 }
-
+.more-info {
+  font-family: allegro;
+}
+.more-info a, .more-info a:visited {
+  color: blue;
+}
 /* @MEDIA */
 
 @media only screen and (max-width : 640px) {
   .taxes-title {
     font-size: 17px;
+  }
+  .more-info {
+    padding: 15px;
   }
 }
 @media only screen and (max-width : 570px) {

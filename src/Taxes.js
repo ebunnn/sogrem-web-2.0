@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/Taxes.css';
 import taxesimg from './images/taxesimg.jpg';
+import {Link} from "react-router-dom";
 //import { render } from '@testing-library/react';
 
 
@@ -42,20 +43,19 @@ class Taxes extends Component {
                     <div className="taxes-uploads">
                         <div className="taxes-upload-2020">
                             <h1>UPLOAD YOUR 2020 TAX DOCUMENT(S)</h1>
-                            <form action="#page">
-                                <input type="file" id="w7File" name="filename" />
-                                <input type="submit"/>
-                            </form>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR991ntJDFef0q1D34nYMGzq9-8uxmx4dNPSCKfXlVOPhOjw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">2020 Tax Document(s)</a>
+
                         </div>
                         <div className="taxes-upload-years">
                             <h1>UPLOAD OTHER YEAR(S) DOCUMENT(S)</h1>
-                            <form action="#page">
-                                <input type="file" id="w7File" name="filename" />
-                                <input type="submit"/>
-                            </form>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4LUSNAhn71FvdxwoNTl3gHialG93hfF1RwMIgU_SSji_buQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Previous Years Tax Document(s)</a>
+
                         </div>
                     </div>
                 </div>
+                <div className="more-info">
+                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                </div>   
             </div>
         )
     }

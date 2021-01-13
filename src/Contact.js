@@ -17,11 +17,16 @@ class Contact extends Component {
                 <div className="contact-img">
                     <img src={contactimg} alt="" />
                 </div>
+                <div className="contact-form">
+                    <h3>Leave your message here and our representative will get back to you:</h3>
+                    <iframe className="freebirdFormviewerViewFormContentWrapper" src="https://docs.google.com/forms/d/e/1FAIpQLSf6mLm1Z9VX7W8K6VYYZvDD_8mTMQ9KPFKLusPhGg7QapEP2Q/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <br></br><br></br>
                     <div className="contact-info"> 
                         <div className="telephone">
                             <h1>Telephone <FaPhone /></h1>
                             <hr></hr><br></br>
-                            <h3>(240)-786-6267</h3><br></br>
+                            <h3><a href="tel:2407866267">(240)786-6267</a></h3><br></br>
                             <h2>Telephone Hours <FaClock /></h2>
                             <hr></hr>
                             <h3>Mon-Fri</h3><br></br>
@@ -30,8 +35,8 @@ class Contact extends Component {
                         <div className="email">
                             <h1>Email <FaMailBulk /></h1>
                             <hr></hr><br></br>
-                            <h3>sogremassociates@sogrem.com</h3>
-                            <h3>sogremassociates@gmail.com</h3>
+                            <h3 className="email-links"><a href="mailto:sogremassociates@sogrem.com">sogremassociates@sogrem.com</a></h3>
+                            <h3 className="email-links"><a href="mailto:sogremassociates@gmail.com">sogremassociates@gmail.com</a></h3>
                             <br></br>
                             <h2>Email Hours <FaClock /></h2>
                             <hr></hr>

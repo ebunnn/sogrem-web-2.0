@@ -1,7 +1,15 @@
 .responsive-nav-div {
     display: block;
     background-color: rgba(91, 164, 207, 0.4);
+    animation-name: slideDown;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
 }
+@keyframes slideDown {
+    from{top: 0px;}
+    to{top: 50px;}
+  }
 .whole-nav-bar {
     overflow: hidden;
     background-color: #8FACBD;

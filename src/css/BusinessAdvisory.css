@@ -53,6 +53,12 @@
   text-decoration: underline;
   text-decoration-color: rgba(91, 164, 207, 0.4);
 }
+.more-info {
+  font-family: allegro;
+}
+.more-info a, .more-info a:visited {
+  color: blue;
+}
 @media only screen and (max-width : 800px) {
   .businessad-title {
     font-size: 22px;
@@ -82,6 +88,9 @@
   }
   .businessad-body h1 {
     font-size: 30px;
+  }
+  .more-info {
+    padding: 15px;
   }
 }
 @media only screen and (max-width : 465px) {

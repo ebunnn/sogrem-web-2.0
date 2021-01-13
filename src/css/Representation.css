@@ -22,9 +22,18 @@
   position: absolute;
   left: 40%;
 }
+.more-info {
+  font-family: allegro;
+}
+.more-info a, .more-info a:visited {
+  color: blue;
+}
 @media only screen and (max-width : 575px) {
   .rep-title {
     font-size: 22px;
+  }
+  .more-info {
+    padding: 15px;
   }
 }
 @media only screen and (max-width : 490px) {
@@ -44,7 +53,7 @@
 }
 @media only screen and (max-width : 333px) {
   .rep-title {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
