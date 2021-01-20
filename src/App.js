@@ -18,7 +18,6 @@ import mainimg from './images/homepage-img.jpg';
 import efile from './images/efile-img.png';
 import caa from './images/caa.png';
 import irsea from './images/irsea.png';
-import { Link as ScrollLink } from "react-scroll";
 import {
   BrowserRouter as Router,
   Switch,
@@ -219,12 +218,12 @@ class App extends Component {
                 <div className="whole-hp-body">
                   <div className="homepage-body">
                     <h1>Welcome!</h1>
-                    <p>You are heartily welcomed to our SOGREM Associates' website. We see your visit as a 
+                    <p>You are heartily welcomed to our website. We see your visit as a 
                       privileged opportunity to showcase the solutions we provide to our numerous clients 
                       in the Maryland, DC, Virginia and West Virginia areas. We believe you will be able 
                       to make up your mind about us within the possible shortest time – our target is 3 minutes.</p>
                     <h1>What We Do - We Fix Tax Problems &amp; Tax Obligations</h1>
-                    <p>SOGREM is wholesomely involved <b><em><ins>essencially</ins></em></b> in tax &amp; tax related solutions.<br></br>
+                    <p>SOGREM is wholesomely involved <b><em><ins>essentially</ins></em></b> in tax &amp; tax related solutions.<br></br>
                        <br></br>
 
                        Our Professional Services Include:<br></br>
@@ -242,7 +241,7 @@ class App extends Component {
                         services within the confines of the rigorously regulated monitoring banner of the US
                         Treasury(IRS). Hence your peace of mind is always assured.<br></br>
                         <br></br>
-                        With us you only pay what you are legally obligated to pay and you receive all you are entitled to
+                        With us, you only pay what you are legally obligated to pay and you receive all you are entitled to
                         - deductions, credits, refunds or waivers, to the last penny! Again, you always have the
                         assurance and peace of mind that you are in full compliance with the tax laws and no
                         backdoor or aftermath negative surprises.</p>

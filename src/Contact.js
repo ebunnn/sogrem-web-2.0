@@ -7,8 +7,12 @@ class Contact extends Component {
     // constructor() {
     //     super()
     // }
-
+    //className="freebirdFormviewerViewFormContentWrapper"
     render() {
+        const iframeStyles = {
+            background: "transparent",
+            border: "1px solid #ccc"
+        }
         return (
             <div>
                 <div>
@@ -18,8 +22,8 @@ class Contact extends Component {
                     <img src={contactimg} alt="" />
                 </div>
                 <div className="contact-form">
-                    <h3>Leave your message here and our representative will get back to you:</h3>
-                    <iframe className="freebirdFormviewerViewFormContentWrapper" src="https://docs.google.com/forms/d/e/1FAIpQLSf6mLm1Z9VX7W8K6VYYZvDD_8mTMQ9KPFKLusPhGg7QapEP2Q/viewform?embedded=true" width="640" height="943" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <h3>Leave your message here and our representative will get back to you:</h3> 
+                    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrgNuTNMNsnjGRqh?backgroundColor=cyan" frameborder="0" onmousewheel="" width="80%" height="1076" style={iframeStyles}></iframe>
                 </div>
                 <br></br><br></br>
                     <div className="contact-info"> 

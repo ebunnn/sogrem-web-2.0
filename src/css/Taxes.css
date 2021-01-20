@@ -43,18 +43,18 @@
 }
 .taxes-upload-2020 {
   font-family: allegro;
-  padding: 50px;
+  padding: 10px;
   padding-top: 5px;
-  text-align: left;
+  text-align: center;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 30px;
 }
 .taxes-upload-years {
   font-family: allegro;
-  padding: 50px;
+  padding: 10px;
   padding-top: 5px;
-  text-align: left;
+  text-align: center;
   border: 2px solid white;
   box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
   margin: 30px;
@@ -93,6 +93,10 @@
 .more-info a, .more-info a:visited {
   color: blue;
 }
+.previous-years-css {
+  width: 80%;
+  height: 1246px;
+}
 /* @MEDIA */
 
 @media only screen and (max-width : 640px) {
@@ -114,6 +118,9 @@
   }
   .taxes-body {
     padding: 30px;
+  }
+  .previous-years-css {
+    width: 100%;
   }
 }
 @media only screen and (max-width : 500px) {

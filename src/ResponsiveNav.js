@@ -46,10 +46,12 @@ class ResponsiveNav extends Component {
                         <div className="">
                             <div className="responsive-nav-div">
                                 <Link to="/" className="each-responsive-btn">Home</Link>
+                                <Link to="/About-us" className="each-responsive-btn">About Us</Link>
                                 <Link to="/Taxes" className="each-responsive-btn">Taxes</Link>
                                 <Link to="/ITIN" className="each-responsive-btn">ITINs</Link>
                                 <Link to="/Representation" className="each-responsive-btn">Representation</Link>
                                 <Link to="/BusinessAdvisory" className="each-responsive-btn">Business Advisory</Link>
+                                <Link to="/Contact-us" className="each-responsive-btn">Contact Us</Link>
                             </div>
                         </div>
                     </div>

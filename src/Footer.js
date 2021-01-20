@@ -15,9 +15,6 @@ class Footer extends Component {
             <div>
                 <div className="footer-parent-div">
                     <div className="footer-base-div">
-                    <p>
-                        Created by Ebun Oludemi
-                    </p>
                     <div className="footer-links">
                         <Link to="/About-us">About Us</Link>
                         <br></br><br></br>

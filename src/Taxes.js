@@ -10,6 +10,10 @@ class Taxes extends Component {
         //super(props)
     //}
     render() {
+        const iframeStyles = {
+            background: "transparent",
+            border: "1px solid #ccc"
+        }
         return(
             <div>
                 <div className="taxes-title">
@@ -43,12 +47,12 @@ class Taxes extends Component {
                     <div className="taxes-uploads">
                         <div className="taxes-upload-2020">
                             <h1>UPLOAD YOUR 2020 TAX DOCUMENT(S)</h1>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR991ntJDFef0q1D34nYMGzq9-8uxmx4dNPSCKfXlVOPhOjw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">2020 Tax Document(s)</a>
+                            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" className="previous-years-css" src="https://airtable.com/embed/shr7XCujr0Exk1C9t?backgroundColor=cyan" frameborder="0" onmousewheel="" style={iframeStyles}></iframe>
 
                         </div>
                         <div className="taxes-upload-years">
-                            <h1>UPLOAD OTHER YEAR(S) DOCUMENT(S)</h1>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4LUSNAhn71FvdxwoNTl3gHialG93hfF1RwMIgU_SSji_buQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Previous Years Tax Document(s)</a>
+                            <h1>UPLOAD PREVIOUS YEARS DOCUMENT(S)</h1>
+                            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" className="previous-years-css" src="https://airtable.com/embed/shrgX39jKCojCA40N?backgroundColor=cyan" frameborder="0" onmousewheel="" style={iframeStyles}></iframe>
 
                         </div>
                     </div>
