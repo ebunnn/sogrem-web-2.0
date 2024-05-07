@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './css/Representation.css';
-import reppic from './images/representationpic.jpg';
+import '../css/Representation.css';
+import reppic from '../images/representationpic.jpg';
 import BodyBox from "./BodyBox";
 import {Link} from "react-router-dom";
 
@@ -32,7 +32,7 @@ class Representation extends Component {
                     />
                 </div>
                 <div className="more-info">
-                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                    <p>Need more information? Please call the number: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
                 </div>   
             </div> 
         )

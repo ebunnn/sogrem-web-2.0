@@ -1,16 +1,21 @@
 .responsive-nav-div {
-    display: block;
-    background-color: rgba(91, 164, 207, 0.4);
-    animation-name: slideDown;
+    display: flex;
+    flex-direction: column;
+    /* animation-name: slideDown;
     animation-duration: 3s;
     animation-delay: 0.3s;
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
+}
+.responsive-nav-div > a {
+    justify-content: flex-end;
 }
 @keyframes slideDown {
     from{top: 0px;}
     to{top: 50px;}
   }
 .whole-nav-bar {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background-color: #8FACBD;
   } 
@@ -19,9 +24,7 @@
     text-decoration: none;
     font-family: allegro;
     color: white;
-    height: 20px; 
-    display: block;
-    clear: left;
+    height: 20px;  
     float: left;
 }
 .whole-nav-bar a:hover {
@@ -29,24 +32,35 @@
     color: black;
 }
 .navbar-title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: allegro;
     font-weight: bold;
     letter-spacing: 2px;
-    display: inline-flex;
-    float: right;
-    padding-right: 15px;
+    /* display: inline-flex; */
+    /* float: right; */
+    /* padding-right: 15px; */
     text-align: center;
-    margin-bottom: auto;
-    margin-top: 10px;
+    /* margin-bottom: auto;
+    margin-top: 10px; */
 }
 .bars-icon {
     float: left;
     cursor: pointer;
 }
-@media only screen and (max-width : 293px) {
+@media only screen and (max-width : 1134px) {
+    .navbar-title {
+        display: none;
+    }
+}
+/* @media only screen and (max-width : 900px) {
+    .navbar-title {
+        display: block;
+    }
+} */
+
+/* @media only screen and (max-width : 293px) {
     .navbar-title {
         font-size: 20px;
     }
-}
+} */
   

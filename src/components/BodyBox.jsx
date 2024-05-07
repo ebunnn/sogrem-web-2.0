@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./css/BodyBox.css"
+import "../css/BodyBox.css"
 
 class BodyBox extends Component {
     constructor(props) {

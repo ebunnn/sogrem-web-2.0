@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './css/ITIN.css';
-import itinsimg from './images/itinspic.jpg';
+import '../css/ITIN.css';
+import itinsimg from '../images/itinspic.jpg';
 import {Link} from "react-router-dom";
 //import { render } from '@testing-library/react';
 
@@ -38,13 +38,13 @@ class ITIN extends Component {
                     <div className="itin-body">
                         <h1>What is an ITIN?:</h1>
                         <p>An ITIN is a nine-digit number issued by the Internal Revenue Service (IRS) to individuals who are
-                        required, for US tax purposes,  to have a Tax Payer Identification number but who do not have, and are
+                        required (for US federal tax purposes),  to have a Tax Payer Identification number but who do not have, and are
                         not eligible to obtain an SSN. While ITIN is a US government assigned number and generally for Federal
-                        tax purposes, ITINs can also be used for US state(s) taxes and financial/banking purposes.</p>
+                        tax purposes, ITINs can also be used for US state(s) taxes and other financial/banking purposes.</p>
                     
                         <h1>Who Must Apply:</h1>
                         <p>Any individual who is not eligible to obtain Social Security Number (SSN) but who must furnish a taxpayer
-                        identification number must apply for an ITIN on Form W-7 (current version).</p>
+                        identification number for federal tax purposes, must apply to the IRS for an ITIN on <a href="https://www.irs.gov/pub/irs-pdf/fw7.pdf" target="_blank" rel="noopener noreferrer">Form W-7</a> (current version).</p>
 
                         
 
@@ -54,16 +54,17 @@ class ITIN extends Component {
                         <h1>How to Apply:</h1>
                         <h2>With a Federal Tax Return:</h2>
                         <p>If you are applying for an ITIN to file a tax return, you must attach your original, completed and signed
-                           federal tax return to apply and request ITIN with your <b>W7</b>. If your attached W7 is accurately completed the
+                           federal tax return to apply and request ITIN with your <a href="https://www.irs.gov/pub/irs-pdf/fw7.pdf" target="_blank" rel="noopener noreferrer"><b>W-7</b></a>. 
+                           If your attached <a href="https://www.irs.gov/pub/irs-pdf/fw7.pdf" target="_blank" rel="noopener noreferrer">W-7</a> is accurately completed the
                            IRS will process and assign an ITIN to the attached federal return after which the return will be processed.<br></br>
                            <br></br>
-                           If you are not required to file a tax return or if you fail to file an accurate completed tax return with your
-                           W-7, you will not be issued an ITIN, unless you meet one of the <b>exceptions</b> as described the
-                           instructions of Form W-7.<br></br>
+                           If you are not required to file a tax return or if you fail to file an accurate completed tax return with your 
+                           <a href="https://www.irs.gov/pub/irs-pdf/fw7.pdf" target="_blank" rel="noopener noreferrer"> W-7</a>, you will not be issued an ITIN, unless you meet one of the <b>exceptions</b> as described the
+                           instructions of Form <a href="https://www.irs.gov/pub/irs-pdf/fw7.pdf" target="_blank" rel="noopener noreferrer">W-7</a>.<br></br>
                            <br></br>
                            An ITIN does not entitle you to social security benefits and does not change your immigration status or
                            your right to work in the United States. Also, individual filing tax returns using and ITIN are not eligible for
-                           the earned income credit (EIC).
+                           the earned income credit <a href="https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc" target="_blank" rel="noopener noreferrer">(EIC)</a>.
                         </p>
                     </div>  
                     <div className="itin-body3">
@@ -129,7 +130,7 @@ class ITIN extends Component {
                     </div>
                 </div>
                 <div className="more-info">
-                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                    <p>Need more information? Please call the number: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
                 </div>    
             </div>
 

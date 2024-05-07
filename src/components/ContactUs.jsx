@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './css/Contact.css';
-import contactimg from './images/contact-image-cropped.jpg';
+import '../css/Contact.css';
+import contactimg from '../images/contact-image-cropped.jpg';
 import {  FaPhone, FaClock, FaMailBulk, FaHome } from 'react-icons/fa';
 
 class Contact extends Component {

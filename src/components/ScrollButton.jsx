@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./css/ScrollButton.css";
+import "../css/ScrollButton.css";
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { Link as ScrollLink } from "react-scroll";
 

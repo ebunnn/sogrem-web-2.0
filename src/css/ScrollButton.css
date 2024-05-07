@@ -3,7 +3,6 @@
     padding: 14px 80px;
     font-size: 20px;
     font-family: allegro;
-    font-weight: bold;
     background-color: #8FACBD;
     color: white;
     border: none;
@@ -19,8 +18,9 @@
     scroll-behavior: smooth;
 }
 .main-btn:hover {
-    background-color: white;
-    color: #8FACBD;
+    font-weight: bold;
+    /* background-color: white;
+    color: #8FACBD; */
   }
 @media only screen and (max-width : 1300px) {
     .main-btn  {

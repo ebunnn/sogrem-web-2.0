@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './css/BusinessAdvisory.css';
-import busadpic from './images/businessadpic.jpg';
+import '../css/BusinessAdvisory.css';
+import busadpic from '../images/businessadpic.jpg';
 import {Link} from "react-router-dom";    
 import { FaCheck } from 'react-icons/fa';
 
@@ -41,7 +41,7 @@ class BusinessAdvisory extends Component {
                     </div>
                 </div>
                 <div className="more-info">
-                    <p>Need more information? Please call the Hot Line: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
+                    <p>Need more information? Please call the number: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
                 </div>          
             </div>
         )

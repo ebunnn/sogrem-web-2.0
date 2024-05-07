@@ -151,6 +151,9 @@
   color: black;
   cursor: pointer;
 }
+.whole-itin-body a, .whole-itin-body a:visited {
+  color: blue;
+}
 .more-info {
   font-family: allegro;
 }
