@@ -7,16 +7,15 @@ import taximg from "../images/taximg.jpg";
 
 
 export default function Taxes() {
-        const iframeStyles = {
-            background: "transparent",
-            border: "1px solid #ccc"
-        }
-        return(
-            <div className='taxes--container'>
-                <h1>Taxes and Tax Resolution</h1>
-                <div className='taxes--text'>
-                    <div className='taxes--top-right'>
-                        <h1>Tax Planning</h1>
+    return(
+        <div className='taxes--container'>
+            <div className='taxes--content'>
+                <div className='taxes--titleImg'>
+                    <h1>Taxes and Tax Resolution</h1>
+                    <img className="taxes--taxImg" src={taximg} alt="Tax Documents" />
+                </div>
+                    <div className='taxes--text'>
+                        <h3>Tax Planning</h3>
                         <p>Our commitment to our tax clients for both Federal & State tax returns are:</p>
                         <ul>
                             <li>Tax owed to Uncle Sam (and/or states) must be at the LEAST possible under the tax laws</li>
@@ -31,11 +30,18 @@ export default function Taxes() {
                         individual and businesses – are fully structured for your benefit. Pass through Entities (with Schedule K1) - LLCs, LLPs, S-CORPS, etc C-Corps
                         </p>
                     </div>
-                    <img src={taximg} alt="Image about taxes" />
-                </div>
             </div>
+            <br/>
+            <br/>
+        </div>
+    )
 
-            // <div>
+
+
+
+
+
+
             //     <div className="taxes-title">
             //         <h1>Taxes &amp; Tax Resolutions</h1>
             //     </div>
@@ -80,6 +86,6 @@ export default function Taxes() {
             //         <p>Need more information? Please call the number: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
             //     </div>   
             // </div>
-        )
+        
 }
 

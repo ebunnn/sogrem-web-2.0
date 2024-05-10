@@ -12,7 +12,7 @@ export default function Navbar() {
                     <li><a href="javascript:void(0);"><Link to="/">Home</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/about-us">About Us</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/taxes">Taxes</Link></a></li>
-                    <li><a href="javascript:void(0);"><Link to="/contact-us">ITINs</Link></a></li>
+                    <li><a href="javascript:void(0);"><Link to="/itin">ITINs</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/contact-us">Representation</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/contact-us">Business Advisory</Link></a></li>
                     <li><a href="javascript:void(0);"><Link to="/contact-us">Contact Us</Link></a></li>

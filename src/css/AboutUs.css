@@ -15,13 +15,17 @@
 .aboutus--text {
   margin-top: 7vh;
   margin-bottom: 7vh;
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
-  gap: 0.5vw;
+  gap: 3vw;
+}
 
+.aboutus--irsEnablingText {
+  color: "black";
+  width: "0%";
 }
 
 .aboutus--ourservices-container {
@@ -38,196 +42,3 @@
 .aboutus-service {
   text-align: left;
 }
-
-/* .about-us-img img {
-    object-fit: cover;
-    width: 100%;
-}
-.about-title {
-    position: absolute;
-    margin-left: 95px;
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    letter-spacing: 5px;
-    font-size: 20px;
-    font-family: allegro;
-    font-weight: bold;
-    background-color: rgba(91, 164, 207, 0.6);
-    color: white;
-    border-radius: 5px;
-}
-.aboutus-body {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-}
-.aboutus-body a, .aboutus-body a:visited {
-  color: blue;
-}
-.whole-aboutus-body {
-  width: 70%;
-  position: relative;
-  display: contents;
-}
-.aboutus-body p {
-  font-size: 30px;
-  text-align: left;
-}
-.aboutus-body h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
-}
-.founders-div {
-  font-family: allegro;
-}
-.founders-div h1 {
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);;
-}
-.founder-cards {
-  display: inline-flex;
-  padding: 70px;
-}
-.founder1 {
-  border-style: solid;
-  margin-right: 62px;
-  width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
-.founder2 {
-  border-style: solid;
-  width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
-.more-info {
-  font-family: allegro;
-}
-.more-info a, .more-info a:visited {
-  color: blue;
-}
-@media only screen and (max-width : 800px) {
-  .founder-cards {
-    display: inline-block;
-  }
-  .founder1 {
-    border-style: solid;
-    margin-right: 62px;
-    width: 300px;
-  }
-  .founder2 {
-    border-style: solid;
-    width: 300px;
-    margin-top: 30px;
-  }
-  .about-title {
-    margin-left: 45px;
-}
-}
-@media only screen and (max-width : 600px) {
-  .aboutus-body p {
-    font-size: 26px;
-  }
-  .aboutus-body h1 {
-    font-size: 40px;
-  }
-  .about-title {
-    font-size: 15px;
-  }
-  .more-info {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width : 570px) {
-  .founders-div h1 {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width : 506px) {
-  .founder-cards {
-    padding-right: 20px;
-  }
-} 
-@media only screen and (max-width : 420px) {
-  .aboutus-body p {
-    font-size: 20px;
-  }
-  .aboutus-body h1 {
-    font-size: 35px;
-  }
-  .founder-cards {
-    display: inline-block;
-  }
-  .founder1 {
-    border-style: solid;
-    margin-right: 62px;
-    width: 250px;
-    margin-left: 15px;
-  }
-  .founder2 {
-    border-style: solid;
-    width: 250px;
-    margin-top: 30px;
-    margin-left: 15px;
-  }
-  .about-title {
-    font-size: 11px;
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-}
-@media only screen and (max-width : 400px) {
-  .founder1 {
-    border-style: solid;
-    margin-right: 62px;
-    width: 180px;
-    margin-left: 15px;
-    padding: 5px;
-  }
-  .founder2 {
-    border-style: solid;
-    width: 180px;
-    margin-top: 30px;
-    margin-left: 15px;
-    padding: 5px;
-  }
-  .founders-div h1 {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width : 363px) {
-  .founder-cards {
-    padding-right: 10px;
-  }
-}
-@media only screen and (max-width : 340px) {
-  .founder1 {
-    width: 120px;
-  }
-  .founder2 {
-    width: 120px;
-  }
-  .founders-div h1 {
-    font-size: 18px;
-  }
-  .about-title {
-    font-size: 9px;
-  }
-  .aboutus-body p {
-    font-size: 15px;
-  }
-  .aboutus-body h1 {
-    font-size: 28px;
-  }
-}
-@media only screen and (max-width : 293px) {
-  .founder-cards {
-    padding-right: 0px;
-  }
-} */

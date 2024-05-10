@@ -1,26 +1,32 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "../css/Home.css"
 import mainimage from "../images/main-image.jpg";
 import salogo from "../images/salogo.png";
 import certifications from "../images/irs certifications.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function Home() {
+
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
     return (
         <div className="home--container">
             <div className="home--header">
                 <div className="home--header-content">
-                    <div className="home--text">
-                        <div className="home--logo">
-                            <img className="home--headerlogo" src={salogo} alt="logo" />
+                    <div data-aos="fade-zoom-in" className="home--text">
+                        <div data-aos="fade-zoom-in" className="home--logo">
+                            <img data-aos="fade-zoom-in" className="home--headerlogo" src={salogo} alt="logo" />
                             <h4 style={{letterSpacing:"2px", fontSize:"1.7rem", fontWeight:"300"}}>SOGREM ASSOCIATES</h4>
                         </div>
 
                         <h2 style={{fontSize:"3.5rem"}}>PROFESSIONAL TAX PREPARATION SERVICE<br></br>IRS + 50 STATES & DC</h2>
                     </div>
-                    <img className="home--headerimg" src={mainimage} alt="header image" />
+                    <img data-aos="fade-zoom-in" className="home--headerimg" src={mainimage} alt="header image" />
                 </div>
 
             </div>
@@ -44,7 +50,7 @@ export default function Home() {
                         <h1 style={{fontSize:"3.5rem"}}>What we do</h1>
                         <p style={{width:"70%"}}>We fix tax problems & tax obligations. SOGREM is wholesomely involved 
                         essentially in tax & tax related solutions.</p>
-                    </div>
+                </div>
                     
                     <div style={{width:"70%"}}>
                         <h3> Our professional services include</h3>
