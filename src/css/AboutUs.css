@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  gap: 3vw;
+  gap: 5vw;
 }
 
 .aboutus--irsEnablingText {
@@ -41,4 +41,8 @@
 }
 .aboutus-service {
   text-align: left;
+}
+
+.aboutus--service-container p {
+  color: #717171;
 }

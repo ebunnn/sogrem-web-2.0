@@ -23,7 +23,7 @@ export default function AboutUs() {
             </div>
             <div className='aboutus--text'>
                 <h1 style={{fontSize:"3.5rem"}}>IRS ENABLING CREDENTIALS</h1>
-                <p className="aboutus--irsEnablingText">SOGREM Associates tax professionals are Enrolled Agents. Enrolled Agents, as 
+                <p style={{color:"#717171"}} className="aboutus--irsEnablingText">SOGREM Associates tax professionals are Enrolled Agents. Enrolled Agents, as 
                     with tax attorneys and CPAs, have unlimited rights to practice at all levels 
                     of the IRS and are the only federally licensed tax professionals - by the US 
                     Treasury. CPAs and Attorneys are state licensed. SOGREM is also an authorized 

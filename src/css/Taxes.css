@@ -1,36 +1,53 @@
 .taxes--container {
   color: #1D83FF;
-  /* display: flex; */
+  display: flex;
   /* align-items: center; */
 }
 
 .taxes--content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .taxes--taxImg {
-  width: 50%;
+  width: 90%;
   height: auto;
 }
 
 .taxes--text {
-  width: 40%;
+  width: 50%;
   position: relative;
-  right: 7vw;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
 }
 
+.taxes--text p {
+  color: #717171;
+}
+
+.taxes--text ul {
+  color: #717171;
+  width: 50%;
+}
+
+.taxes--titleImg hr {
+  width: 100%;
+  opacity: 0.3;
+}
 .taxes--titleImg {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 50%;
   position: relative;
-  left: 4vw;
+  align-items: center;
+
 }
 
 .taxes--titleImg h1 {
-  font-size: 2.2rem;
+  font-size: 3.5rem;
 }
