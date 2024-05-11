@@ -1,59 +1,48 @@
-.rep-image img{
-  width: 100%;
-  object-fit: cover;
-  height: 685px;
-}
-.rep-title {
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  letter-spacing: 5px;
-  font-size: 30px;
-  font-family: allegro;
-  font-weight: bold;
-  background-color: rgba(91, 164, 207, 0.6);
-  color: white;
-  border-radius: 5px;
-}
-.main-btn {
-  position: absolute;
-  left: 40%;
-}
-.more-info {
-  font-family: allegro;
-}
-.more-info a, .more-info a:visited {
-  color: blue;
-}
-@media only screen and (max-width : 575px) {
-  .rep-title {
-    font-size: 22px;
-  }
-  .more-info {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width : 490px) {
-  .rep-body h1 {
-    font-size: 10px;
-  }
-}
-@media only screen and (max-width : 465px) {
-  .rep-title {
-    font-size: 17px;
-  }
-}
-@media only screen and (max-width : 400px) {
-  .rep-title {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width : 333px) {
-  .rep-title {
-    font-size: 10px;
-  }
+.rep--container {
+  color: #1D83FF;
+  display: flex;
+  /* align-items: center; */
 }
 
+.rep--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rep--img {
+  width: 90%;
+  height: auto;
+}
+
+.rep--text {
+  width: 50%;
+  position: relative;
+  text-align: left;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.rep--text p {
+  color: #717171;
+}
+
+.rep--titleImg hr {
+  width: 100%;
+  opacity: 0.3;
+}
+.rep--titleImg {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  align-items: center;
+
+}
+
+.rep--titleImg h1 {
+  font-size: 3.5rem;
+}

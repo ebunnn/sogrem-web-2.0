@@ -1,245 +1,52 @@
-.itin-title {
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  letter-spacing: 5px;
-  font-size: 20px;
-  font-family: allegro;
-  font-weight: bold;
-  background-color: rgba(91, 164, 207, 0.6);
-  color: white;
-  border-radius: 5px;
+.itin--container {
+  color: #1D83FF;
+  display: flex;
 }
-.itin-image img {
-  object-fit: cover;
-  height: 685px;
-  width: 100%;
+
+.itin--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.itin-image {
-  object-fit: cover;
-  height: 400px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-top: -50px;
+.itin--img {
+  width: 90%;
+  height: auto;
 }
-.upload-scroll {
-  padding: 20px;
-  width: 300px;
-  font-size: 20px;
-  margin-top: 20px;
-  background-color: #8FACBD;
-  border: none;
-  color: white;
-  font-family: allegro;
-  top: 734px;
-  position: absolute;
-  left: 550px;
-  cursor: pointer;
-}
-.whole-itin-body {
-  width: 70%;
+
+.itin--text {
+  width: 50%;
   position: relative;
-  display: contents;
-}
-.itin-body {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
   text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-  margin-top: 340px;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
 }
-.itin-body p {
-  font-size: 30px;
-  text-align: left;
+
+.itin--text p, ol {
+  color: #717171;
 }
-.itin-body h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
+
+.itin--text ul {
+  color: #717171;
+  width: 80%;
 }
-.itin-body2 {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
+
+.itin--titleImg hr {
+  width: 100%;
+  opacity: 0.3;
 }
-.itin-body2 p {
-  font-size: 30px;
-  text-align: left;
-}
-.itin-body2 h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
+.itin--titleImg {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  align-items: center;
 
 }
-.itin-body3 {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-}
-.itin-body3 p {
-  font-size: 30px;
-  text-align: left;
-}
-.itin-body3 h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
-}
-.itin-body3 a {
-  color: blue;
-  text-decoration: none;
-}
-.itin-body3 a:hover {
-  text-decoration: underline;
-}
-.itin-body4 {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-}
-.itin-body4 p {
-  font-size: 30px;
-  text-align: left;
-}
-.itin-body4 h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
-}
-.itin-body4 h3 {
-  font-size: 30px;
-}
-.upload-body {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: center;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-}
-.upload-body input[type=submit] {
-  background-color:  #8FACBD;
-  font-size: 17px;
-  text-align: center;
-  font-family: allegro;
-  color: white;
-  border: none;
-  padding: 14px 16px;
-  border-radius: 5px;
-}
-.upload-body input[type=submit]:hover {
-  color: black;
-  cursor: pointer;
-}
-.whole-itin-body a, .whole-itin-body a:visited {
-  color: blue;
-}
-.more-info {
-  font-family: allegro;
-}
-.more-info a, .more-info a:visited {
-  color: blue;
-}
-/* @MEDIA */
-@media only screen and (max-width : 600px) {
-  .itin-title {
-      font-size: 15px;
-  }
-  .more-info {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width : 500px) {
-  .itin-title {
-      font-size: 12px;
-  }
-  .itin-body {
-    padding: 30px;
-  }
-  .itin-body2 {
-    padding: 30px;
-  }
-  .itin-body3 {
-    padding: 30px;
-  }
-  .itin-body4 {
-    padding: 30px;
-  }
-  .upload-body {
-    font-size: 12px;
-  }
-  .upload-body input[type=submit] {
-    font-size: 15px;
-    padding: 11px 10px;
-    margin-top: 20px;
-  }
-  .upload-body input[type=file] {
-    font-size: 10px;
-  }
-}
-@media only screen and (max-width : 452px) {
-  .itin-title {
-      font-size: 10px;
-  }
-  .whole-itin-body h1 {
-    font-size: 30px;
-  }
-  .whole-itin-body h3 {
-    font-size: 20px;
-  }
-  .whole-itin-body p {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width : 418px) {
-  .upload-body h1 {
-    font-size: 17px;
-  }
-  .upload-body input[type=submit] {
-    font-size: 13px;
-    padding: 10px 9px;
-  }
-}
-@media only screen and (max-width : 400px) {
-  .itin-title {
-    font-size: 12px;
-    display: table;
-    width: 20px;
-  }
-}
-@media only screen and (max-width : 350px) {
-  .whole-itin-body h1 {
-    font-size: 20px;
-  }
-  .whole-itin-body h3 {
-    font-size: 15px;
-  }
-  .whole-itin-body p {
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width : 315px) {
-  .itin-title {
-    font-size: 10px;
-  }
+
+.itin--titleImg h1 {
+  font-size: 3.5rem;
 }
