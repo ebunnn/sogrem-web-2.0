@@ -1,66 +1,108 @@
-import React, { Component } from 'react';
+import {React, useEffect, useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import '../css/Contact.css';
-import contactimg from '../images/contact-image-cropped.jpg';
+import contactusimg from '../images/contactusimg.jpg';
 import {  FaPhone, FaClock, FaMailBulk, FaHome } from 'react-icons/fa';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
-class Contact extends Component {
-    // constructor() {
-    //     super()
-    // }
-    //className="freebirdFormviewerViewFormContentWrapper"
-    render() {
-        const iframeStyles = {
-            background: "transparent",
-            border: "1px solid #ccc"
-        }
-        return (
-            <div>
-                <div>
-                    <h1 className="contact-title">Contact Us</h1>
-                </div>
-                <div className="contact-img">
-                    <img src={contactimg} alt="" />
-                </div>
-                <div className="contact-form">
-                    <h3>Leave your message here and our representative will get back to you:</h3> 
-                    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrgNuTNMNsnjGRqh?backgroundColor=cyan" frameborder="0" onmousewheel="" width="80%" height="1076" style={iframeStyles}></iframe>
-                </div>
-                <br></br><br></br>
-                    <div className="contact-info"> 
-                        <div className="telephone">
-                            <h1>Telephone <FaPhone /></h1>
-                            <hr></hr><br></br>
-                            <h3><a href="tel:2407866267">(240)786-6267</a></h3><br></br>
-                            <h2>Telephone Hours <FaClock /></h2>
-                            <hr></hr>
-                            <h3>Mon-Fri</h3><br></br>
-                            <h3>9AM-5PM</h3>                       
+
+export default function ContactUs() {
+
+const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert("Message Sent! We will get back to you as soon as possible");
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
+    return (
+        <div data-aos="fade-zoom-in" className='contactus--container'>
+                <div className="contactus--formContainer">
+                    <img className="contactus--img" src={contactusimg} alt="" />
+                    <h1 className="contactus--title">Contact Us</h1>
+                    <div className='contactus--content'>
+                        <form ref={form} style={{textAlign:"left"}} onSubmit={sendEmail}>
+                            <label className="contactus--label">First and Last Name <span style={{color:"red"}}>*</span></label><br />
+                            <input
+                                    type="text"
+                                    className="contactus--textLabel"
+                                    placeholder="First and Last Name"
+                                    name="user_name"
+                                    // onChange={(e) => setSenderName(e.target.value)}
+                                    required
+                                />
+                                <br />
+                                <div className='contactus--email-and-phone'>
+                                    <div style={{display:"flex", flexDirection:"column"}}>
+                                        <label className="contactus--label">Email  <span style={{color:"red"}}>*</span></label>
+                                        <input
+                                            type="text"
+                                            className="contactus--textLabel"
+                                            placeholder="Your email"
+                                            name="user_email"
+                                        // onChange={(e) => setEmail(e.target.value)}
+                                            required
+                                        />
+                                    </div>
+                                    <div style={{display:"flex", flexDirection:"column"}}>
+                                        <label className="contactus--label">Phone Number</label>
+                                        <input
+                                            type="text"
+                                            className="contactus--textLabel"
+                                            placeholder="Your phone number"
+                                            name="user_phone"
+                                            //onChange={(e) => setPhoneNumber(e.target.value)}
+                                            required
+                                        />
+                                        <br />
+                                    </div>
+                                </div>
+                                <label className="contactus--label">Message <span style={{color:"red"}}>*</span></label><br />
+                                <textarea
+                                    type="text"
+                                    className="contactus--textLabel"
+                                    placeholder="Type your message here..."
+                                    name="message"
+                                    //onChange={(e) => setMessage(e.target.value)}
+                                    required
+                                />
+                                <br />
+                                <button type="submit" class="contactus--button-77" role="button">Send Message</button>  {/*<input type="submit" class="contactus--button-77" role="button" value="Send Message" /> */}
+                        </form>
+                        <div className='contactus--contactInfo'>
+                            <h1 style={{color:"#1D83FF"}}>Our Contacts</h1>
+                            <p>Please send a message here and our representative will get back to you. Or contact us through one of these methods</p>
+                            <div className='contactus--methods'>
+                                <ul style={{listStyleType:"none"}}>
+                                    <li><FaPhone /> <a href="tel:+12407866267"> +1(240)-786-6267</a> </li>
+                                    <li><FaMailBulk />  <a href="mailto:sogremassociates@gmail.com">sogremassociates@gmail.com</a></li>
+                                    <li><FaClock />  Visiting Hours: 10am - 5pm</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="email">
-                            <h1>Email <FaMailBulk /></h1>
-                            <hr></hr><br></br>
-                            <h3 className="email-links"><a href="mailto:sogremassociates@sogrem.com">sogremassociates@sogrem.com</a></h3>
-                            <h3 className="email-links"><a href="mailto:sogremassociates@gmail.com">sogremassociates@gmail.com</a></h3>
-                            <br></br>
-                            <h2>Email Hours <FaClock /></h2>
-                            <hr></hr>
-                            <h3>Anytime</h3>
-                        </div>
-                    </div> 
-                        <div className="address">
-                            <h1>Address <FaHome /></h1>
-                            <hr></hr><br></br>
-                            <h3>228 Linden Ridge Road, Laurel, MD 20724</h3><br></br>
-                            <h2>Visiting Hours <FaClock /></h2>
-                            <hr></hr>
-                            <h3>9AM-5PM</h3>
-                        </div>  
-            </div>
-            
-        )
-   
-    }
+                    </div>
+                    
+                </div>
+                <br/><br/>
+        </div>
+    )
 }
-
-
-export default Contact;

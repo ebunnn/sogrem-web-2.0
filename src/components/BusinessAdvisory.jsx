@@ -1,50 +1,47 @@
-import React, { Component } from 'react';
+import {React, useEffect} from 'react';
 import '../css/BusinessAdvisory.css';
 import busadpic from '../images/businessadpic.jpg';
-import {Link} from "react-router-dom";    
 import { FaCheck } from 'react-icons/fa';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
-class BusinessAdvisory extends Component {
-    // constructor() {
-    //     super()
-    // }
-    render() {
-        return(
-            <div>
-                <div className="businessad-title">
-                    <h1>Business Advisory Services</h1>
+export default function BusinessAdvisory() {
+
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
+    return (
+        <div data-aos="fade-zoom-in" className='businessad--container'>
+            <div className='businessad--content'>
+                <div className='businessad--titleImg'>
+                    <h1>Business Advisory</h1>
+                    <img className="businessad--img" src={busadpic} alt="Tax Documents" />
+                    <br></br>
+                    <br></br>
+                    <hr></hr>
                 </div>
-                <div className="businessad-title2">
-                    <h1>Business Advisory<br/>Services</h1>
-                </div>
-                <div className="businessad-image">
-                    <img src={busadpic} alt="business advisory picture" />
-                </div>
-                
-                <div className="whole-businessad-body">
-                    <div className="businessad-body">
+                    <div className='businessad--text'>
                         <h1>Business Advisory</h1>
-                        <p>We provide consulting assistance clients in arears of:<br></br>
-                        <br></br>
-                        Business Registration in all 50 states &amp; DC, viz <br></br><br></br>
-
-                        &emsp;<FaCheck /> Sole Proprietor<br></br>
-                        &emsp;<FaCheck /> Partnership<br></br>
-                        &emsp;<FaCheck /> Limited Liability Companies<br></br>
-                        &emsp;<FaCheck /> Small Corporations<br></br>
-                        &emsp;<FaCheck /> C Corporations<br></br>
-                        <br></br>
-                        Business Permits &amp; Licenses (with exceptions)<br></br>
-                        <br></br>
-                        IRS Employer Identification Number (EIN)  
-                        </p>
+                        <p>We provide consulting assistance clients in areas of:
+                            <br/><br/>
+                            Business Registration in all 50 states and DC, 
+                            <ul>
+                                <li><FaCheck /> Sole Proprietor</li>
+                                <li><FaCheck /> Partnership</li>
+                                <li><FaCheck /> Limited Liability Companies</li>
+                                <li><FaCheck /> Small Corporations</li>
+                                <li><FaCheck /> C Corporations</li>
+                            </ul>         
+                            <br></br>
+                            Business Permits and Licenses (with exceptions)<br></br>
+                            <br></br>
+                            IRS Employer Identification Number (EIN)  
+                         </p>
                     </div>
-                </div>
-                <div className="more-info">
-                    <p>Need more information? Please call the number: (240)-786-6267 or visit our <Link to="/Contact-us">Contact Us</Link> page.</p>
-                </div>          
+                    <br></br>
+                    <br></br>
             </div>
-        )
-    }
+        </div>
+    )
 }
-export default BusinessAdvisory;

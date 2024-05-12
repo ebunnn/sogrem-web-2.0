@@ -1,11 +1,18 @@
 import {React, useEffect} from 'react';
 import '../css/Representation.css';
 import reppic from '../images/representationpic.jpg';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 
 export default function Representation() {
+
+    useEffect(()=> {
+        AOS.init({duration: 2000});
+    }, []);
+
     return (
-        <div className='rep--container'>
+        <div data-aos="fade-zoom-in" className='rep--container'>
             <div className='rep--content'>
                 <div className='rep--titleImg'>
                     <h1>Representation</h1>

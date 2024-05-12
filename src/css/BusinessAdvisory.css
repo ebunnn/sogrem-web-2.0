@@ -1,122 +1,53 @@
-.businessad-image img {
-  object-fit: cover;
-  height: 685px;
-  width: 100%;
+.businessad--container {
+  color: #1D83FF;
+  display: flex;
 }
-.businessad-title {
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 30px;
-  padding: 0px 20px;
-  letter-spacing: 5px;
-  font-size: 25px;
-  font-family: allegro;
-  font-weight: bold;
-  background-color: rgba(91, 164, 207, 0.6);
-  color: white;
-  border-radius: 5px;
+
+.businessad--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.businessad-title2 {
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 30px;
-  padding: 0px 20px;
-  letter-spacing: 5px;
-  font-size: 25px;
-  font-family: allegro;
-  font-weight: bold;
-  background-color: rgba(91, 164, 207, 0.6);
-  color: white;
-  border-radius: 5px;
-  display: none;
+.businessad--img {
+  width: 90%;
+  height: auto;
 }
-.businessad-body {
-  font-family: allegro;
-  padding: 50px;
-  padding-top: 5px;
-  text-align: left;
-  border: 2px solid white;
-  box-shadow: 5px 8px 16px 7px rgba(0,0,0,0.2);
-  margin: 30px;
-}
-.whole-businessad-body {
-  width: 70%;
+
+.businessad--text {
+  width: 50%;
   position: relative;
-  display: contents;
+  text-align: left;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
 }
-.businessad-body p {
- font-size: 30px;
- text-align: left;
+
+.businessad--text p {
+  color: #717171;
 }
-.businessad-body h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: rgba(91, 164, 207, 0.4);
+
+.businessad--text ul {
+  color: #717171;
+  width: 70%;
+  list-style-type: none;
 }
-.more-info {
-  font-family: allegro;
+
+.businessad--titleImg hr {
+  width: 100%;
+  opacity: 0.3;
 }
-.more-info a, .more-info a:visited {
-  color: blue;
+.businessad--titleImg {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  align-items: center;
+
 }
-@media only screen and (max-width : 800px) {
-  .businessad-title {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width : 740px) {
-  .businessad-title {
-    font-size: 15px;
-  }
-  .businessad-body p {
-    font-size: 25px;
-  }
-  .businessad-body h1 {
-    font-size: 40px;
-  }
-}
-@media only screen and (max-width : 575px) {
-  .businessad-title {
-    display: none;
-  }
-  .businessad-title2 {
-    display: block;
-    font-size: 16px;
-  }
-  .businessad-body p {
-    font-size: 20px;
-  }
-  .businessad-body h1 {
-    font-size: 30px;
-  }
-  .more-info {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width : 465px) {
-  .businessad-title2 {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width : 400px) {
-  .businessad-title2 {
-    font-size: 10px;
-  }
-  .businessad-body p {
-    font-size: 15px;
-  }
-  .businessad-body h1 {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width : 333px) {
-  .businessad-title2 {
-    font-size: 7px;
-  }
-  .businessad-body p {
-    font-size: 13px;
-  }
-  .businessad-body h1 {
-    font-size: 20px;
-  }
+
+.businessad--titleImg h1 {
+  font-size: 3.5rem;
 }

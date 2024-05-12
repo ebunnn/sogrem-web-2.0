@@ -46,7 +46,7 @@ export default function AboutUs() {
                         <div className='aboutus--service'>
                             <FontAwesomeIcon icon={faChartPie} style={{fontSize:"4rem"}}/>
                             <h4>Tax Preparation</h4>
-                            <p>We prepare everything you need for your tax return</p>       
+                            <p>We prepare everything you need for your tax return</p> 
                         </div>
                     </div>
                     
