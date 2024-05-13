@@ -12,6 +12,13 @@
     max-width: 4vw;
 }
 
+.home--title {
+    font-size: 3.5rem
+}
+
+.home--title2 {
+    display: none;
+}
 .home--header-content {
     display: flex;
     justify-content: center;
@@ -41,10 +48,15 @@
     margin-right: auto;
 }
 
-.home--certification-container {
-    background: white;
-    height: 40vh;
+.home--certifications-container {
     display: flex;
+    justify-content: center;
+}
+
+.home--certificationimg {
+    width: 350px;
+    height: auto;
+    padding: 15px;
 }
 
 .home--info-container1 {
@@ -98,3 +110,54 @@
     font-size: 1.5rem;
 }
 
+@media only screen and (max-width : 1575px) {
+    .home--title {
+        font-size: 3.5rem;
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width : 1400px) {
+    .home--title {
+        font-size: 3rem;
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width : 1250px) {
+    .home--title {
+        font-size: 2.3rem;
+        width: 399px;
+    }
+    .home--certificationimg {
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width : 1125px) {
+    .home--title {
+        display: none;
+    }
+
+    .home--title2 {
+        display: flex;
+        font-size: 2.3rem;
+    }
+
+    .home--header-content {
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        position: relative;
+        top: -50px;
+    }
+    .home--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        text-align: center;
+    }
+}

@@ -2,7 +2,9 @@ import {React, useEffect} from "react";
 import "../css/Home.css"
 import mainimage from "../images/main-image.jpg";
 import salogo from "../images/salogo.png";
-import certifications from "../images/irs certifications.png";
+import efile from "../images/irsefile.png";
+import irsea from '../images/irsea.png';
+import caa from "../images/caa.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import AOS from "aos";
@@ -23,18 +25,17 @@ export default function Home() {
                             <img data-aos="fade-zoom-in" className="home--headerlogo" src={salogo} alt="logo" />
                             <h4 style={{letterSpacing:"2px", fontSize:"1.7rem", fontWeight:"300"}}>SOGREM ASSOCIATES</h4>
                         </div>
-
-                        <h2 style={{fontSize:"3.5rem"}}>PROFESSIONAL TAX PREPARATION SERVICE<br></br>IRS + 50 STATES & DC</h2>
+                        <h2 className="home--title">PROFESSIONAL TAX PREPARATION SERVICE<br></br>IRS + 50 STATES & DC</h2>
+                        <h2 className="home--title2">PROFESSIONAL TAX PREPARATION SERVICE <br></br> IRS + 50 STATES & DC</h2>
                     </div>
                     <img data-aos="fade-zoom-in" className="home--headerimg" src={mainimage} alt="header image" />
                 </div>
 
             </div>
-            <div className="home--certifications-container" style={{height:"30vh"}}>
-                    {/* <img className="home--certificationimg" src={efile} alt="IRS efile provider certification" />
+            <div className="home--certifications-container" > 
+                    <img className="home--certificationimg" src={efile} alt="IRS efile provider certification" />
                     <img className="home--certificationimg" src={caa} alt="Certifying acceptance agent certification" />
-                    <img className="home--certificationimg" src={irsea} alt="IRS enrolled agent certification" /> */}
-                    <img src={certifications} alt="IRS Certifications" />
+                    <img className="home--certificationimg" src={irsea} alt="IRS enrolled agent certification" />
             </div>
             <div className="home--info-container1">
                 <div className="home--info-text1">
