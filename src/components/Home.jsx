@@ -23,7 +23,7 @@ export default function Home() {
                     <div data-aos="fade-zoom-in" className="home--text">
                         <div data-aos="fade-zoom-in" className="home--logo">
                             <img data-aos="fade-zoom-in" className="home--headerlogo" src={salogo} alt="logo" />
-                            <h4 style={{letterSpacing:"2px", fontSize:"1.7rem", fontWeight:"300"}}>SOGREM ASSOCIATES</h4>
+                            <h4 className="home--sogrem-title">SOGREM ASSOCIATES</h4>
                         </div>
                         <h2 className="home--title">PROFESSIONAL TAX PREPARATION SERVICE<br></br>IRS + 50 STATES & DC</h2>
                         <h2 className="home--title2">PROFESSIONAL TAX PREPARATION SERVICE <br></br> IRS + 50 STATES & DC</h2>
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
             <div className="home--info-container1">
                 <div className="home--info-text1">
-                    <h1 style={{fontSize:"3.5rem"}}>Welcome!</h1>
+                    <h1>Welcome!</h1>
                     <p>You are heartily welcomed to our website. We see your visit as a privileged
                        opportunity to showcase the solutions we provide to our numerous clients in 
                        the Maryland, DC, Virginia and West Virginia areas. We believe you will be 
@@ -47,13 +47,13 @@ export default function Home() {
                        target is 3 minutes.</p>
                 </div>
                 <div className="home--info-text2">
-                    <div style={{display:"flex", flexDirection:"column"}}>
-                        <h1 style={{fontSize:"3.5rem"}}>What we do</h1>
-                        <p style={{width:"70%"}}>We fix tax problems & tax obligations. SOGREM is wholesomely involved 
+                    <div className="home--what-we-do">
+                        <h1>What we do</h1>
+                        <p>We fix tax problems & tax obligations. SOGREM is wholesomely involved 
                         essentially in tax & tax related solutions.</p>
-                </div>
+                    </div>
                     
-                    <div style={{width:"70%"}}>
+                    <div className="home--services">
                         <h3> Our professional services include</h3>
                         <hr style={{width:"95%", height:"1%", background:"white", border:"none"}}></hr>
                         <h5><FontAwesomeIcon icon={faCheck} /> IRS/State individual and business tax preparation</h5>
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <div className="home--info-container2">
                 <div style={{width:"70%"}}>
-                    <h1 style={{fontSize:"3.5rem"}}>Our Service Delivery Platform</h1>
+                    <h1>Our Service Delivery Platform</h1>
                     <p>SOGREM Associates tax professionals are US Treasury Circular 230 Practitioners and 
                        fully governed by the Office of Professional Responsibility (OPR). We offer our tax 
                        services within the confines of the rigorously regulated monitoring banner of the US 
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             <div className="home--info-container3">
                 <div style={{width:"70%"}}>
-                    <h1 style={{fontSize:"3.5rem"}}>Fees Affordability Assurance</h1>
+                    <h1>Fees Affordability Assurance</h1>
                     <p>Our charges are always the best you can receive within the industry and we are ready to match 
                         any price (on similar service) you get from other Enrolled Agents, Tax Attorneys and CPAs. 
                         Please feel free to go through our web pages to see what we have to offer you. We are extremely 

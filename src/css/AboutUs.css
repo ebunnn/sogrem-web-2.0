@@ -7,6 +7,9 @@
   font-size: 1.5rem;
 }
 
+.aboutus--container h1 {
+  font-size: 3.5rem;
+}
 .aboutus--mainimg {
   width: 80vh;
   height: 50vh;
@@ -23,9 +26,13 @@
   gap: 5vw;
 }
 
-.aboutus--irsEnablingText {
+/* .aboutus--irsEnablingText {
   color: "black";
   width: "0%";
+} */
+
+.aboutus--text h1 {
+  font-size: 3.5rem;
 }
 
 .aboutus--ourservices-container {
@@ -38,6 +45,7 @@
 .aboutus--service-container {
   display: flex;
   width: 65%;
+  gap: 20px;
 }
 .aboutus-service {
   text-align: left;
@@ -45,4 +53,89 @@
 
 .aboutus--service-container p {
   color: #717171;
+}
+
+@media only screen and (max-width : 1300px) {
+  .aboutus--text {
+    width: 80%;
+  }
+  .aboutus--service-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width : 1100px) {
+  .aboutus--text {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width : 935px) {
+  .aboutus--text {
+    flex-direction: column;
+    gap: 0vw;
+    text-align: center;
+  }
+
+  .aboutus--service-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width : 831px) {
+  .aboutus--service-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 749px) {
+  .aboutus--service-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .aboutus--service-container {
+    width: 70%;
+  }
+  .aboutus--text h1 {
+    font-size: 2.5rem;
+  }
+  .aboutus--container h1 {
+    font-size: 2.5rem;
+  }
+  .aboutus--irsEnablingText {
+    font-size: 1.3rem;
+  }
+
+  .aboutus--service-container p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width : 530px) {
+  .aboutus--container h1 {
+    font-size: 1.6rem;
+  }
+  .aboutus--text h1 {
+    font-size: 2rem;
+  }
+  .aboutus--service-container h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width : 340px) {
+  .aboutus--container h1 {
+    font-size: 1.2rem;
+  }
+  .aboutus--irsEnablingText {
+    font-size: 1.1rem;
+  }
+  .aboutus--service-container h1 {
+    font-size: 2rem;
+  }
+  .aboutus--service-container p {
+    font-size: 1.1rem;
+  }
 }

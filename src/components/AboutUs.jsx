@@ -18,11 +18,11 @@ export default function AboutUs() {
     return(
         <div data-aos="fade-zoom-in" className='aboutus--container'>
             <div>
-                <h1 style={{fontSize:"3.5rem"}}>About Sogrem Associates</h1>
+                <h1>About Sogrem Associates</h1>
                 <img className="aboutus--mainimg" src={aboutsogrem} alt="Handshake Image" />
             </div>
             <div className='aboutus--text'>
-                <h1 style={{fontSize:"3.5rem"}}>IRS ENABLING CREDENTIALS</h1>
+                <h1>IRS ENABLING CREDENTIALS</h1>
                 <p style={{color:"#717171"}} className="aboutus--irsEnablingText">SOGREM Associates tax professionals are Enrolled Agents. Enrolled Agents, as 
                     with tax attorneys and CPAs, have unlimited rights to practice at all levels 
                     of the IRS and are the only federally licensed tax professionals - by the US 

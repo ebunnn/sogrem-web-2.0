@@ -110,6 +110,34 @@
     font-size: 1.5rem;
 }
 
+.home--services {
+    width: 70%;
+}
+
+.home--what-we-do {
+    display: flex;
+    flex-direction: column;
+}
+
+.home--what-we-do h1 {
+    font-size: 3.5rem;
+}
+
+.home--info-text1 h1 {
+    font-size: 3.5rem;
+}
+.home--info-container3 h1{
+    font-size: 3.5rem; 
+}
+.home--info-container2 h1 {
+    font-size: 3.5rem;
+}
+.home--sogrem-title {
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
 @media only screen and (max-width : 1575px) {
     .home--title {
         font-size: 3.5rem;
@@ -147,7 +175,7 @@
 
     .home--header-content {
         flex-direction: column;
-        gap: 0px;
+        gap: 60px;
         align-items: center;
         position: relative;
         top: -50px;
@@ -159,5 +187,118 @@
         align-items: center;
         left: auto;
         text-align: center;
+        gap: 30px;
+    }
+    .home--services {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .home--info-container1 {
+        background: #1D83FF;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 3%;
+    }
+
+    .home--info-text2 {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 830px) {
+    .home--certificationimg {
+        width: 180px;
+    }
+
+    .home--info-text1 {
+        font-size: 1.3rem;
+    }
+
+    .home--info-text2 {
+        font-size: 1.3rem;
+    }
+    .home--info-container2 {
+        font-size: 1.3rem;
+    }
+    .home--info-container3 {
+        font-size: 1.3rem;
+    }
+    .home--title2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .home--title2 {
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width : 620px) {
+    .home--info-container1 {
+        text-align: center;
+    }
+    .home--info-container2 {
+        text-align: center;
+    }
+    .home--info-container3 {
+        text-align: center;
+    }
+    .home--info-text1 h1 {
+        font-size: 2.5rem;
+    }
+    .home--what-we-do h1 {
+        font-size: 2.5rem;
+    }
+    .home--info-container3 h1{
+        font-size: 2.5rem;
+    }
+    .home--info-container2 h1 {
+        font-size: 2.5rem;
+    }
+    .home--certificationimg {
+        width: 130px;
+    }
+    .home--title2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .home--title2 {
+        font-size: 1.1rem;
+    }
+    .home--sogrem-title {
+        font-size: 1.5rem;
+    }
+    .home--certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home--certificationimg {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .home--title2 {
+        font-size: 1.5rem;
+    }
+    .home--logo {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 300px) {
+    .home--sogrem-title {
+        font-size: 1.3rem;
+    }
+    .home--title2 {
+        font-size: 1.3rem;
     }
 }
