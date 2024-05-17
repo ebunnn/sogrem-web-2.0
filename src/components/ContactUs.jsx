@@ -12,8 +12,18 @@ export default function ContactUs() {
 const form = useRef();
 
   const sendEmail = (e) => {
+    
     e.preventDefault();
 
+    const userName = form.current.user_name.value;
+    const userEmail = form.current.user_email.value;
+    const userMessage = form.current.message.value;
+
+    if (!userName || !userEmail || !userMessage) {
+      alert('Please fill out all required fields: First and Last Name, Email, and Message.');
+      return;
+    }
+    
     emailjs
       .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
         publicKey: process.env.REACT_APP_PUBLIC_KEY,
