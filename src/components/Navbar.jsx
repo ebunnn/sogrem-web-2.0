@@ -1,7 +1,6 @@
 import {React, useState, useEffect} from "react";
 import "../css/Navbar.css";
 import {NavLink} from "react-router-dom";
-import salogo from "../images/salogo.png";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
