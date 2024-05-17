@@ -8,7 +8,7 @@
 }
 
 .home--headerlogo {
-    height: 4vh;
+    height: 7vh;
     max-width: 4vw;
 }
 
@@ -44,7 +44,7 @@
     text-align: left;
     width: 100%;
     position: relative;
-    left: 10vw;
+    left: 7vw;
     margin-right: auto;
 }
 
@@ -150,6 +150,9 @@
         font-size: 3rem;
         width: 520px;
     }
+    .home--headerlogo {
+        max-width: 6vw;
+    }
 }
 
 @media only screen and (max-width : 1250px) {
@@ -191,6 +194,9 @@
     }
     .home--services {
         width: 100%;
+    }
+    .home--headerlogo {
+        max-width: 8vw;
     }
 }
 
@@ -238,6 +244,9 @@
     .home--title2 {
         font-size: 1.7rem;
     }
+    .home--headerlogo {
+        max-width: 10vw;
+    }
 }
 @media only screen and (max-width : 620px) {
     .home--info-container1 {
@@ -267,6 +276,10 @@
     .home--title2 {
         font-size: 1.4rem;
     }
+    .home--headerlogo {
+        max-width: 12vw;
+    }
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -283,6 +296,9 @@
     .home--certificationimg {
         width: 170px;
     }
+    .home--headerlogo {
+        max-width: 15vw;
+    }
 }
 
 @media only screen and (max-width : 380px) {
@@ -291,6 +307,9 @@
     }
     .home--logo {
         flex-direction: column;
+    }
+    .home--headerlogo {
+        max-width: 20vw;
     }
 }
 

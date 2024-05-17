@@ -1,7 +1,7 @@
 import {React, useEffect} from "react";
 import "../css/Home.css"
 import mainimage from "../images/main-image.jpg";
-import salogo from "../images/salogo.png";
+import salogo from "../images/Sogrem Logo shortened.png";
 import efile from "../images/irsefile.png";
 import irsea from '../images/irsea.png';
 import caa from "../images/caa.png";
