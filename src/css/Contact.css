@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .contactus--label {
@@ -69,7 +68,7 @@
 
 .contactus--methods {
     text-align: center;
-    line-height: 2.8;
+    line-height: 2;
     font-size: 1.2rem;
 }
 
@@ -194,3 +193,100 @@
       padding: 19px 32px;
     }
   }
+
+@media only screen and (max-width : 1309px) {
+  .contactus--content {
+    gap: 10vw;
+  }
+}
+
+@media only screen and (max-width : 1170px) {
+  .contactus--content{
+    width: 85%;
+}
+.contactus--textLabel {
+  width: 40vw;
+}
+.contactus--email-and-phone input {
+  width: 18vw;
+}
+}
+
+@media only screen and (max-width : 748px) {
+  .contactus--title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width : 940px) {
+  .contactus--content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0vw;
+  }
+  .contactus--textLabel {
+    width: 400px;
+  }
+  .contactus--email-and-phone input {
+    width: 190px;
+  }
+  .contactus--img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width : 641px) {
+  .contactus--title {
+    font-size: 2.3rem;
+  }
+  .contactus--contactInfo h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width : 491px) {
+  .contactus--contactInfo p {
+    font-size: 1.1rem;
+  }
+  .contactus--textLabel {
+    width: 300px;
+}
+.contactus--email-and-phone {
+  flex-direction: column;
+}
+.contactus--email-and-phone input{
+  width: 300px;
+}
+}
+
+@media only screen and (max-width : 350px) {
+  .contactus--textLabel {
+    width: 230px;
+}
+.contactus--email-and-phone input{
+  width: 230px;
+}
+.contactus--label {
+  text-align: center;
+}
+}
+
+@media only screen and (max-width : 312px) {
+  .contactus--contactInfo p {
+    font-size: 0.9rem;
+  }
+  .contactus--title {
+    font-size: 1.7rem;
+}
+.contactus--contactInfo h1 {
+  font-size: 1.3rem;
+}
+}
+
+@media only screen and (max-width : 300px) {
+  .contactus--content {
+    gap: 10vw;
+  }
+  .contactus--contactInfo {
+    padding: 0px;
+  }
+}

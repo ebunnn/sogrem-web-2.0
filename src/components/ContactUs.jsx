@@ -47,7 +47,6 @@ const form = useRef();
                                     className="contactus--textLabel"
                                     placeholder="First and Last Name"
                                     name="user_name"
-                                    // onChange={(e) => setSenderName(e.target.value)}
                                     required
                                 />
                                 <br />
@@ -59,7 +58,6 @@ const form = useRef();
                                             className="contactus--textLabel"
                                             placeholder="Your email"
                                             name="user_email"
-                                        // onChange={(e) => setEmail(e.target.value)}
                                             required
                                         />
                                     </div>
@@ -70,7 +68,6 @@ const form = useRef();
                                             className="contactus--textLabel"
                                             placeholder="Your phone number"
                                             name="user_phone"
-                                            //onChange={(e) => setPhoneNumber(e.target.value)}
                                             required
                                         />
                                         <br />
@@ -82,21 +79,18 @@ const form = useRef();
                                     className="contactus--textLabel"
                                     placeholder="Type your message here..."
                                     name="message"
-                                    //onChange={(e) => setMessage(e.target.value)}
                                     required
                                 />
                                 <br />
-                                <button type="submit" class="contactus--button-77" role="button">Send Message</button>  {/*<input type="submit" class="contactus--button-77" role="button" value="Send Message" /> */}
+                                <button type="submit" class="contactus--button-77" role="button">Send Message</button> 
                         </form>
                         <div className='contactus--contactInfo'>
                             <h1 style={{color:"#1D83FF"}}>Our Contacts</h1>
                             <p>Please send a message here and our representative will get back to you. Or contact us through one of these methods</p>
                             <div className='contactus--methods'>
-                                <ul style={{listStyleType:"none"}}>
-                                    <li><FaPhone /> <a href="tel:+12407866267"> +1(240)-786-6267</a> </li>
-                                    <li><FaMailBulk />  <a href="mailto:sogremassociates@gmail.com">sogremassociates@gmail.com</a></li>
-                                    <li><FaClock />  Visiting Hours: 10am - 5pm</li>
-                                </ul>
+                                <p><FaPhone /> <a href="tel:+12407866267"> +1(240)-786-6267</a> </p>
+                                <p><FaMailBulk />  <a href="mailto:sogremassociates@gmail.com">sogremassociates@gmail.com</a></p>
+                                <p><FaClock />  Visiting Hours: 10am - 5pm</p>
                             </div>
                         </div>
                     </div>

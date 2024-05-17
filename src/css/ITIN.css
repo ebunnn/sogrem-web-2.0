@@ -50,3 +50,55 @@
 .itin--titleImg h1 {
   font-size: 3.5rem;
 }
+
+@media only screen and (max-width : 1100px) {
+  .itin--text {
+    width: 80%;
+  }
+  .itin--img {
+    width: 170%;
+}
+}
+
+@media only screen and (max-width : 1050px) {
+  .itin--titleImg h1 {
+    width: 130%;
+  }
+}
+
+@media only screen and (max-width : 748px) {
+  .itin--titleImg h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width : 641px) {
+  .itin--titleImg h1 {
+    font-size: 2.3rem;
+}
+.itin--text h1 {
+  font-size: 2rem;
+}
+}
+
+@media only screen and (max-width : 491px) {
+  .itin--titleImg h1 {
+    font-size: 2rem;
+    width: 130%;
+}
+.itin--text {
+  font-size: 1.1em;
+}
+}
+
+@media only screen and (max-width : 328px) {
+  .itin--titleImg h1 {
+    font-size: 1.7rem;
+    width: 150%;
+}
+
+.itin--text h1 {
+  font-size: 1.7rem;
+}
+
+}
