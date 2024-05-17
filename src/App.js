@@ -11,6 +11,7 @@ import Representation from './components/Representation';
 import BusinessAdvisory from './components/BusinessAdvisory';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Error404 from "./components/Error404";
 
 
 export default function App() {
@@ -34,7 +35,8 @@ export default function App() {
                   <Route path='/itin' element={<ITIN />} />  
                   <Route path='/representation' element={<Representation />} />                   
                   <Route path='/business-advisory' element={<BusinessAdvisory />} />                   
-                  <Route path='/contact-us' element={<ContactUs />} />                                    
+                  <Route path='/contact-us' element={<ContactUs />} />  
+                  <Route path='/*' element={<Error404 />} />                                                                      
                 </Routes>
             </header>
             <Footer />
